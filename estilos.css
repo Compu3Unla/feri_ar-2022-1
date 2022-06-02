@@ -10,7 +10,7 @@ header{
 	background:#FEABD9;
 	height:100px;
 }
-h1{
+.bienvenidx{
 	position: absolute;
 	width: 742px;
 	height: 127px;
@@ -26,7 +26,7 @@ h1{
 	text-align: center;
 
 }
-.texto-bienvenida{
+	.texto-principal p{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 30px;
