@@ -20,6 +20,14 @@ h1{
 	border-radius: 10px;
 
 }
+.texto-bienvenida{
+	background-color: white;
+	border: 1px solid black;
+	height: 50px;
+	widht: 20%;
+	border-radius: 10px;
+	margin-top: 10px;
+}
 
 
 
