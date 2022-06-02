@@ -11,22 +11,32 @@ body {
 
 h1{
 	font-family: "Nunito-Bold";
+	font-size: 2em;
 	color: white;
 	background-color:#ff20ac;
-	box-sizing: content-box;
-	border:1px solid black;
-	height: 50px;
-	widht: 50px;
-	border-radius: 10px;
+	box-sizing: border-box;
+	border:0.5px solid black;
+	height: 80px;
+	width: 30%;
+	border-radius: 20px;
+	text-align: center;
+	padding-top: 20px;
 
 }
 .texto-bienvenida{
+	font-family: "Nunito-Bold";
 	background-color: white;
-	border: 1px solid black;
-	height: 50px;
-	widht: 20%;
-	border-radius: 10px;
+	border: 0.5px solid black;
+	height: 150px;
+	width: 30%;
+	border-radius: 20px;
 	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
 }
 
 
