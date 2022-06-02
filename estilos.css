@@ -6,9 +6,11 @@
 	padding: 0px;
 	font-family: "Nunito";
 }
-
+header{
+	background:#FEABD9;
+	height:100px;
+}
 h1{
-	
 	position: absolute;
 	width: 742px;
 	height: 127px;
