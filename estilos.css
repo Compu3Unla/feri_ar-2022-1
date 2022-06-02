@@ -4,42 +4,52 @@
 * {
 	margin: 0px;
 	padding: 0px;
-}
-body {
-	font-family: 'Nunito', sans-serif;
+	font-family: "Nunito";
 }
 
 h1{
-	font-family: "Nunito-ExtraBold";
-	font-size: 2em;
-	color: white;
+	
+	position: absolute;
+	width: 742px;
+	height: 127px;
+	left: 972px;
+	top: 289px;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 60px;
+	color: #FFFFFF;
 	background-color:#ff20ac;
-	box-sizing: border-box;
-	border:0.5px solid black;
-	height: 80px;
-	width: 30%;
+	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
-	padding-top: 20px;
 
 }
 .texto-bienvenida{
-	font-family: "Nunito-Bold";
-	background-color: white;
-	border: 0.5px solid black;
-	height: 150px;
-	width: 30%;
-	border-radius: 20px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 41px;
+	text-align: justify;
+	color: #000000;
 	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 40px;
-	box-sizing: border-box;
 	padding-left: 20px;
 	padding-right: 20px;
-	text-align: justify;
+	
+	box-sizing: border-box;
+	position: absolute;
+	width: 742px;
+	height: 293px;
+	left: 972px;
+	top: 432px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 32px;
 }
 h2{
-	font-family: "Nunito-Bold";
+	font-weight: bold;
 	font-size: 1.3em;
 	color: white;
 	background-color:#ff20ac;
@@ -50,7 +60,6 @@ h2{
 	text-align: center;
 }
 .ul-objetivos{
-	font-family: "Nunito";
 	background-color: white;
 	border: 0.5px solid black;
 	height: 150px;
@@ -61,23 +70,4 @@ h2{
 	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-@font-face{
-	font-family: "Nunito";
-	src:url("fonts/Nunito-Regular.ttf");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face{
-	font-family: "Nunito-Bold";
-	src:url("fonts/Nunito-Bold.ttf");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face{
-	font-family: "Nunito-ExtraBold";
-	src:url("fonts/Nunito-ExtraBold.ttf");
-	font-weight: normal;
-	font-style: normal;
 }
