@@ -11,11 +11,6 @@ header{
 	height:100px;
 }
 h1{
-	position: absolute;
-	width: 742px;
-	height: 127px;
-	left: 972px;
-	top: 289px;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 60px;
@@ -24,7 +19,6 @@ h1{
 	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
-
 }
 .texto-bienvenida{
 	font-style: normal;
@@ -40,11 +34,6 @@ h1{
 	padding-right: 20px;
 	
 	box-sizing: border-box;
-	position: absolute;
-	width: 742px;
-	height: 293px;
-	left: 972px;
-	top: 432px;
 	background: #FFFFFF;
 	border: 1px solid #000000;
 	border-radius: 32px;
@@ -54,11 +43,24 @@ h2{
 	font-size: 1.3em;
 	color: white;
 	background-color:#ff20ac;
-	border:0.5px solid black;
+	border:1px solid black;
 	height: 50px;
 	width: 30%;
 	border-radius: 10px;
 	text-align: center;
+}
+h3{
+	font-weight: bold;
+	font-size: 1.1em;
+	color: white;
+	background-color:#ff20ac;
+	border:1px solid black;
+	height: 40px;
+	width: 232px;
+	box-sizing:border-box;
+	border-radius: 20px;
+	text-align: center;
+	padding-top:7px;
 }
 .ul-objetivos{
 	background-color: white;
@@ -71,4 +73,10 @@ h2{
 	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+footer{
+	font-weight:700;
+	width: 100%;
+	color: #0E6372;
+	background-color:#92DDEA;
 }
