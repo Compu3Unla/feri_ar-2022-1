@@ -10,7 +10,6 @@
  	background-repeat: no-repeat;
 	background-position: top left;
 	background-size:contain;
-  
 }
 header{
 	background:#FEABD9;
@@ -19,7 +18,7 @@ header{
 h1{
 	font-style: normal;
 	font-weight: 800;
-	font-size: 2em;
+	font-size: 3.75em;
 	color: #ffffff;
 	background-color:#ff20ac;
 	border:1px solid black;
@@ -45,7 +44,7 @@ h1{
 	border-radius: 32px;
 }
 h2{
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 2.5em ;
 	color: white;
 	background-color:#ff20ac;
@@ -56,7 +55,7 @@ h2{
 	text-align: center;
 }
 h3{
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1.875em;
 	color: white;
 	background-color:#ff20ac;
