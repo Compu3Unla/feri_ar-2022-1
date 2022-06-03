@@ -7,12 +7,6 @@
 	font-family: "Nunito";
 }
 body{
-	background-image: url("img_index/cuadriculafondo-01.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: top left;
-	background-size:cover;
-	border-bottom-color: lightpink;
 }
 
 h1{
