@@ -5,6 +5,12 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
+	background-image: url("img_index/fondo-01.jpg");
+	background-attachment: fixed;
+ 	background-repeat: no-repeat;
+	background-position: top left;
+	background-size:contain;
+  
 }
 header{
 	background:#FEABD9;
