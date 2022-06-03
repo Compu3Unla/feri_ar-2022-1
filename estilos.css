@@ -12,6 +12,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size:cover;
+	border-bottom-color: lightpink;
 }
 
 h1{
