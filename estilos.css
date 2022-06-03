@@ -5,7 +5,17 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
+	background-image: url("img_index/fondo-01.jpg");
+	background-attachment: fixed;
+ 	background-repeat: no-repeat;
+	background-position: top left;
+	background-size:contain;
 }
+header{
+	background:#FEABD9;
+	height:100px;
+}
+
 body{
 	background-image: url("img_index/cuadriculafondo-01.jpg");
 	background-attachment: fixed;
@@ -14,57 +24,59 @@ body{
 	background-size:cover;
 }
 
+=======
 h1{
-	
-	position: absolute;
-	width: 742px;
-	height: 127px;
-	left: 972px;
-	top: 289px;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 60px;
-	color: greenyellow;
+	font-size: 3.75em;
+	color: #ffffff;
 	background-color:#ff20ac;
 	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
-
+	width: 742px;
 }
 .texto-bienvenida{
-	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 1.875em;
 	line-height: 41px;
 	text-align: justify;
 	color: #000000;
 	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-	
-	box-sizing: border-box;
-	position: absolute;
+	padding-left: 50px;
+	padding-right: 50px;
 	width: 742px;
-	height: 293px;
-	left: 972px;
-	top: 432px;
+	box-sizing: border-box;
 	background: #FFFFFF;
 	border: 1px solid #000000;
 	border-radius: 32px;
 }
 h2{
-	font-weight: bold;
-	font-size: 1.3em;
+	font-weight: 700;
+	font-size: 2.5em ;
 	color: white;
 	background-color:#ff20ac;
-	border:0.5px solid black;
-	height: 50px;
-	width: 30%;
-	border-radius: 10px;
+	border:1px solid black;
+	height: 87px;
+	width: 412px;
+	border-radius: 20px;
 	text-align: center;
+}
+h3{
+	font-weight: 700;
+	font-size: 1.875em;
+	color: white;
+	background-color:#ff20ac;
+	border:1px solid black;
+	height: 40px;
+	width: 232px;
+	box-sizing:border-box;
+	border-radius: 20px;
+	text-align: center;
+	padding-top:7px;
 }
 .ul-objetivos{
 	background-color: white;
@@ -77,4 +89,10 @@ h2{
 	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+footer{
+	font-weight:700;
+	width: 100%;
+	color: #0E6372;
+	background-color:#92DDEA;
 }
