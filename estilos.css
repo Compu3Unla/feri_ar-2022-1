@@ -7,9 +7,9 @@
 	font-family: "Nunito";
 }
 body{
-	background-image: url("img_index/fondo-01.jpg");
+	background-image: url("img_index/cuadriculafondo-01.jpg");
 	background-attachment: fixed;
- 	background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-position: top left;
 	background-size:cover;
 }
