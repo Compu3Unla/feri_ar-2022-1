@@ -5,7 +5,7 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
-	background-image: url("img_index/fondo-01.jpg");
+	background-image: url("img/index/fondo-01.jpg");
 	background-attachment: fixed;
  	background-repeat: no-repeat;
 	background-position: top left;
@@ -17,7 +17,7 @@ header{
 }
 
 body{
-	background-image: url("img_index/cuadriculafondo-01.jpg");
+	background-image: url("img/index/cuadriculafondo-01.jpg");
 	background-attachment: fixed;
  	background-repeat: no-repeat;
 	background-position: top left;
