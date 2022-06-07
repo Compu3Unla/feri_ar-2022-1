@@ -5,15 +5,21 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
-	background-image: url("img_index/fondo-01.jpg");
-	background-attachment: fixed;
- 	background-repeat: no-repeat;
-	background-position: top left;
-	background-size:contain;
 }
 header{
 	background:#FEABD9;
 	height:100px;
+	position: fixed;
+	width: 100%;
+	display:flex;
+}
+
+body{
+	background-image: url("img/index/cuadriculafondo-01.jpg");
+	background-attachment: fixed;
+ 	background-repeat: no-repeat;
+	background-position: top left;
+	background-size:cover;
 }
 h1{
 	font-style: normal;
@@ -26,7 +32,7 @@ h1{
 	text-align: center;
 	width: 742px;
 }
-.texto-bienvenida{
+	.texto-principal p{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.875em;
