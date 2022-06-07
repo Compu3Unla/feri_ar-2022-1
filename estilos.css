@@ -74,12 +74,18 @@ h3{
 }
 .p-contenidos{
 	color: black;
-	background-color: #FFFFFFF;
+	background-color: white;
 	border:1px solid black;
 	height: 115px;
 	width: 232px;
 	border-radius: 20px;
 	text-align: center;
+	font-size: 1.25em;
+	font-weight: 400;
+	margin-top:10px;
+	box-sizing: border-box;
+	padding-top: 15px;
+
 }
 .ul-objetivos{
 	background-color: white;
