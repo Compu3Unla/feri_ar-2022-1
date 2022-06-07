@@ -93,6 +93,9 @@ h3{
 	padding-left: 20px;
 	padding-right: 20px;
 }
+nav{
+	display:flex;
+}
 footer{
 	font-weight:700;
 	width: 100%;
