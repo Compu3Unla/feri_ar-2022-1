@@ -159,6 +159,49 @@ h3{
 	box-sizing: border-box;
 	padding-top: 15px;
 }
+/*-------seccion disfruta---------*/
+#disfruta{
+	padding: 10% 10% 5% 10%;
+	box-sizing: border-box;
+}
+#disfruta article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+#disfruta h4 {
+	text-align: center;
+	padding-bottom: 0px;
+	color: #FF20AC;
+	font-weight: 800;
+	font-size: 3.75em;
+	font-style: normal;
+}
+/*-------animacion de los stickers---------*/
+.imagen-disfruta {
+	width: 42%;
+	height: 532px;
+	background-image: url("img/index/cierre-animacion-home.png");
+	background-size: 100%;
+	animation: cierre-animacion-home alternate 2s infinite ease-in-out;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	animation-play-state: running;
+	background-repeat: no-repeat;
+}
+@keyframes cierre-animacion-home{
+	0%{
+		background-image: url("img/index/cierre-animacion-home.png");
+	}
+	50%{
+		background-image: url("img/index/cierre-animacion-2.png");
+	}
+	100%{
+		background-image: url("img/index/cierre-animacion-home.png");
+	}
+}
 /*-------footer---------*/
 .footer-flex {
 	display: flex;
