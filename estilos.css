@@ -1,17 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
 * {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
+	list-style: none;
+	text-decoration: none;
 }
-header{
-	background:#FEABD9;
-	height:100px;
-	position: fixed;
-	width: 100%;
-}
+/*-----------------body-----------------*/
+
 body{
 	background-image: url("img/index/cuadriculafondo-01.jpg");
 	background-attachment: fixed;
@@ -19,7 +18,64 @@ body{
 	background-position: top left;
 	background-size:cover;
 }
-h1{
+body{
+}
+/*-----------------header general-----------------*/
+
+header{
+	background:#FEABD9;
+	height:100px;
+	position: fixed;
+	width: 100%;
+}
+/*------logo-----*/
+
+
+/*------menu-----*/
+
+nav{
+	display:flex;
+}
+/*-------------circulos secciones home------------*/
+/*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
+
+html {
+	scroll-behavior: smooth;
+	transition-duration: 3s;
+}
+.circulos {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 30px;
+	top: 50%;
+}
+.circulos li {
+	display: flex;
+	justify-content: center;
+	padding: 2px;
+}
+.circulos a {
+	width: 21px;
+	height: 21px;
+	border-radius: 100%;
+	background-color: #FFFFFF; 
+	border: 2px solid #000000
+}
+.circulos a:hover {
+	background-color: #92DDEA
+}
+.circulos a:active {
+	background-color: #2CA6BC;
+}
+.circulos a:focus {
+	background-color: #2CA6BC;
+}
+/*-----seccion bienvenidx-----*/
+#bienvenida {
+	padding: 10%;
+}
+.bienvenidx{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 3.75em;
@@ -48,6 +104,10 @@ h1{
 	border: 1px solid #000000;
 	border-radius: 32px;
 }
+.texto-mobile {
+	display: none;
+}
+/*-----seccion objetivos-----*/
 h2{
 	font-weight: 700;
 	font-size: 2.5em ;
@@ -59,6 +119,19 @@ h2{
 	border-radius: 20px;
 	text-align: center;
 }
+.texto-objetivos ul {
+	background-color: white;
+	border: 0.5px solid black;
+	height: 150px;
+	width: 30%;
+	border-radius: 15px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/*-----seccion contenido-----*/
 h3{
 	font-weight: 700;
 	font-size: 1.875em;
@@ -85,26 +158,33 @@ h3{
 	margin-top:10px;
 	box-sizing: border-box;
 	padding-top: 15px;
-
 }
-.ul-objetivos{
-	background-color: white;
-	border: 0.5px solid black;
-	height: 150px;
-	width: 30%;
-	border-radius: 15px;
-	margin-top: 10px;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
+/*-------footer---------*/
+.footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
 }
-nav{
-	display:flex;
-}
-footer{
+footer {
 	font-weight:700;
 	width: 100%;
+	height: 50px;
 	color: #0E6372;
 	background-color:#92DDEA;
+	padding: 16px 0px;
+}
+#posicion-texto-footer {
+	padding: 0px 0px 0px 64px;
+	font-size: 1.0625em;
+}
+#posicion-redes-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 64px 0px 0px;
+}
+.redes {
+	padding: 0px 8px;
 }
