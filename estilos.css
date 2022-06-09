@@ -152,6 +152,7 @@ html {
 #bienvenida {
 	padding: 10%;
 }
+
 .bienvenidx{
 	font-style: normal;
 	font-weight: 800;
@@ -162,6 +163,7 @@ html {
 	border-radius: 20px;
 	text-align: center;
 	width: 742px;
+	
 }
 .texto-principal p{
 	font-style: normal;
@@ -186,12 +188,6 @@ html {
 }
 /*-----seccion objetivos-----*/
 #objetivos{
-	background:  #FFDAED;
-	box-sizing: border-box;
-position:static;
-width: 1920;
-height: 909px;
-	z-index: 20;
 }
 .box-objetivos{
 	display:flex;
