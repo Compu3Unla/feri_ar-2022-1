@@ -1,29 +1,162 @@
 @charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
 * {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
+	list-style: none;
+	text-decoration: none;
+	
 }
+body{
+	background-image: url("img/index/fondoindex.jpg");
+	background-attachment:scroll;
+ 	background-repeat: no-repeat;
+	background-position: top left;
+	background-size:contain;
+}
+/*-----------------header general-----------------*/
+
 header{
+	padding: 15px 5%;
 	background:#FEABD9;
 	height:100px;
 	position: fixed;
 	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	box-sizing: border-box;
 }
-body{
-	background-image: url("img/index/cuadriculafondo-01.jpg");
-	background-attachment: fixed;
- 	background-repeat: no-repeat;
-	background-position: top left;
-	background-size:cover;
+
+/*------menu-header-----*/
+.logo{
+	display: flex;
+	justify-content:flex-start;
+	width: 13%;
 }
-h1{
+.logo img{
+	width: 174px;
+	height: auto;
+}
+.buscar{
+	width: 100%;
+	max-width: 700px;
+	background: white;
+	border-radius: 40px;
+	padding: 10px 10px 10px 20px;
+	border: 1px solid black;
+}
+.buscador-form {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items:center;
+	justify-content: center;
+}
+.buscar-texto{
+	width: 100%;
+	max-width: 700px;
+	border: none;
+	background: none;
+	outline: none;
+	color: black;
+	font-size: 1.25em;
+	font-weight: 800;
+	margin-left: 20px;
+}
+
+.menu{
+	width:40%;
+	max-width: 577px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;	
+}
+.botones-menu {
+	display: flex;
+	align-items: center;
+	padding: 0px 60px;
+}
+.botones-menu a {
+	font-weight: 800;
+	font-size: 1.25em;
+	text-align: center;
+	color: #0E6372;
+	background-color: #92DDEA;
+	border: 1px solid black;
+	border-radius: 20px;
+	height: 36px;
+	width: 150px;
+	box-sizing: border-box;
+	padding: 6% 30%;
+}
+.botones-menu a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.botones-menu li{
+	margin-right: 32px;
+}
+.nav-perfil{
+	width: 10%;
+	max-width: 300px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.nav-pergil img {
+	margin-top: 10px;
+}
+
+/*-------------circulos secciones home------------*/
+/*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
+
+html {
+	scroll-behavior: smooth;
+	transition-duration: 3s;
+}
+.circulos {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 30px;
+	top: 50%;
+}
+.circulos li {
+	display: flex;
+	justify-content: center;
+	padding: 2px;
+}
+.circulos a {
+	width: 21px;
+	height: 21px;
+	border-radius: 100%;
+	background-color: white; 
+	border: 2px solid black
+}
+.circulos a:hover {
+	background-color: #92DDEA
+}
+.circulos a:active {
+	background-color: #2CA6BC;
+}
+.circulos a:focus {
+	background-color: #2CA6BC;
+}
+/*-----seccion bienvenidx-----*/
+#bienvenida {
+	padding: 10%;
+}
+.bienvenidx{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 3.75em;
-	color: #ffffff;
+	color: white;
 	background-color:#ff20ac;
 	border:1px solid black;
 	border-radius: 20px;
@@ -36,7 +169,7 @@ h1{
 	font-size: 1.875em;
 	line-height: 41px;
 	text-align: justify;
-	color: #000000;
+	color: black;
 	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 40px;
@@ -44,10 +177,14 @@ h1{
 	padding-right: 50px;
 	width: 742px;
 	box-sizing: border-box;
-	background: #FFFFFF;
-	border: 1px solid #000000;
+	background: white;
+	border: 1px solid black;
 	border-radius: 32px;
 }
+.texto-mobile {
+	display: none;
+}
+/*-----seccion objetivos-----*/
 h2{
 	font-weight: 700;
 	font-size: 2.5em ;
@@ -58,7 +195,24 @@ h2{
 	width: 412px;
 	border-radius: 20px;
 	text-align: center;
+	box-sizing: border-box;
+	padding-top: 17px;
+
+	
 }
+.texto-objetivos ul {
+	background-color: white;
+	border: 0.5px solid black;
+	height: 150px;
+	width: 30%;
+	border-radius: 15px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/*-----seccion contenido-----*/
 h3{
 	font-weight: 700;
 	font-size: 1.875em;
@@ -85,23 +239,179 @@ h3{
 	margin-top:10px;
 	box-sizing: border-box;
 	padding-top: 15px;
+	
+}
+.contenido-iconos{
+	box-sizing: border-box;
+	width: 1042px;
+	height:730px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	
 
+	}
+
+.aricle-contenido{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.ul-objetivos{
-	background-color: white;
-	border: 0.5px solid black;
-	height: 150px;
-	width: 30%;
-	border-radius: 15px;
-	margin-top: 10px;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
+/*-------seccion disfruta---------*/
+#disfruta{
+	padding: 10% 10% 5% 10%;
+	box-sizing: border-box;
 }
-footer{
+#disfruta article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+#disfruta h4 {
+	text-align: center;
+	padding-bottom: 0px;
+	color: #FF20AC;
+	font-weight: 800;
+	font-size: 3.75em;
+	font-style: normal;
+}
+/*-------animacion de los stickers---------*/
+.imagen-disfruta {
+	width: 42%;
+	height: 532px;
+	background-image: url("img/index/cierre-animacion-home.png");
+	background-size: 100%;
+	animation: cierre-animacion-home alternate 2s infinite ease-in-out;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	animation-play-state: running;
+	background-repeat: no-repeat;
+}
+@keyframes cierre-animacion-home{
+	0%{
+		background-image: url("img/index/cierre-animacion-home.png");
+	}
+	50%{
+		background-image: url("img/index/cierre-animacion-2.png");
+	}
+	100%{
+		background-image: url("img/index/cierre-animacion-home.png");
+	}
+}
+/*-------footer---------*/
+.footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+footer {
 	font-weight:700;
 	width: 100%;
+	height: 50px;
 	color: #0E6372;
 	background-color:#92DDEA;
+	padding: 16px 0px;
+}
+#posicion-texto-footer {
+	padding: 0px 0px 0px 64px;
+	font-size: 1.0625em;
+}
+#posicion-redes-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 64px 0px 0px;
+}
+.redes {
+	padding: 0px 8px;
+}
+/*--------------------------------FERIAS-FERIAR.HTML----------------------------------------*/
+#main-ferias {
+	background-image: url("img/ferias/fondo.jpg");
+	padding: 13% 70px 30px 70px;
+	background-size: 100%;
+	
+}
+.ferias{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+.ferias h1{
+	font-weight: 700;
+	font-size: 2.5em;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	height: 87px;
+	width: 412px;
+	border-radius: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*-------ferias carrusel--------*/
+.lista-ferias {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+	display: grid;
+	grid-template-rows: 300px;
+	grid-template-columns: 360px 360px 360px 360px 360px 360px 360px;
+	grid-column-gap: 20px;
+	grid-auto-flow: column;
+	
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	
+	width: 100%;
+	max-width: 1920px;
+	height: 600px;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+}
+.ferias-graficas {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	transition-duration: 0.8s;
+	transition-property: transform;
+}
+.esconder-botones {
+	display:none;
+}
+ .ferias-graficas:active {
+	transform: scale(1.2);
+	text-align: center;
+}
+
+.ferias-graficas {
+	padding: 0px 20px 0px 10px;
+	width: 300px;
+	object-fit: cover;
+	scroll-snap-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.ferias-nombre {
+	color: black;
+	font-weight: 700;
+	height: 38px;
+	width: 70%;
+	margin: 40px 20px 0px 20px;
+	font-size: 1.5625em;
+	text-align: center;
 }
