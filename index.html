@@ -7,38 +7,44 @@
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<header>
+	<header class="nav-flex">
 		<!-- imagen del logo de feriar -->
 		<a href="index.html" target="_self">
-			<img src="img/nav/logo.png" width="174px" height="62px" alt="logoheader"/> 
+			<img class="nav-logo" src="img/nav/logo.png" width="174px" height="62px" alt="logoheader"/> 
 		</a>
 		<!-- buscador -->
-			<form class="buscador" action="index.html" method="get" role="search">
-			<input type="text" name="buscar" class="nav-search-input" maxlength="30" placeholder="buscar" requiered>
+		<div class="buscar">
+			<form class="buscador-form" action="index.html" method="get" role="search">
+				<input type="text" name="buscar" class="buscar-texto" maxlength="200" placeholder="buscar" requiered>
+				<img class="icono-buscar" src="img/nav/icono-buscador.png" width="19px" height="17px" alt="icono buscar">
 			</form>
+		</div>
 		<nav class="menu">
 			<!-- el div de menu hamburguesa es para el responsive de mobile -->
-			<div class="menu-hamburguesa"></div>
+			<div class="menu-hamburguesa">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 			<!-- en favoritos y usuario va con una imagen -->
-			<ul>
+			<ul class="botones-menu">
 				<li>
-					<a href="ferias-feriar.html" target="_self">ferias</a>
+					<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
 				</li>
 				<li>
-					<a>cursos</a>
+					<a>Cursos</a>
 				</li>
 				<li>
-					<a>
-						<img src="img/nav/boton favoritos.png" width="41px" height="41px" alt="favoritos"/>
-					</a>
-				</li>
-				<li>
-					<a>
-						<img src="img/nav/boton perfil.png" width="41px" height="41px" alt="usuario"/>
-					</a>
+					<a>Agenda</a>
 				</li>
 			</ul>
 		</nav>
+		<div class="nav-perfil">
+			<a>
+				<img src="img/nav/perfil.png" width="41px" height="41px" alt="perfil"/>
+			</a>
+			
+		</div>
 	</header>
 	<main>
 		<!--  en el ul van a estar los 4 circulos con las secciones del home  -->
