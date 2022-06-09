@@ -6,13 +6,7 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Nunito";
-	list-style: none;
-	text-decoration: none;
-}
-/*-----------------body-----------------*/
 
-body{
-	background-image: url("img/index/cuadriculafondo-01.jpg");
 	background-attachment: fixed;
  	background-repeat: no-repeat;
 	background-position: top left;
@@ -31,10 +25,6 @@ header{
 /*------logo-----*/
 
 
-/*------menu-----*/
-
-nav{
-	display:flex;
 }
 /*-------------circulos secciones home------------*/
 /*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
