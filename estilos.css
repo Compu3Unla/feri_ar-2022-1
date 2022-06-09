@@ -22,11 +22,83 @@ header{
 	height:100px;
 	position: fixed;
 	width: 100%;
+	z-index: 1000;
 }
-/*------logo-----*/
 
-
+/*------menu-header-----*/
+.nav-flex{
+	display: flex;
+	align-items: center;
 }
+.nav-logo{
+	padding: 10px 40px 10px 64px;
+}
+.buscar{
+	width: 100%;
+	max-width: 700px;
+	background: white;
+	border-radius: 40px;
+	padding: 10px 130px 10px 20px;
+	border: 1px solid black;
+}
+.buscador-form {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items:center;
+	justify-content: center;
+}
+.buscar-texto{
+	width: 100%;
+	max-width: 700px;
+	border: none;
+	background: none;
+	outline: none;
+	color: black;
+	font-size: 20px;
+	font-weight: 800;
+	margin-left: 20px;
+}
+
+.menu{
+	display: flex;
+	position: absolute;
+	left: 1181px;
+	margin-top: 10px;
+}
+.botones-menu {
+	display: flex;
+}
+.botones-menu a {
+	font-weight: 800;
+	font-size: 1.25em;
+	text-align: center;
+	color: #0E6372;
+	background-color: #92DDEA;
+	border: 1px solid black;
+	border-radius: 20px;
+	height: 36px;
+	width: 150px;
+	box-sizing: border-box;
+	padding: 6% 30%;
+}
+.botones-menu a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.botones-menu li{
+	padding-bottom: 10px;
+	margin-right: 32px;
+}
+.nav-perfil{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 75px;
+	padding: 60px 0px 50px;
+}
+
 /*-------------circulos secciones home------------*/
 /*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
 
@@ -50,8 +122,8 @@ html {
 	width: 21px;
 	height: 21px;
 	border-radius: 100%;
-	background-color: #FFFFFF; 
-	border: 2px solid #000000
+	background-color: white; 
+	border: 2px solid black
 }
 .circulos a:hover {
 	background-color: #92DDEA
@@ -70,7 +142,7 @@ html {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 3.75em;
-	color: #ffffff;
+	color: white;
 	background-color:#ff20ac;
 	border:1px solid black;
 	border-radius: 20px;
@@ -83,7 +155,7 @@ html {
 	font-size: 1.875em;
 	line-height: 41px;
 	text-align: justify;
-	color: #000000;
+	color: black;
 	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 40px;
@@ -91,8 +163,8 @@ html {
 	padding-right: 50px;
 	width: 742px;
 	box-sizing: border-box;
-	background: #FFFFFF;
-	border: 1px solid #000000;
+	background: white;
+	border: 1px solid black;
 	border-radius: 32px;
 }
 .texto-mobile {
