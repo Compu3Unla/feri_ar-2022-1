@@ -195,6 +195,10 @@ h2{
 	width: 412px;
 	border-radius: 20px;
 	text-align: center;
+	box-sizing: border-box;
+	padding-top: 17px;
+
+	
 }
 .texto-objetivos ul {
 	background-color: white;
@@ -270,6 +274,26 @@ h3{
 	padding: 3% 1%;
 	box-sizing: border-box;
 	margin: 10px 30px;
+	padding-top: 15px;
+	
+}
+.contenido-iconos{
+	box-sizing: border-box;
+	width: 1042px;
+	height:730px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	
+
+	}
+
+.aricle-contenido{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 /*-------seccion disfruta---------*/
 #disfruta{
