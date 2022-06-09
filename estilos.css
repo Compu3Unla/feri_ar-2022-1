@@ -312,3 +312,87 @@ footer {
 .redes {
 	padding: 0px 8px;
 }
+/*--------------------------------FERIAS-FERIAR.HTML----------------------------------------*/
+#main-ferias {
+	background-image: url("img/ferias/fondo.jpg");
+	padding: 13% 70px 30px 70px;
+	background-size: 100%;
+	
+}
+.ferias{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+.ferias h1{
+	font-weight: 700;
+	font-size: 2.5em;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	height: 87px;
+	width: 412px;
+	border-radius: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*-------ferias carrusel--------*/
+.lista-ferias {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+	display: grid;
+	grid-template-rows: 300px;
+	grid-template-columns: 360px 360px 360px 360px 360px 360px 360px;
+	grid-column-gap: 20px;
+	grid-auto-flow: column;
+	
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	
+	width: 100%;
+	max-width: 1920px;
+	height: 600px;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+}
+.ferias-graficas {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	transition-duration: 0.8s;
+	transition-property: transform;
+}
+.esconder-botones {
+	display:none;
+}
+ .ferias-graficas:active {
+	transform: scale(1.2);
+	text-align: center;
+}
+
+.ferias-graficas {
+	padding: 0px 20px 0px 10px;
+	width: 300px;
+	object-fit: cover;
+	scroll-snap-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.ferias-nombre {
+	color: black;
+	font-weight: 700;
+	height: 38px;
+	width: 70%;
+	margin: 40px 20px 0px 20px;
+	font-size: 1.5625em;
+	text-align: center;
+}
