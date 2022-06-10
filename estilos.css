@@ -259,8 +259,26 @@ h2{
 	border-radius: 20px;
 	text-align: center;
 	box-sizing: border-box;
-	padding-top: 17px;	
-
+}
+.h1-objetivo {
+	padding: 3% 6%;
+}
+#objetivos {
+	padding: 12% 8% 14%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-harta {
+	width: 100%;
+	max-width: 1138px;
+	height: auto;
+}
+.box-objetivos {
+	position: relative;
+	right: 100px;
+	z-index: 20;
 }
 .ul-objetivos{
 	padding: 50px 20px 40px;
