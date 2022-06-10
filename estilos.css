@@ -207,26 +207,8 @@ h2{
 	border-radius: 20px;
 	text-align: center;
 	box-sizing: border-box;
-}
-.h1-objetivo {
-	padding: 3% 6%;
-}
-#objetivos {
-	padding: 12% 8% 14%;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.img-harta {
-	width: 100%;
-	max-width: 1138px;
-	height: auto;
-}
-.box-objetivos {
-	position: relative;
-	right: 100px;
-	z-index: 20;
+	padding-top: 17px;	
+
 }
 .ul-objetivos{
 	font-size: 1.5em;
@@ -281,9 +263,6 @@ h3{
 	align-items: center;
 }
 #contenido {
-	width: 75%;
-	padding: 7% 10% 0%;
-  }  
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -334,7 +313,7 @@ h3{
 }
 /*-------seccion disfruta---------*/
 #disfruta{
-	padding: 11% 10% 3% 10%;
+	padding: 10% 10% 5% 10%;
 	box-sizing: border-box;
 }
 #disfruta article {
