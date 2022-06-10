@@ -40,6 +40,7 @@ header{
 .logo img{
 	width: 174px;
 	height: auto;
+	margin-right: 27px;
 }
 /*------animacion logo nav-----*/
 .logo {
@@ -96,7 +97,7 @@ header{
 	justify-content: flex-start;
 }
 .botones-menu {
-	padding: 0px 60px;
+	padding-left: 6%;
 	display: flex;
 	align-items: center;
 }
@@ -138,8 +139,6 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	}
 /*-----======================-----*/
 .nav-perfil img {
-	width: 10%;
-	max-width: 300px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
