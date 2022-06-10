@@ -3,32 +3,142 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
-	<title>Juntas - FeriAR</title>
+	<title>Juntas - FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="img/index/favicon.png" type="image/png" sizes="16x16">
 </head>
 <body>
 	<header>
 		<!-- imagen del logo de feriar -->
-		<a href="index.html">
-			<img alt="logo"> 
+		<a href="index.html" target="_self" class="logo">
+			<img src="img/nav/logo.png" width="174px" height="62px" alt="logoheader"/> 
 		</a>
+		<!-- buscador -->
+		<div class="buscar">
+			<form class="buscador-form" action="index.html" method="get" role="search">
+				<input type="text" name="buscar" class="buscar-texto" maxlength="200" placeholder="buscar" requiered>
+				<img src="img/nav/icono-buscador.png" width="19px" height="17px" alt="icono buscar">
+			</form>
+		</div>
 		<nav class="menu">
 			<!-- el div de menu hamburguesa es para el responsive de mobile -->
-			<div class="menu-hamburguesa"></div>
+			<div class="menu-hamburguesa">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 			<!-- en favoritos y usuario va con una imagen -->
-			<ul>
-				<li><a></a>ferias</li>
-				<li><a></a>cursos</li>
-				<li><a></a>favoritos</li>
-				<li><a></a>usuario</li>
+			<ul class="botones-menu">
+				<li>
+					<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
+				</li>
+				<li>
+					<a>Cursos</a>
+				</li>
+				<li>
+					<a>Agenda</a>
+				</li>
 			</ul>
-			<!-- buscador -->
-			<form class="buscador" action="index.html" method="get" role="search">
-			<input type="text" name="buscar" class="nav-search-input" maxlength="30" placeholder="buscar" requiered>
-			</form>
 		</nav>
+		<div class="nav-perfil">
+			<a>
+				<img src="img/nav/perfil.png" width="41px" height="41px" alt="perfil"/>
+			</a>
+			
+		</div>
 	</header>
-	<main>
+	<main id="main-feria-grafica">
+		<section>
+			<article class="feria-juntas">
+				<img class="boton-volver" src="img/fg/volver.png" width="78px" height="78px" alt="boton volver atras">
+				<h1>Feria Juntas</h1>
+				<p>Próximo encuentro 14 de Junio  |  de 15 a 20hs</p>
+			</article>
+			<article class="como-llegar">
+				<h2>Cómo llegar</h2>
+				<ul class="ul-informacion">
+					<li class="informacion-juntas">
+						<img src="img/fg/icono-ubicacion.png" width="51px" height="63px" alt="icono de ubicación">
+						<p>
+							Av. Olazábal 1784 - Belgrano / CABA
+						</p>
+					</li>
+					<li class="informacion-juntas">
+						<img src="img/fg/icono-tren.png" width="52px" height="68px" alt="icono de tren">
+						<p>
+							Tren Belgrano, Estación Carabobo 
+						</p>
+					</li>
+					<li class="informacion-juntas">
+						<img src="img/fg/icono-bus.png" width="52px" height="66px" alt="icono de bus">
+						<p>
+							Línea 15B - 227
+						</p>
+					</li>
+					<li class="informacion-juntas">
+						<img src="img/fg/icono-auto.png" width="67px" height="49px" alt="icono de auto">
+						<p>
+							36 min (32.6 km) por Av. Gral. Paz/RN A001
+						</p>
+					</li>
+					<li class="informacion-juntas">
+						<img src="img/fg/icono-bicicleta.png" width="68px" height="64px" alt="icono de bicicleta">
+						<p>
+							1 h 34 min (26.7 km) por Av. del Libertad
+						</p>
+					</li>
+					<li class="informacion-juntas">
+						<img src="img/fg/icono-peaton.png" width="49px" height="62px" alt="icono de peatón">
+						<p>
+							5 h 5 min (24.4 km) por Av. Coronel Roca
+						</p>
+					</li>
+				</ul>
+				<img class="img-mapa" src="img/fg/mapa.png" width="804px" height="700px" alt="mapa">
+			</article>
+			<article class="botones-juntas">
+				<h2>Redes sociales</h2>
+				<a href="https://www.facebook.com" target="_blank">
+					<img class="redes" src="img/fg/facebook.png" width="47px" height="49px" alt="facebook" />
+				</a>
+				<a href="https://www.instagram.com/?hl=es" target="_blank">
+					<img class="redes" src="img/fg/instagram.png" width="46px" height="46px" alt="instagram" />
+				</a>
+			</article>
+		</section>
+		<section class="cards-juntas">
+			<article class="card-a">
+				<h3>SOBRE JUNTAS</h3>
+				<p>
+					El objetivo de Juntas es mostrar el trabajo de emprendedorxs nacionales y latinoamericanxs que comparten formas de producción, lenguajes visuales y estéticas semejantes. Valoran el trabajo a pequeña escala, hecho a mano y de manera autogestiva y local.
+				</p>
+			</article>
+			<article class="card-b">
+				<h3>CANTIDAD DE ENCUENTROS</h3>
+				<p>
+					‘‘El primer año realizábamos ediciones cada dos meses pero al ver la demanda de la gente y lo bien que reaccionaban todxs a la propuesta, decidimos que se vuelva una feria mensual, incluso con ediciones dobles en ciertas fechas especiales.’’
+				</p>
+			</article>
+		</section>
+		<section class="galeria-carrusel">
+		</section>
 	</main>
+	<!-- En el footer van las imagenes de cada red social -->
+	<footer class="footer-flex">
+		<section id="posicion-texto-footer">
+			<p>FERIAR © 2022 todos los derechos reservados.</p>
+		</section>
+		<section id="posicion-redes-footer">
+					<a href="https://www.facebook.com" target="_blank">
+						<img class="redes" src="img/footer/facebook.png" width="30px" height="30px" alt="facebook" />
+					</a>
+					<a href="https://www.instagram.com/?hl=es" target="_blank">
+						<img class="redes" src="img/footer/instagram.png" width="31px" height="30px" alt="instagram" />
+					</a>
+					<a href="https://twitter.com/?lang=es" target="_blank">
+						<img class="redes" src="img/footer/twitter.png" width="34px" height="30px" alt="twitter" />
+					</a>
+		</section>
+	</footer>
 </body>
 </html>

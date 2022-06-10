@@ -514,3 +514,10 @@ footer {
 		transform: rotateY(360deg);
 	}
 }
+/*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
+#main-feria-grafica {
+	padding: 10% 70px 30px;
+	background-image: url("img/fg/fondo-fg.png");
+	background-size: 100%;
+	
+}
