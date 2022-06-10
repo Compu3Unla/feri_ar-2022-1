@@ -248,14 +248,11 @@ html {
  }
 /*-----seccion objetivos-----*/
 h2{
-	padding-top: 17px;
 	font-weight: 700;
 	font-size: 2.5em ;
 	color: white;
 	background-color:#ff20ac;
 	border:1px solid black;
-	height: 87px;
-	width: 593px;
 	border-radius: 20px;
 	text-align: center;
 	box-sizing: border-box;
