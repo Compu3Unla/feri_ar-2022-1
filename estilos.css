@@ -190,7 +190,7 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	display: flex;
 	margin: 0px 0px 50px 0px;
 }
-#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2 {
+#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2, #sticker-ferias {
 	height: auto;
 	position: absolute;
 	z-index: -1;
@@ -323,20 +323,20 @@ html {
 .logo-bienvenida {
 	width: 57%;
 	height: 321px;
-	background-image: url("img/index/logo-animacion-a.svg");
+	background-image: url("img/index/isologo-animacion-a.svg");
 	background-size: 100%;
 	animation: iso-bienvenidx alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
 @keyframes iso-bienvenidx{
 	0%{
-		background-image: url("img/index/logo-animacion-a.svg");
+		background-image: url("img/index/isologo-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/logo-animacion-b.svg");
+		background-image: url("img/index/isologo-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/logo-animacion-a.svg");
+		background-image: url("img/index/isologo-animacion-a.svg");
 	}
  }
 /*-----SECCION OBJETIVOS-----*/
@@ -499,10 +499,10 @@ h2{
 		background-image: url("img/index/cierre-animacion-a.svg");
 	}
 	50%{
-		background-image: url( "img/index/cierre-animacion-b.svg");
+		background-image: url("img/index/cierre-animacion-b.svg");
 	}
 	100%{
-		background-image: url( "img/index/cierre-animacion-a.svg");
+		background-image: url("img/index/cierre-animacion-a.svg");
 	}
 }
 /*----------------FOOTER----------------------*/
@@ -535,13 +535,14 @@ footer {
 	padding: 0px 8px;
 }
 /*--------------------------------FERIAS-FERIAR.HTML----------------------------------------*/
-#main-ferias {
-	padding: 10% 70px 30px;
-	background-image: url("img/ferias/fondo.jpg");
-	background-size: 100%;
-	
+#sticker-ferias {
+	width: 30%;
+	max-width: 184px;
+	bottom: -482px;
+	right: 0;
 }
 .ferias{
+	 padding: 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -615,6 +616,22 @@ footer {
 		transform: rotateY(360deg);
 	}
 }
+/*---------diseño del scroll horizontal--------*/
+.lista-ferias::-webkit-scrollbar {
+	width: 10px;
+	height: 20px;
+}
+.lista-ferias::-webkit-scrollbar:horizontal {
+	background-color: #FF20AC;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+.lista-ferias::-webkit-scrollbar-thumb:horizontal {
+	background: #92ddea;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
 /*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
 #main-feria-grafica {
 	padding: 10% 70px 30px;
@@ -636,28 +653,21 @@ footer {
 		display: flex;
 		align-items: center;
 	}
-	/*-----iso mobile--------*/
+	/*-----iso mobile y menu--------*/
 	.logo {
 		padding-bottom: 2%;
 	}
 	.logo:hover {
 	animation: logo-movimiento normal 10s 1s 1 ease;
 	}
-	.iso-mobile {
+	.iso-mobile, .checkbtn, .menu-mobile {
 		display: block;
 	}
 	.logo-desktop {
 		display: none;
 	}
-	/*-----menu--------*/
-	.checkbtn {
-		display: block;
-	}
 	#check:checked ~ ul {
 		left: 0;
-	}
-	.menu-mobile {
-		display: block;
 	}
 	.botones-menu{
 		position: fixed;
@@ -800,8 +810,19 @@ footer {
 		width: 75%;
 		height: 268px;
 	}
+	/*--------------------HTML FERIAS-FERIAR-----------------------------*/
+	#main-ferias {
+		padding: 10% 0% 10%;
+	}
+	.ferias h1 {
+		padding: 4%;
+	}
+	/*--------grid----------*/
+	.lista-ferias {
+	grid-template-columns: 311px 311px 311px 311px 311px 311px 311px;
+	grid-column-gap: 2px;
+	}
 }
-
 @media (max-width: 450px) {
 	/*-------SECCION CONTENIDO------*/
 	.contenido-grid {
