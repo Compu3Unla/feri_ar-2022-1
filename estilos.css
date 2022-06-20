@@ -11,40 +11,26 @@
 	
 }
 body{
-	background-image: url("img/index/fondoindex.jpg");
+	background-image: url("img/fondo/fondo.svg");
 	background-position: top left;
 	background-size:100%;
 }
-/*-----------------header general-----------------*/
+/*-----------------HEADER GENERAL---------------*/
 
 header{
 	width: 100%;
-	height:100px;
-	padding: 15px 5%;
+	height: 80px;
+	padding: 10px 3%;
 	background:#FEABD9;
 	position: fixed;
 	z-index: 1000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
 	box-sizing: border-box;
 }
+/*-------------------------------MENU---------------------------------*/
 
-/*------menu-header-----*/
-.logo{
-	argin-right: 24px;
-	display: flex;
-	justify-content:flex-start;
-}
-.logo img{
-	width: 174px;
-	height: auto;
-	margin-right: 27px;
-}
-/*------animacion logo nav-----*/
-.logo {
-	animation: logo-movimiento normal 10s 1s 1 ease;
+/*------animacion logo nav para desktop-----*/
+.logo:hover {
+	animation: logo-movimiento normal 10s  1 ease;
 }
 @-webkit-keyframes logo-movimiento {
 	0% {
@@ -63,41 +49,33 @@ header{
 		transform: scale3d(1, 1, 1);
 	}
 }
-/*------==================-----*/
-.buscar{
-	width: 100%;
-	max-width: 700px;
-	background: white;
-	padding: 10px 10px 10px 20px;
-	border-radius: 40px;
-	border: 1px solid black;
+/*------animacion botones nav desktop, botones contenido y  boton menu hamburguesa-----*/
+.botones-menu li:hover,.botones-contenido h3:hover, .checkbtn img:hover, .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus {
+border-radius: 40px;
+animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
-.buscador-form {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items:center;
-	justify-content: center;
+@keyframes shadow-pop-br {
+	0% {
+		box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+		transform: translateX(0) translateY(0);
+	}
+	100% {
+		box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+		transform: translateX(-8px) translateY(-8px);
+	}
 }
-.buscar-texto{
-	width: 100%;
-	max-width: 700px;
-	margin-left: 20px;
-	font-size: 1.25em;
-	font-weight: 800;
-	border: none;
-	background: none;
-	outline: none;
-	color: black;
-}
-
+/*--------menu botones desktop-----------*/
 .menu{
-	max-width: 577px;
+	gap: 31px;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+}
+.nav {
+	display: flex;
+	gap: 20px;
 }
 .botones-menu {
-	padding-left: 6%;
+	gap: 20px;
 	display: flex;
 	align-items: center;
 }
@@ -119,31 +97,149 @@ header{
 	align-items: center;
 	justify-content: center;
 }
-.botones-menu li{
-	margin-right: 32px;
+/*----------buscador-----------*/
+.buscador {
+	width: 100%;
 }
-/*------animacion botones nav-----*/
-.botones-menu li:hover, .botones-menu li:focus {
-border-radius: 40px;
-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+.form-search input[type=text] {
+	box-sizing: content-box;
+	font-size: 100%;
+	border: solid 1px black;
+	padding: 9px 10px;
+	border-radius: 22px;
 }
-@keyframes shadow-pop-br {
-	0% {
-		box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-		transform: translateX(0) translateY(0);
-		}
-	100% {
-		box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
-		transform: translateX(-8px) translateY(-8px);
-		}
-	}
-/*-----======================-----*/
-.nav-perfil img {
+.form-search input[type=text]:focus {
+	width: 100%;
+	max-width: 700px;
+	background-color: white;
+}
+/*----------menu de perfil desktop------------*/
+
+.nav-mi-perfil {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
+	justify-content: flex-end;
+}
+.flecha-contenedor li {
+	width: 30px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flecha-mi-perfil{
+	width: 10px;
+	height: 10px;
+	border-radius: 2px;
+	border-top: solid 4px #0E6372;
+	border-right: solid 4px #0E6372;
+	transform: rotate(135deg);
+	transition: all 0.2s ease;
+}
+.nav-mi-perfil ul ul {
+	display: none;
+	position: absolute;
+	background-color: #FEABD9;
+	top: 71px;
+	right: 0;
+	border-radius: 5px;
+	padding: 10px 0px 0px
+}
+.nav-mi-perfil ul ul li {
+	height: auto;
+	width: auto;
+	padding: 25px 45px 10px 25px;
+	transition: all 0.15s ease;
+	justify-content: flex-start;
 }
 
+.nav-mi-perfil ul ul a {
+	color: black;
+	font-size: 1.2em;
+	transition: all 0.15s ease;
+}
+.nav-mi-perfil ul ul li:hover {
+	background-color: #FF20AC;
+}
+
+.nav-mi-perfil ul ul li:hover a {
+	font-weight: 700;
+	color: white;
+}
+.nav-mi-perfil ul li:hover ul {
+	display: block;
+}
+.nav-mi-perfil li:hover .flecha-mi-perfil {
+	transform: rotate(315deg);
+	border-color: #FF20AC; 
+}
+/*--------MENU HAMBURGUESA-----------*/
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	cursor:pointer;
+	display: none;
+}
+#check, .iso-mobile, .menu-mobile {
+	display: none;
+}
+/*--------------------HTML HOME--------------*/
+/*------------------MAIN STICKERS DE FONDO HTML HOME-----------------------*/
+#stickers-fondo {
+	display: flex;
+	margin: 0px 0px 50px 0px;
+}
+#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2 {
+	height: auto;
+	position: absolute;
+	z-index: -1;
+}
+#fondo-sticker1 {
+	width: 50%;
+	max-width: 142px;;
+	left: -4px;
+	top: 551px;
+}
+#sticker-linea-fucsia {
+	width: 68%;
+	max-width: 354px;
+	bottom: -200px;
+	right: 0;
+}
+#sticker-paleta {
+	width: 10%;
+	max-width: 225px;
+	right: 82px;
+	top: 1273px;
+}
+#sticker-rayo {
+	width: 30%;
+	max-width: 184px;
+	right: 60px;
+	top: 1844px;
+}
+#sticker-grabadoras {
+	width: 20%;
+	max-width: 391px;
+	left: 0px;
+	top: 1956px;
+}
+#sticker-corazon {
+	width: 278px;
+	left: 0px;
+	top: 2466px;
+}
+#sticker-linea-amarilla {
+	width: 384px;
+	left: 0px;
+	top: 2767px;
+}
+#sticker-grabadora2 {
+	width: 313px;
+	right: 38px;
+	top: 3020px;;
+}
 /*-------------circulos secciones home------------*/
 /*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
 
@@ -168,7 +264,7 @@ html {
 	height: 21px;
 	border-radius: 100%;
 	background-color: white; 
-	border: 2px solid black
+	border: 1px solid black
 }
 .circulos a:hover {
 	background-color: #92DDEA
@@ -179,7 +275,7 @@ html {
 .circulos a:focus {
 	background-color: #2CA6BC;
 }
-/*-----seccion bienvenidx-----*/
+/*-----SECCION BIENVENIDX-----*/
 #bienvenida {
 	padding: 14% 7% 14% 1%;
 	box-sizing: border-box;
@@ -202,13 +298,11 @@ html {
 	max-width: 652px;
 }
 .texto-principal p{
-	padding: 20px 50px 50px 40px;
+	padding: 25px 57px 31px 64px;
 	margin-top: 10px;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.875em;
-	line-height: 41px;
-	text-align: justify;
 	color: black;
 	box-sizing: border-box;
 	background: white;
@@ -225,27 +319,27 @@ html {
 	left: 35px;
 	z-index: 10;
 }
-	/*-----animacion iso seccion bienvenidx-----*/
+/*-----animacion iso seccion bienvenidx-----*/
 .logo-bienvenida {
 	width: 57%;
 	height: 321px;
-	background-image: url( "img/index/logobienvenida.png");
+	background-image: url("img/index/logo-animacion-a.svg");
 	background-size: 100%;
 	animation: iso-bienvenidx alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
 @keyframes iso-bienvenidx{
 	0%{
-		background-image: url("img/index/logobienvenida.png");
+		background-image: url("img/index/logo-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/logo-animacion-b.png");
+		background-image: url("img/index/logo-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/logobienvenida.png");
+		background-image: url("img/index/logo-animacion-a.svg");
 	}
  }
-/*-----seccion objetivos-----*/
+/*-----SECCION OBJETIVOS-----*/
 h2{
 	font-weight: 700;
 	font-size: 2.5em ;
@@ -288,8 +382,58 @@ h2{
 .objetivos-items{
 	display:flex;
 }
-/*-----seccion contenido-----*/
-h3{
+/*-----SECCION CONTENIDO-----*/
+/*--------------contenido grid--------------*/
+.contenido-grid {
+	max-width: 902px;
+	margin: 0px auto;
+	padding: 9% 10% 14%;
+	display: grid;
+	/*NOTA: el css original era: grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); pero al hacerlo asi sale un error en dw, solo deja con px*/
+	grid-template-columns:repeat(auto-fit, minmax(229px, 1px));
+	grid-gap: 60px;
+	row-gap: 100px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	justify-items: center;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	margin-block-end: 2em;
+	margin-block-start: 1em;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	padding-inline-end: 40px;
+}
+/*---------------------*/
+#contenido{
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.titulo-contenido {
+	width: 400px;
+	padding: 1% 77px;;
+	font-weight: 700;
+	font-size: 2.5em;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	border-radius: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	display:flex;
+}
+#contenido li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 13px;
+}
+#contenido h3{
 	width: 232px;
 	height: 40px;
 	font-weight: 700;
@@ -300,15 +444,11 @@ h3{
 	box-sizing:border-box;
 	border-radius: 20px;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .p-contenidos{
 	width: 232px;
 	height: 115px;
 	padding: 15px;
-	margin-top:10px;
 	font-size: 1.25em;
 	font-weight: 400;
 	color: black;
@@ -317,46 +457,16 @@ h3{
 	border-radius: 20px;
 	text-align: center;
 	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center
 }
-#contenido {
-	width: 75%;
-	padding: 7% 10% 0%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-#contenido h2 {
-	padding: 1% 5%;
-	display:flex;
-	justify-content: center;
-	text-align:center;
-}
-#contenido ul {
-	display: flex;
-	justify-content: center;
-	justify-content: space-between;
-}
-#contenido li {
-	width: 23%;
-	padding: 3% 1%;
-	margin: 10px 30px;
-	gap: 20px;
-	box-sizing: border-box;
+/*--------botones del contenido-------*/
+.botones-contenido {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 10px;
 }
-.aricle-contenido{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-/*-------seccion disfruta---------*/
+
+/*-------SECCION DISFRUTA---------*/
 #disfruta{
 	padding: 10% 10% 5% 10%;
 	box-sizing: border-box;
@@ -379,23 +489,23 @@ h3{
 .imagen-disfruta {
 	width: 42%;
 	height: 532px;
-	background-image: url("img/index/cierre-animacion-home.png");
+	background-image: url("img/index/cierre-animacion-a.svg");
 	background-size: 100%;
 	animation: cierre-animacion-home alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
 @keyframes cierre-animacion-home{
 	0%{
-		background-image: url("img/index/cierre-animacion-home.png");
+		background-image: url("img/index/cierre-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/cierre-animacion-2.png");
+		background-image: url( "img/index/cierre-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/cierre-animacion-home.png");
+		background-image: url( "img/index/cierre-animacion-a.svg");
 	}
 }
-/*-------footer---------*/
+/*----------------FOOTER----------------------*/
 .footer-flex {
 	display: flex;
 	flex-direction: row;
@@ -511,4 +621,190 @@ footer {
 	background-image: url("img/fg/fondo-fg.png");
 	background-size: 100%;
 	
+}
+@media (max-width: 600px) {
+/*-----MENU HAMBURGUESA Mobile--------*/
+	header {
+		height: 80px;
+		padding: 15px 2%;
+	}
+	.menu {
+		gap: 15px;
+	}
+	.nav {
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+	}
+	/*-----iso mobile--------*/
+	.logo {
+		padding-bottom: 2%;
+	}
+	.logo:hover {
+	animation: logo-movimiento normal 10s 1s 1 ease;
+	}
+	.iso-mobile {
+		display: block;
+	}
+	.logo-desktop {
+		display: none;
+	}
+	/*-----menu--------*/
+	.checkbtn {
+		display: block;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+	.menu-mobile {
+		display: block;
+	}
+	.botones-menu{
+		position: fixed;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		top: 80px;
+		gap: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	.botones-menu a {
+		border-radius: 0px;
+		margin: 0px;
+		padding: 4% 0% 4% 14%;
+		justify-content: flex-start;
+		width: 300px;
+		box-sizing: content-box;
+	}
+	.botones-menu li {
+	font-size: 1em;
+	}
+	.botones-menu a:hover {
+		background-color: #FF20AC;
+		color: white;
+		fon-size: 1.2em;
+	}
+	.botones-menu li:hover, .botones-menu li:focus {
+		border-radius: 0px;
+		animation: none;
+	}
+	.botones-menu li:hover {
+		font-size: 1.3em;
+	}
+	
+	/*-----------buscador-----------*/
+	.buscador {
+		padding-bottom: 2%;
+	}
+	.form-search input[type=text]:focus {
+		max-width: 230px;
+		width: 100%;
+	}
+	/*--------nav perfil----------*/
+	.nav-mi-perfil {
+		width: 10%;
+		flex: none;
+		padding-bottom: 2%;
+	}
+	.flecha-contenedor {
+		display: none;
+	}
+	/*--------FOOTER MOBILE-------------*/
+	.footer-flex {
+		padding: 10px 0px;
+		line-height: 15px;
+		font-size: 0.8125em;
+	}
+	.footer-flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center
+	}
+	#posicion-texto-footer {
+		padding: 0% 0% 2%
+	}
+	#posicion-redes-footer {
+		padding: 0px;
+	}
+	/*--------------------HTML HOME-----------------------------*/
+	/*----MAIN STICKERS DE FONDO----*/
+	#sticker-corazon, #sticker-linea-amarilla, #sticker-grabadoras, #sticker-grabadora2, #sticker-paleta, #sticker-rayo {
+		display: none;
+	}
+	/*circulos de las secciones*/
+	.circulos {
+		display: none;
+	}
+	/*-----SECCION BIENVENIDX-----*/
+	.logo-bienvenida, .texto-desktop {
+		display: none;
+	}
+	.texto-mobile {
+		display: block;
+	}
+	#bienvenida {
+		padding: 28% 6% 14%;
+	}
+	.bienvenidx{
+		font-size: 2.5em;
+	}
+	.texto-principal p{
+		padding: 23px 45px;
+		border-radius: 20px;
+		text-align: center;
+	}
+	/*---SECCION OBJETIVOS-----*/
+	#objetivos {
+		display: none;
+	}
+	
+	/*-------SECCION CONTENIDO------*/
+	/*-------contenido grid-----*/
+	.contenido-grid{
+		max-width: 600px;
+	}
+	.contenido-grid{
+		margin: 0 auto;
+		padding: 0%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1px));
+		grid-gap: 20px;
+		grid-auto-flow: dense;
+		justify-content: center;
+	}
+	/*------------------------------------*/
+	#contenido {
+		gap: 30px;
+	}
+	.titulo-contenido{
+		width: 300px;
+		padding: 5px 54px;
+		font-size: 2em;
+	}
+	#contenido h3{
+		width: 197px;
+		height: 41px;
+	}
+	.p-contenidos {
+		width: 93%;
+		padding: 9px;
+		border-radius: 15px;
+	}
+	/*----SECCION DISFRUTA------*/
+	#disfruta h4 {
+		font-size: 3em;
+	}
+	.imagen-disfruta {
+		width: 75%;
+		height: 268px;
+	}
+}
+
+@media (max-width: 450px) {
+	/*-------SECCION CONTENIDO------*/
+	.contenido-grid {
+		max-width: 250px;
+	}
 }
