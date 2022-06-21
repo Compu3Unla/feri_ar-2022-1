@@ -5,107 +5,155 @@
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>Juntas - FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="img/index/favicon.png" type="image/png" sizes="16x16">
+	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+	<!--css js galeria-->
+	<link tyle="text/css" rel="stylesheet" href="css/jquery.fancybox.css">
 </head>
 <body>
 	<header>
-		<!-- imagen del logo de feriar -->
-		<a href="index.html" target="_self" class="logo">
-			<img src="img/nav/logo.png" width="174px" height="62px" alt="logoheader"/> 
-		</a>
-		<!-- buscador -->
-		<div class="buscar">
-			<form class="buscador-form" action="index.html" method="get" role="search">
-				<input type="text" name="buscar" class="buscar-texto" maxlength="200" placeholder="buscar" requiered>
-				<img src="img/nav/icono-buscador.png" width="19px" height="17px" alt="icono buscar">
-			</form>
-		</div>
 		<nav class="menu">
-			<!-- el div de menu hamburguesa es para el responsive de mobile -->
-			<div class="menu-hamburguesa">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<!-- en favoritos y usuario va con una imagen -->
-			<ul class="botones-menu">
-				<li>
-					<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
-				</li>
-				<li>
-					<a>Cursos</a>
-				</li>
-				<li>
-					<a>Agenda</a>
-				</li>
-			</ul>
-			<div class="nav-perfil">
-			<a>
-				<img src="img/nav/perfil.png" width="41px" height="41px" alt="perfil"/>
+			<!-- logo de feriar -->
+			<a href="home.html" target="_self" class="logo">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header"/>
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header"/>
 			</a>
+			<!-- buscador -->
+			<div class="buscador">
+				<form class="form-search">
+					<input placeholder="Buscar" type="text" size="15" maxlength="128">
+				</form>
+			</div>
+			<div class="nav">
+				<!--  menu hamburguesa es para el responsive de mobile -->
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<img src="img/nav/menu hamburguesa.svg" width="50px" height="50px" alt="menu">
+				</label>
+				<!--  menu -->
+				<ul class="botones-menu">
+					<li>
+						<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
+					</li>
+					<li>
+						<a href="#" title="Ferias - FERIAR" target="_self">Cursos</a>
+					</li>
+					<li>
+						<a href="#" title="Ferias - FERIAR" target="_self">Agenda</a>
+					</li>
+					<li class="menu-mobile" >
+						<a href="#" title="Ferias - FERIAR" target="_self">Mi perfil</a>
+					</li>
+					<li class="menu-mobile">
+						<a href="#" title="Ferias - FERIAR" target="_self">Mis cursos</a>
+					</li>
+					<li class="menu-mobile">
+						<a  href="#" title="Ferias - FERIAR" target="_self">Cerrar sesión</a>
+					</li>
+				</ul>
+			</div>
+			<!--  menu de perfil -->
+			<div class="nav-mi-perfil">
+				<ul class="flecha-contenedor">
+					<li>
+						<a href="#">
+							<div class="flecha-mi-perfil"></div>
+						</a>
+						<ul>
+							<li>
+								<a href="#">Mi perfil</a>
+							</li>
+							<li>
+								<a href="#">Mis cursos</a>
+							</li>
+							<li>
+								<a href="#">Cerrar sesión</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<img src="img/nav/perfil.svg" width="53px" height="50px" alt="perfil"/>
 			</div>
 		</nav>
 	</header>
-	<main id="main-feria-grafica">
-		<section>
+	<main>
+		<!--aca van los stickers de fondo-->
+		<section id="stickers-fondo">
+			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker"/>
+			<img id="sticker-linea-fucsia" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker"/>
+			<img id="sticker-paleta" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta"/>
+			<img id="sticker-rayo" src="img/fondo/sticker-rayo.svg" width="184px" height="426px" alt="sticker rayo"/>
+			<img id="sticker-grabadoras" src="img/fondo/sticker-grabadoras.svg" width="391px" height="530px" alt="sticker grabadoras"/>
+		</section>
+		<!--  en el ul van a estar los 3 circulos con las secciones de la feria  -->
+		<ul class="circulos"> 
+			<li id="c1">
+				<a href="#seccion-como-llegar" target="_self"></a>
+			</li>
+			<li id="c2">
+				<a href="#seccion-cards" target="_self"></a>
+			</li>
+			<li id="c3">
+				<a href="#seccion-galeria" target="_self"></a>
+			</li>
+		</ul>
+		<section id="seccion-como-llegar">
 			<article class="feria-juntas">
-				<img class="boton-volver" src="img/fg/volver.png" width="78px" height="78px" alt="boton volver atras">
+				<a href="ferias-feriar.html" target="_self">
+					<img class="boton-volver" src="img/fg/boton-volver.svg" width="60px" height="60px" alt="boton volver atras">
+				</a>
 				<h1>Feria Juntas</h1>
-				<p>Próximo encuentro 14 de Junio  |  de 15 a 20hs</p>
 			</article>
 			<article class="como-llegar">
-				<h2>Cómo llegar</h2>
-				<ul class="ul-informacion">
-					<li class="informacion-juntas">
-						<img src="img/fg/icono-ubicacion.png" width="51px" height="63px" alt="icono de ubicación">
-						<p>
-							Av. Olazábal 1784 - Belgrano / CABA
-						</p>
-					</li>
-					<li class="informacion-juntas">
-						<img src="img/fg/icono-tren.png" width="52px" height="68px" alt="icono de tren">
-						<p>
-							Tren Belgrano, Estación Carabobo 
-						</p>
-					</li>
-					<li class="informacion-juntas">
-						<img src="img/fg/icono-bus.png" width="52px" height="66px" alt="icono de bus">
-						<p>
-							Línea 15B - 227
-						</p>
-					</li>
-					<li class="informacion-juntas">
-						<img src="img/fg/icono-auto.png" width="67px" height="49px" alt="icono de auto">
-						<p>
-							36 min (32.6 km) por Av. Gral. Paz/RN A001
-						</p>
-					</li>
-					<li class="informacion-juntas">
-						<img src="img/fg/icono-bicicleta.png" width="68px" height="64px" alt="icono de bicicleta">
-						<p>
-							1 h 34 min (26.7 km) por Av. del Libertad
-						</p>
-					</li>
-					<li class="informacion-juntas">
-						<img src="img/fg/icono-peaton.png" width="49px" height="62px" alt="icono de peatón">
-						<p>
-							5 h 5 min (24.4 km) por Av. Coronel Roca
-						</p>
-					</li>
-				</ul>
-				<img class="img-mapa" src="img/fg/mapa.png" width="804px" height="700px" alt="mapa">
-			</article>
-			<article class="botones-juntas">
-				<h2>Redes sociales</h2>
-				<a href="https://www.facebook.com" target="_blank">
-					<img class="redes" src="img/fg/facebook.png" width="47px" height="49px" alt="facebook" />
-				</a>
-				<a href="https://www.instagram.com/?hl=es" target="_blank">
-					<img class="redes" src="img/fg/instagram.png" width="46px" height="46px" alt="instagram" />
-				</a>
+				<div class="div-informacion-llegar">
+					<h2>CÓMO LLEGAR</h2>
+					<ul class="ul-informacion">
+						<li class="informacion-juntas">
+							<img src="img/fg/icono-ubicacion.svg" width="51px" height="63px" alt="icono de ubicación">
+							<p>Av. Olazábal 1784 - Belgrano / CABA</p>
+						</li>
+						<li class="informacion-juntas">
+							<img src="img/fg/icono-tren.svg" width="52px" height="69px" alt="icono de tren">
+							<p>Tren Belgrano, Estación Carabobo</p>
+						</li>
+						<li class="informacion-juntas">
+							<img src="img/fg/icono-bus.svg" width="52px" height="67px" alt="icono de bus">
+							<p>Línea 15B - 227</p>
+						</li>
+						<li class="informacion-juntas">
+							<img src="img/fg/icono-auto.svg" width="67px" height="50px" alt="icono de auto">
+							<p>36 min (32.6 km) por Av. Gral. Paz/RN A001</p>
+						</li>
+						<li class="informacion-juntas">
+							<img src="img/fg/icono-bicicleta.svg" width="68px" height="65px" alt="icono de bicicleta">
+							<p>1 h 34 min (26.7 km) por Av. del Libertad</p>
+						</li>
+						<li class="informacion-juntas">
+							<img src="img/fg/icono-peaton.svg" width="49px" height="63px" alt="icono de peatón">
+							<p>5 h 5 min (24.4 km) por Av. Coronel Roca</p>
+						</li>
+					</ul>
+					<div class="botones-juntas">
+						<a href="https://www.facebook.com/feriajuntas/" target="_blank">
+							<img src="img/fg/facebook.svg" width="46px" height="46px" alt="facebook">
+						</a>
+						<a href="https://www.instagram.com/juntasferiaok/" target="_blank">
+							<img src="img/fg/instagram.svg" width="46px" height="46px" alt="instagram">
+						</a>
+						<a class="boton-favoritos" href="#" target="_self">
+							<img src="img/fg/favoritos.svg" width="48px" height="48px" alt="facebook">
+						</a>
+						<a class="boton-stand" href="#" target="_self">
+							<p>ADQUIRIR UN STAND</p>
+						</a>
+					</div>
+				</div>
+				<div class="mapa">
+					<h2>MAPA</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6571.791945761526!2d-58.45611789847797!3d-34.556189190751574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sjuntas%20feria!5e0!3m2!1ses-419!2sar!4v1655765313976!5m2!1ses-419!2sar" width="550" height="550" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 			</article>
 		</section>
-		<section class="cards-juntas">
+		<section id="seccion-cards">
 			<article class="card-a">
 				<h3>SOBRE JUNTAS</h3>
 				<p>
@@ -119,7 +167,52 @@
 				</p>
 			</article>
 		</section>
-		<section class="galeria-carrusel">
+		<section id="seccion-galeria">
+			<h4 class="galeria-titulo">GALERIA</h4>
+			<article class="fondo-galeria">
+				<div class="galeria-carrusel">
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas1.svg" data-fancybox="gallery" data-caption="Encuentro en Olazábal 1784, belgrano, ilustraciones y stickers">
+							<img src="img/fg/juntas1-miniatura.svg" alt="Feria juntas encuentro en Olazábal" width="400px" height="300px">
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas2.svg" data-fancybox="gallery" data-caption="Encuentro de Mayo por los ojos  mágicos">
+							<img src="img/fg/juntas2-miniatura.svg" alt="Feria Juntas edición de Mayo" width="400px" height="300px">
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas3.svg" data-fancybox="gallery" data-caption="Stickers, encuentro Olazabal 1784, Barrio Chino de Belgrano.">
+							<img src="img/fg/juntas3-miniatura.svg" alt="Encuentro Olazabal 1784, Barrio Chino de Belgrano." width="400px" height="300px">
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas4.svg" data-fancybox="gallery" data-caption="Stickers, Encuentro febrero ferias Juntas">
+							<img src="img/fg/juntas4-miniatura.svg" alt="Encuentro febrero ferias Juntas" width="400px" height="300px">
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas5.svg" data-fancybox="gallery" data-caption="Libreta, encuentro Mayo, por los ojos mágicos, Feria juntas">
+							<img src="img/fg/juntas5-miniatura.svg" alt="Libreta, encuentro Mayo, Feria Juntas" width="400px" height="300px"> 
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas6.svg" data-fancybox="gallery" data-caption="Encuentro Junio, feria Juntas, en Belgrano Olazabal 1784">
+							<img src="img/fg/juntas6-miniatura.svg" alt="Encuentro feria Juntas" width="400px" height="300px">
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas7.svg" data-fancybox="gallery" data-caption="Encuentro edición de Mayo por los ojos  mágicos, feria Juntas">
+							<img src="img/fg/juntas7-miniatura.svg" alt="Encuentro Mayo feria Juntas" width="400px" height="300px">
+						</a>
+					</div>
+					<div class="carrusel-juntas">
+						<a href="img/fg/juntas8.svg" data-fancybox="gallery" data-caption="Encuentro edición julio, feria Juntas en Belgrano Olazabal 1784">
+							<img src="img/fg/juntas8-miniatura.svg" alt="Encuentro edición julio feria Juntas" width="400px" height="300px">
+						</a>
+					</div>
+				</div>
+			</article>
 		</section>
 	</main>
 	<!-- En el footer van las imagenes de cada red social -->
@@ -128,16 +221,20 @@
 			<p>FERIAR © 2022 todos los derechos reservados.</p>
 		</section>
 		<section id="posicion-redes-footer">
-					<a href="https://www.facebook.com" target="_blank">
-						<img class="redes" src="img/footer/facebook.png" width="30px" height="30px" alt="facebook" />
-					</a>
-					<a href="https://www.instagram.com/?hl=es" target="_blank">
-						<img class="redes" src="img/footer/instagram.png" width="31px" height="30px" alt="instagram" />
-					</a>
-					<a href="https://twitter.com/?lang=es" target="_blank">
-						<img class="redes" src="img/footer/twitter.png" width="34px" height="30px" alt="twitter" />
-					</a>
+			<a href="https://www.facebook.com" target="_blank">
+				<img class="redes" src="img/footer/facebook.svg" width="30px" height="30px" alt="facebook">
+			</a>
+			<a href="https://www.instagram.com/?hl=es" target="_blank">
+				<img class="redes" src="img/footer/instagram.svg" width="31px" height="30px" alt="instagram">
+			</a>
+			<a href="https://twitter.com/?lang=es" target="_blank">
+				<img class="redes" src="img/footer/twitter.svg" width="35px" height="30px" alt="twitter">
+			</a>
 		</section>
 	</footer>
+	<!---------------GALERIA JS--------------------->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
 </body>
 </html>

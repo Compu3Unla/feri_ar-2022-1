@@ -19,7 +19,7 @@ body{
 
 header{
 	width: 100%;
-	height: 80px;
+	height: 90px;
 	padding: 10px 3%;
 	background:#FEABD9;
 	position: fixed;
@@ -50,7 +50,7 @@ header{
 	}
 }
 /*------animacion botones nav desktop, botones contenido y  boton menu hamburguesa-----*/
-.botones-menu li:hover,.botones-contenido h3:hover, .checkbtn img:hover, .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus {
+.botones-menu li:hover,.botones-contenido h3:hover, .boton-volver:hover, .checkbtn img:hover, .boton-stand:hover,.boton-stand:focus .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus, .boton-volver:focus {
 border-radius: 40px;
 animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
@@ -143,7 +143,7 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	top: 71px;
 	right: 0;
 	border-radius: 5px;
-	padding: 10px 0px 0px
+	padding: 20px 0px 0px
 }
 .nav-mi-perfil ul ul li {
 	height: auto;
@@ -617,16 +617,16 @@ footer {
 	}
 }
 /*---------diseño del scroll horizontal--------*/
-.lista-ferias::-webkit-scrollbar {
+.lista-ferias::-webkit-scrollbar, .galeria-carrusel::-webkit-scrollbar {
 	width: 10px;
 	height: 20px;
 }
-.lista-ferias::-webkit-scrollbar:horizontal {
+.lista-ferias::-webkit-scrollbar:horizontal, .galeria-carrusel::-webkit-scrollbar:horizontal {
 	background-color: #FF20AC;
 	border-radius: 10px;
 	border: 1px solid black;
 }
-.lista-ferias::-webkit-scrollbar-thumb:horizontal {
+.lista-ferias::-webkit-scrollbar-thumb:horizontal, .galeria-carrusel::-webkit-scrollbar-thumb:horizontal {
 	background: #92ddea;
 	border-radius: 10px;
 	border: 1px solid black;
@@ -634,11 +634,198 @@ footer {
 
 /*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
 #main-feria-grafica {
-	padding: 10% 70px 30px;
-	background-image: url("img/fg/fondo-fg.png");
-	background-size: 100%;
+	padding-top: 4%;
 	
 }
+/*-------seccion como llegar------*/
+#seccion-como-llegar {
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+}
+.feria-juntas {
+	padding: 1% 4% 10px;
+	gap: 80px;
+	display: flex;
+	align-items: center;
+}
+.feria-juntas h1 {
+	font-weight: 700;
+	font-Size: 2.5em;
+	color: #0E6372;
+}
+.como-llegar {
+	gap: 60px;
+	display: flex;
+	justify-content: center;
+}
+.como-llegar h2 {
+	font-size: 1.85em;
+}
+.div-informacion-llegar {
+	width: 40%;
+}
+.ul-informacion {
+	margin: 10px 0px 15px;
+	padding: 2% 3% 2% 2%;
+	background-color: white;
+	border-radius: 30px;
+	border: 1px solid black;
+}
+.informacion-juntas {
+	margin-bottom: 15px;
+	gap: 20px;
+	display: flex;
+	align-items: center;
+}
+.informacion-juntas p {
+	width: 100%;
+	padding: 2%;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #F6C1DF;
+	border-radius: 40px;
+	box-sizing: border-box;
+	text-align: center;
+}
+/*---botones de redes, favoritos y stand*/
+.botones-juntas {
+	padding-top: 2%;
+	gap: 20px;
+	display: flex;
+}
+
+.boton-stand {
+	width: 310px;
+	cursor:pointer;
+}
+
+.boton-stand p {
+	padding: 15px 10px;
+	font-weight: 700;
+	font-size: 1em;
+	text-align: center;
+	color: white;
+	background-color: #FF20AC;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+/*------animacion boton favorito----------*/
+.boton-favoritos {
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@keyframes heartbeat {
+	from {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		-webkit-transform: scale(0.91);
+		transform: scale(0.91);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	17% {
+		-webkit-transform: scale(0.98);
+		transform: scale(0.98);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	33% {
+		-webkit-transform: scale(0.87);
+		transform: scale(0.87);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	45% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+/*------------mapa-----------*/
+.mapa iframe {
+	margin-top: 10px;
+	border:1px solid black;
+	border-radius: 30px;
+}
+
+/*------------seccion cards------------*/
+#seccion-cards {
+	padding: 5% 8% 12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-a h3, .card-b h3, .galeria-titulo {
+	font-weight: 700;
+	font-size: 1.875em;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	border-radius: 20px 20px 0px 0px;
+	box-sizing: border-box;
+}
+.card-a h3, .card-b h3 {
+	padding: 3% 6%;
+	text-align: center;
+}
+.card-a p, .card-b p {
+	padding: 60px 86px;
+	font-size: 1.5em;
+}
+.card-a p, .card-b p, .fondo-galeria { 
+	background-color: white;
+	border: 0.5px solid black;
+	border-radius: 0px 0px 20px 20px;
+	box-sizing: border-box;
+}
+.card-b {
+	position: relative;
+	right: 55px;
+	top: 237px;
+	z-index: 20;
+	margin-bottom: 13%;
+}
+/*--------------seccion galeria--------------*/
+
+/*---------fondo galeria--------*/
+#seccion-galeria {
+	width: 60%;
+	padding: 7% 20%;
+	display: flex;
+	flex-direction: column;
+}
+.galeria-titulo {
+	padding: 2% 7%;
+}
+.fondo-galeria {
+	padding: 0% 4% 6%;
+}
+/*  -------galeria carrusel Juntas----------*/
+.galeria-carrusel {
+	display: grid;
+	grid-template-columns: 400px 400px 400px 400px 400px 400px 400px 400px;
+	grid-column-gap: 20px;
+	grid-auto-flow: column;
+	align-items: center;
+	width: 100%;
+	height: 429px;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.carrusel-juntas {
+	margin: 0 auto;
+}
+	
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
 	header {
@@ -715,7 +902,8 @@ footer {
 	.nav-mi-perfil {
 		width: 10%;
 		flex: none;
-		padding-bottom: 2%;
+		padding-bottom: 3%;
+		margin-left: 4px;;
 	}
 	.flecha-contenedor {
 		display: none;
@@ -813,6 +1001,9 @@ footer {
 	/*--------------------HTML FERIAS-FERIAR-----------------------------*/
 	#main-ferias {
 		padding: 10% 0% 10%;
+	}
+	.ferias {
+		padding: 5% 1%;
 	}
 	.ferias h1 {
 		padding: 4%;
