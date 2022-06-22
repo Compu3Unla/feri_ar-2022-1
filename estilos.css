@@ -1135,6 +1135,69 @@ h2{
 	background-position: top left;
 	background-size:100%;
 }
+.contenedor_avatar{
+	font-size: 1.25em;
+	font-weight: 400;
+	color: black;
+	background-color: white;
+	border:1px solid black;
+	border-radius: 20px;
+	text-align: center;
+	width: 384px;
+	height: 703px;
+	margin-left:139px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#nombre-perfil{
+	color: #000000;
+	font-size: 1.56em;
+	font-weight: 700;
+	background: none;
+	border:none;
+	margin-top: 33px;
+}
+.categorias{
+	width: 205px;
+	height: 101px;
+	background-color: #FFE927;
+	border: 1px solid #000000;
+	border-radius: 28px;
+	font-size:1.25em;
+	font-weight: 700;
+	text-align: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding-top: 14px;
+	margin-top:40px;
+}
+#editar-perfil{
+	font-size: 0.93em;
+	font-weight: 800;
+	background-color: #FF20AC;
+	border: 1px solid #000000;
+	border-radius: 149px;
+	height: 34px;
+	width: 157px;
+	margin-top:50px;
+}
+#editar-perfil-texto{
+	text-decoration: none;
+	color: white;
+}
+.localidad{
+	display: flex;
+	justify-content:center;
+	font-size: 1em;
+	font-weight: 400;
+	margin-top: 25px;
+}
+.trabajos-carrusel{
+	display:flex;
+}
 	
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
