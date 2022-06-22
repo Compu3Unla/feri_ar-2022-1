@@ -1120,6 +1120,21 @@ h2{
 .carrusel-juntas {
 	margin: 0 auto;
 }
+/*-----------------HTML CURSOS-------------------*/
+
+
+
+/*-----------------HTML AGENDA-------------------*/
+
+
+
+
+/*-----------------HTML PERFIL-------------------*/
+.body-perfil {
+	background-image: url("img/perfil/fondo-perfil-body.svg");
+	background-position: top left;
+	background-size:100%;
+}
 	
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
@@ -1233,7 +1248,6 @@ h2{
 	bottom: 266px;
 	}
 	
-
 	/*---------index--------*/
 	.main-index {
 		padding: 5%;
@@ -1246,7 +1260,7 @@ h2{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-}
+	}
 	.boton-formulario-index {
 		padding: 2% 10%;
 	 }

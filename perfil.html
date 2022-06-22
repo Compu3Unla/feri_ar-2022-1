@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Perfil - FERIAR</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+	<!--css js galeria-->
+	<link tyle="text/css" rel="stylesheet" href="css/jquery.fancybox.css">
+</head>
+<body class="body-perfil">
+	<header>
+		<nav class="menu">
+			<!-- logo de feriar -->
+			<a href="home.html" target="_self" class="logo">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
+			</a>
+			<!-- buscador -->
+			<div class="buscador">
+				<form class="form-search">
+					<input placeholder="Buscar" type="text" size="15" maxlength="128">
+				</form>
+			</div>
+			<div class="nav">
+				<!--  menu hamburguesa es para el responsive de mobile -->
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<img src="img/nav/menu hamburguesa.svg" width="50px" height="50px" alt="menu">
+				</label>
+				<!--  menu -->
+				<ul class="botones-menu">
+					<li>
+						<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
+					</li>
+					<li>
+						<a href="#" title="Ferias - FERIAR" target="_self">Cursos</a>
+					</li>
+					<li>
+						<a href="#" title="Ferias - FERIAR" target="_self">Agenda</a>
+					</li>
+					<li class="menu-mobile" >
+						<a href="#" title="Ferias - FERIAR" target="_self">Mi perfil</a>
+					</li>
+					<li class="menu-mobile">
+						<a href="#" title="Ferias - FERIAR" target="_self">Mis cursos</a>
+					</li>
+					<li class="menu-mobile">
+						<a href="index.html" title="FERIAR" target="_self">Cerrar sesión</a>
+					</li>
+				</ul>
+			</div>
+			<!--  menu de perfil -->
+			<div class="nav-mi-perfil">
+				<ul class="flecha-contenedor">
+					<li>
+						<a href="#">
+							<div class="flecha-mi-perfil"></div>
+						</a>
+						<ul>
+							<li>
+								<a href="#" target="_self">Mi perfil</a>
+							</li>
+							<li>
+								<a href="#" target="_self">Mis cursos</a>
+							</li>
+							<li>
+								<a href="index.html" title="FERIAR" target="_self">Cerrar sesión</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<img src="img/nav/perfil.svg" width="53px" height="50px" alt="perfil">
+			</div>
+		</nav>
+	</header>
+	<main>
+		 <section class="seccion_perfil">
+			<!-- Foto QR Y avatar -->
+			<article data-aos="fade-right" class="contenedor_avatar">
+				<div>
+					<img id="foto-avatar" src="img/perfil/foto-perfil.svg" width="212px" height="214px" alt="Foto-Perfil">
+				</div>
+				<h2 id="nombre-perfil">Cecilia Rodriguez</h2>
+				<div class="localidad">
+					<img src="img/perfil/ubicacion-perfil.svg" width="23px" height="29px" alt="icono ubicación">
+					<h3 id="localidad-perfil">BS AS, Palermo</h3>
+				</div>
+				<div class="categorias">
+					<p>Ilustrador/a</p>
+					<p>Diseñador/a</p>
+				</div>
+				<p id="editar-perfil"><a href="#">EEDITAR PERFIL</a></p>
+				<h4>REDES</h4>
+				<div class="redes-sociales">
+					<img width="30px" height=" 30px" src="img/footer/facebook.svg" alt="facebook">
+					<img width="31px" height=" 30px" src="img/footer/instagram.svg" alt="instagram">
+				</div>
+			</article>
+		</section>
+		<section class="trabajos-perfil">
+			<article>
+				<h4>Mis Trabajos</h4>
+				<p id="boton-trabajos"><a href="#">SUBIR MÁS TRABAJOS</a></p>
+			</article>
+			<article class="galeria-perfil">
+				<div class="trabajos-carrusel">
+					<div class="carrusel-perfil">
+						<a href="img/perfil/trabajo1.svg" data-fancybox="gallery">
+							<img src="img/perfil/trabajo1-miniatura.svg" alt="" width="300px" height="200px">
+						</a>
+					</div>
+					<div class="carrusel-perfil">
+						<a href="img/perfil/trabajo2.svg" data-fancybox="gallery">
+							<img src="img/perfil/trabajo2-miniatura.svg" alt="" width="300px" height="200px">
+						</a>
+					</div>
+					<div class="carrusel-perfil">
+						<a href="img/perfil/trabajo3.svg" data-fancybox="gallery" data-caption="">
+							<img src="img/perfil/trabajo3-miniatura.svg" alt="" width="300px" height="200px">
+						</a>
+					</div>
+					<div class="carrusel-perfil">
+						<a href="img/perfil/trabajo4.svg" data-fancybox="gallery" data-caption="">
+							<img src="img/perfil/trabajo4-miniatura.svg" alt="" width="300px" height="200px">
+						</a>
+					</div>
+					<div class="carrusel-perfil">
+						<a href="img/perfil/trabajo5.svg" data-fancybox="gallery" data-caption="">
+							<img src="img/perfil/trabajo5-miniatura.svg" alt="" width="300px" height="200px"> 
+						</a>
+					</div>
+					<div class="carrusel-perfil">
+						<a href="img/fg/juntas6.svg" data-fancybox="gallery" data-caption="">
+							<img src="img/perfil/trabajo6-miniatura.svg" alt="" width="300px" height="200px">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<!-- En el footer van las imagenes de cada red social -->
+	<footer class="footer-flex">
+		<section id="posicion-texto-footer">
+			<p>FERIAR © 2022 todos los derechos reservados.</p>
+		</section>
+		<section id="posicion-redes-footer">
+			<a href="https://www.facebook.com" target="_blank">
+				<img class="redes" src="img/footer/facebook.svg" width="30px" height="30px" alt="facebook">
+			</a>
+			<a href="https://www.instagram.com/?hl=es" target="_blank">
+				<img class="redes" src="img/footer/instagram.svg" width="31px" height="30px" alt="instagram">
+			</a>
+			<a href="https://twitter.com/?lang=es" target="_blank">
+				<img class="redes" src="img/footer/twitter.svg" width="35px" height="30px" alt="twitter">
+			</a>
+		</section>
+	</footer>
+	<!---------------GALERIA JS--------------------->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+</body>
+</html>
