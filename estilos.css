@@ -28,7 +28,7 @@ header{
 }
 /*-------------------------------MENU---------------------------------*/
 
-/*------animacion logo nav para desktop-----*/
+/*------animacion logo-----*/
 .logo:hover {
 	animation: logo-movimiento normal 10s  1 ease;
 }
@@ -47,21 +47,6 @@ header{
 	}
 	10%, 100% {
 		transform: scale3d(1, 1, 1);
-	}
-}
-/*------animacion botones nav desktop, botones contenido y  boton menu hamburguesa-----*/
-.botones-menu li:hover,.botones-contenido h3:hover, .boton-volver:hover, .checkbtn img:hover, .boton-stand:hover,.boton-stand:focus .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus, .boton-volver:focus {
-border-radius: 40px;
-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-@keyframes shadow-pop-br {
-	0% {
-		box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-		transform: translateX(0) translateY(0);
-	}
-	100% {
-		box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
-		transform: translateX(-8px) translateY(-8px);
 	}
 }
 /*--------menu botones desktop-----------*/
@@ -184,13 +169,56 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 #check, .iso-mobile, .menu-mobile {
 	display: none;
 }
-/*--------------------HTML HOME--------------*/
-/*------------------MAIN STICKERS DE FONDO HTML HOME-----------------------*/
+/*----------------FOOTER----------------------*/
+.footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	font-weight:700;
+	padding: 16px 0px;
+	color: #0E6372;
+	background-color:#92DDEA;
+}
+#posicion-texto-footer {
+	padding: 0px 0px 0px 64px;
+	font-size: 1.0625em;
+}
+#posicion-redes-footer {
+	padding: 0px 64px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.redes {
+	padding: 0px 8px;
+}
+/*------animacion botones nav desktop, botones contenido y  boton menu hamburguesa-----*/
+.botones-menu li:hover,.botones-contenido h3:hover, .boton-volver:hover, .checkbtn img:hover, .boton-stand:hover, .boton-formulario-index:hover, .boton-siguiente:hover,.boton-ir-inicio:hover, .flechas-registro:hover, .flechas-registro:focus,.boton-ir-inicio:focus, .boton-siguiente:focus .boton-formulario-index:focus .boton-stand:focus .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus, .boton-volver:focus {
+border-radius: 40px;
+animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@keyframes shadow-pop-br {
+	0% {
+		box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+		transform: translateX(0) translateY(0);
+	}
+	100% {
+		box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+		transform: translateX(-8px) translateY(-8px);
+	}
+}
+/*------------------STICKERS DE FONDO-----------------------*/
 #stickers-fondo {
 	display: flex;
 	margin: 0px 0px 50px 0px;
 }
-#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2, #sticker-ferias {
+#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2, #sticker-ferias, #linea-fucia-index, #paleta-index {
 	height: auto;
 	position: absolute;
 	z-index: -1;
@@ -240,6 +268,298 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	right: 38px;
 	top: 3020px;;
 }
+/*---------------HTML INDEX---------------*/
+/*------header-index----*/
+.header-index {
+	gap: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*-----animacion del nav se mueve hacia abajo-------*/
+.nav-animacion {
+	animation: menu-movimiento  normal 3s ease-out both;
+}
+@-webkit-keyframes menu-movimiento {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 0%;
+	}
+}
+/*----------fondo stickers index------*/
+#linea-fucia-index {
+	width: 68%;
+	max-width: 373px;
+	bottom: 104px;
+	right: 0;
+}
+#paleta-index {
+	width: 10%;
+	max-width: 225px;
+	left: 361px;
+	top: 580px;
+}
+/*----conectarse-----*/
+#conectarse {
+	padding: 9% 6% 4%;
+	display: flex;
+	justify-content: center;
+}
+.texto-index {
+	width: 100%;
+	max-width: 600px;
+}
+.h1-index {
+	font-size: 2em;
+}
+.index-p {
+	padding: 7% 8%;
+	font-size: 1.3em;
+}
+.datos {
+	padding: 12% 0% 0%;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.datos-index {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+}
+.caja-formulario-index {
+	padding: 2% 4%;
+	margin: 10px 0px;
+	font-size: 1em;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+/*--botones del index registrarse, ingresar, olvidaste contraseña--*/
+.botones-index {
+	margin: 10px;
+	display: flex;
+	gap: 60px;
+}
+.boton-formulario-index {
+	margin: 10px 0px;
+	padding: 2% 13%;
+	font-size: 1.1em;
+	background-color: #FF20AC;
+	color: white;
+	font-weight: 700;
+	border-radius: 30px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+span a {
+	color: black;
+}
+.boton-password {
+	margin: 20px 0px;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/*------------------------HTML REGISTRO--------------------------------*/
+/*--------circulos de los pasos-------*/
+.boton-fucsia{
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px;
+	background: #FF20AC;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.boton-rosa {
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px;
+	background: #F6C1DF;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+/*-----------------MAIN-----------------*/
+.main-registrar section {
+	width: 100%;
+	height: 917px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*-----Carrusel------*/
+.carrusel-registro {
+	max-width: 745px;
+	height: 763px;
+	overflow: hidden; /*esto es lo que hace que se pueda ver una card a la vez, lo oculta*/
+	display: flex;
+	position: absolute;
+	top: 39px;/*para que no quede pegado al borde superior de la pantalla y tenga un espaciado*/
+}
+/*-----contenedor cards------*/
+.contenedor-cuadrado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.espacio {
+	height: 142px;/*esto es para el espacio arriba de la card para que el elemento empiece donde empieza la página y no se mueva hacia abajo cuando vaya al siguiente card*/
+}
+/*-----cuadrado de las cards------*/
+.main-registrar .cuadrado {
+	width: 629px;
+	height: 526px;
+	padding: 30px 57px 62px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	border: 1px solid black;
+	background-color: #92DDEA;
+	border-radius: 31px;
+	gap: 23px;
+}
+/*-----flechas de volver y siguiente para que queden alineadas------*/
+.flechas {
+	width: 89%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 6.5%;
+	margin-left: 33px;
+}
+/*--para que este oculta la flecha de la primera card*/
+.flecha-no {
+	visibility: hidden;
+}
+/*-----texto------*/
+.texto-registro {
+	width: 100%;
+	max-width: 593px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.main-registrar h1{
+	font-size: 1.6875em;
+	text-align: center;
+	padding: 0% 9%;
+}
+/*-----redes vincular primera card------*/
+.redes-vincular {
+	padding: 2% 10%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+.redes-vincular img {
+	margin: 0px 10px;
+}
+/*-----------------*/
+
+.main-registrar p{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 700;
+}
+
+.main-registrar .texto-bold{
+	font-weight: bold;
+}
+
+/*-----form label------*/
+.main-registrar label {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+/*-----Form input------*/
+
+.main-registrar form{
+	width: 90%;
+	max-height: 314px;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 5px;
+}
+.main-registrar form input, .respuesta-categoria {
+	width: 100%;
+	height: 41px;
+	padding-left: 30px;
+	background-color: white;
+	border-radius: 20px;
+	font-weight: 700;
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+/*-----Boton-siguiente------*/
+
+.boton-siguiente {
+	width: 50%;
+	height: auto;
+	padding: 10px 40px 8px;
+	background-color: #FF20AC;
+	color: white;
+	font-weight: 700;
+	border-radius: 50px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	font-size: 1.3em;
+}
+
+#cuadrado-registro-1 .boton-siguiente, #cuadrado-registro-2 .boton-siguiente, #cuadrado-registro-3 .boton-siguiente {
+	margin-top: 40px;
+}
+/*-----boton-ir-inicio------*/
+.main-registrar .boton-ir-inicio {
+	width: 50%;
+	height: auto;
+	margin: 0% 20%;
+	padding: 9px 40px;
+	font-size: 1.2em;
+	background-color: #FF20AC;
+	color: white;
+	font-weight: 700;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+/*animacion de sticker completado registro el ultimo card*/
+.img-completado {
+	height: 371px;
+	position: relative;
+	left: 103px;
+	background-image: url("img/registro/animacion-registro-a.svg");
+	animation: registro-completo alternate 2s infinite ease-in-out;
+	background-repeat: no-repeat;
+}
+@keyframes registro-completo {
+	0%{
+		background-image: url("img/registro/animacion-registro-a.svg");
+	}
+	50%{
+		background-image: url( "img/registro/animacion-registro-b.svg");
+	}
+	100%{
+		background-image: url("img/registro/animacion-registro-a.svg");
+	}
+}
+/*--------------------HTML HOME--------------*/
 /*-------------circulos secciones home------------*/
 /*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
 
@@ -283,31 +603,35 @@ html {
 	justify-content: center;
 	align-items: flex-end
 }
-.bienvenidx{
+.bienvenidx, .h1-index {
 	padding: 2% 6%;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 3.75em;
 	color: white;
 	background-color:#ff20ac;
 	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
 }
+.bienvenidx {
+	font-size: 3.75em;
+}
 .texto-principal{
 	max-width: 652px;
 }
-.texto-principal p{
-	padding: 25px 57px 31px 64px;
+.texto-principal p, .index-p{
 	margin-top: 10px;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 1.875em;
 	color: black;
 	box-sizing: border-box;
 	background: white;
 	border: 1px solid black;
 	border-radius: 32px;
+}
+.texto-principal p {
+	padding: 25px 57px 31px 64px;
+	font-size: 1.875em;
 }
 .texto-mobile {
 	display: none;
@@ -504,35 +828,6 @@ h2{
 	100%{
 		background-image: url("img/index/cierre-animacion-a.svg");
 	}
-}
-/*----------------FOOTER----------------------*/
-.footer-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
-	align-items: center;
-}
-footer {
-	width: 100%;
-	height: 50px;
-	font-weight:700;
-	padding: 16px 0px;
-	color: #0E6372;
-	background-color:#92DDEA;
-}
-#posicion-texto-footer {
-	padding: 0px 0px 0px 64px;
-	font-size: 1.0625em;
-}
-#posicion-redes-footer {
-	padding: 0px 64px 0px 0px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.redes {
-	padding: 0px 8px;
 }
 /*--------------------------------FERIAS-FERIAR.HTML----------------------------------------*/
 #sticker-ferias {
@@ -926,11 +1221,36 @@ footer {
 	#posicion-redes-footer {
 		padding: 0px;
 	}
-	/*--------------------HTML HOME-----------------------------*/
+	
 	/*----MAIN STICKERS DE FONDO----*/
-	#sticker-corazon, #sticker-linea-amarilla, #sticker-grabadoras, #sticker-grabadora2, #sticker-paleta, #sticker-rayo {
+	#sticker-corazon, #sticker-linea-amarilla, #sticker-grabadoras, #sticker-grabadora2, #sticker-paleta, #sticker-rayo, #paleta-index {
 		display: none;
 	}
+	/*--------------------HTML INDEX-------------*/
+	/*---stickers fondo------*/
+	#linea-fucia-index {
+	width: 50%;
+	bottom: 266px;
+	}
+	
+
+	/*---------index--------*/
+	.main-index {
+		padding: 5%;
+	}
+	.index-p {
+		text-align: center;
+	}
+	.botones-index {
+		gap: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+	.boton-formulario-index {
+		padding: 2% 10%;
+	 }
+	/*--------------------HTML HOME-----------------------------*/
 	/*circulos de las secciones*/
 	.circulos {
 		display: none;
