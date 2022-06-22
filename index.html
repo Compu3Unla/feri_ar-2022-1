@@ -5,167 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="img/index/favicon.png" type="image/png" sizes="16x16">
+	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
 </head>
 <body>
-	<header>
-		<!-- imagen del logo de feriar -->
-		<a href="index.html" target="_self" class="logo">
-			<img src="img/nav/logo.png" width="174px" height="62px" alt="logoheader"/> 
-		</a>
-		<!-- buscador -->
-		<div class="buscar">
-			<form class="buscador-form" action="index.html" method="get" role="search">
-				<input type="text" name="buscar" class="buscar-texto" maxlength="200" placeholder="buscar" requiered>
-				<img src="img/nav/icono-buscador.png" width="19px" height="17px" alt="icono buscar">
-			</form>
-		</div>
-		<nav class="menu">
-			<!-- el div de menu hamburguesa es para el responsive de mobile -->
-			<div class="menu-hamburguesa">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<!-- en favoritos y usuario va con una imagen -->
-			<ul class="botones-menu">
-				<li>
-					<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
-				</li>
-				<li>
-					<a>Cursos</a>
-				</li>
-				<li>
-					<a>Agenda</a>
-				</li>
-			</ul>
-			<div class="nav-perfil">
-			<a>
-				<img src="img/nav/perfil.png" width="41px" height="41px" alt="perfil"/>
+	<header class="nav-animacion">
+		<nav class="header-index">
+			<!-- logo de feriar -->
+			<a href="#conectarse" target="_self" class="logo">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
 			</a>
-			
+			<div class="nav">
+				<!--  menu -->
+				<ul class="botones-menu">
+					<li>
+						<a href="#conectarse" target="_self">Ingresar</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
-	<main>
-		<!--  en el ul van a estar los 4 circulos con las secciones del home  -->
-		<ul class="circulos"> 
-			<li id="c1">
-				<a href="#bienvenida" target="_self" ></a>
-			</li>
-			<li id="c2">
-				<a href="#objetivos" target="_self"></a>
-			</li>
-			<li id="c3">
-				<a href="#contenido" target="_self"></a>
-			</li>
-			<li id="c4"> 
-				<a href="#disfruta" target="_self"></a>
-			</li>
-		</ul>
-		<!-- texto de bienvenida -->
-		<section id="bienvenida">
+	<main class="main-index">
+		<!--aca van los stickers de fondo-->
+		<section id="stickers-fondo">
+			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
+			<img id="linea-fucia-index" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
+			<img id="paleta-index" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
+		</section>
+		<section id="conectarse">
 			<article class="logo-bienvenida"></article>
-			<article class="texto-principal">
-				<h1 class="bienvenidx">¡BIENVENIDX!</h1>
-					<span class="texto-desktop">
-					<p>
-						¿Te animás a ser parte de la nueva generación de emprendedores? Explora nuestra web y descubrí los beneficios que te brindamos a un solo click.Diferenciate del resto, ¡sé único, sé un/a emprendedor/a FERIAR!
-					</p>
+			<article class="texto-index">
+				<h1 class="h1-index">¡SÉ PARTE DE FERIAR!</h1>
+				<p class="index-p">
+					No esperes más y da a conocer tu talento al mundo o aventúrate a descubrir ferias gráficas cerca tuyo
+				</p>
+				<form class="datos" method="post" action="mailto:melisasaavedra@outlook.com" subject="cliente" target="_self" enctype="text/plain">
+					<label class="datos-index" for="correo-electrónico">USUARIO O E-MAIL</label>
+					<input type="correo-electrónico" class="caja-formulario-index" id="correo_electronico" name="correo_electronico" placeholder="Escribe tu correo electrónico" required>
+					<label class="datos-index" for="password">CONTRASEÑA</label>
+					<input type="password" class="caja-formulario-index" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" required>
+					<div class="botones-index">
+						<button class="boton-formulario-index" type="submit" name="boton-registrarse" onclick="location.href='registro.html'" enctype="text/plain">REGISTRARSE</button>
+						<button type="submit" class="boton-formulario-index" name="boton-ingresar" onclick="location.href='home.html'" enctype="text/plain">IR A INICIO</button>
+					</div>
+					<span class="boton-password">
+						<a href="#">¿Olvidaste tu contraseña?</a>
 					</span>
-					<p class="texto-mobile">
-					Diferenciate del resto, ¡sé único, sé un/a emprendedor/a FERIAR!
-					</p>
-			</article>
-		</section>
-		<!-- texto de los objetivos -->
-		<section id="objetivos">
-			<article>
-				<img class="img-harta" src="img/index/imagenholastickers.png" width="1138px" height="778px" alt="imagen hola harta">
-			</article>
-			<article class="box-objetivos">
-					<h2 class="h1-objetivo">NUESTROS OBJETIVOS</h2>
-					<ul class="ul-objetivos">
-						<li class= "objetivos-items">
-							<img src="img/index/stickerrayo.png" width="72px" height="80px" alt="sticker rayo">
-							<p>
-								Dar a conocer las ferias gráficas y  lxs emprendedorxs.
-							</p>
-						</li>
-						<li class= "objetivos-items">
-							<img src="img/index/stickerrayo.png" width="72px" height="80px" alt="sticker rayo">
-							<p>
-								Promocionar los cursos de diferentes artistas y diseñadores.
-							</p>
-						</li>
-						<li class= "objetivos-items">
-							<img src="img/index/stickerrayo.png" width="72px" height="80px" alt="sticker rayo">
-							<p>
-								Facilitarle al usuario una agenda para que organice las ferias y cursos del mes a los que quisiera asistir.
-							</p>
-						</li>
-					</ul>	
-			</article>
-		</section>
-		<!-- sección de contenido van las imagenes y texto -->
-		<section id="contenido">
-			<h2>CONTENIDO</h2>
-			<article>
-				<ul>
-					<li>
-						<img src="img/index/ferias.png" width="150px" height="150px" alt="ferias" >
-						<h3>Ferias</h3>
-						<p class="p-contenidos">
-							Conocé las ferias gráficas del mes cercanas a tu zona
-						</p>
-					</li>
-					<li>
-						<img src="img/index/cursos.png" width="150px" height="150px" alt="cursos" >
-						<h3>Cursos</h3>
-						<p class="p-contenidos">
-							Conocé los cursos que ofrecen los emprendedores
-						</p>
-					</li>
-					<li>
-						<img src="img/index/galeria.png" width="150px" height="150px" alt="galeria" >
-						<h3>Galería</h3>
-						<p class="p-contenidos">
-							Dale una mirada a las fotos de cada encuentro gráfico
-						</p>
-					</li>
-				</ul>
-			</article>
-			<article>
-				<ul>
-					<li>
-						<img src="img/index/agenda.png" width="150px" height="150px" alt="agenda" >
-						<h3>Agenda</h3>
-						<p class="p-contenidos">
-							Enterate de las próximas ferias, y agendalas
-						</p>
-					</li>
-					<li>
-						<img src="img/index/favoritos.png" width="150px" height="150px" alt="favoritos" >
-						<h3>Favoritos</h3>
-						<p class="p-contenidos">
-							Añadí a tus favoritos ferias y cursos que no te queres perder
-						</p>
-					</li>
-					<li>
-						<img src="img/index/perfil.png" width="150px" height="150px" alt="perfil" >
-						<h3>Perfil</h3>
-						<p class="p-contenidos">
-							Creá un perfil para estar informadx día a día de las novedades
-						</p>
-					</li>
-				</ul>
-			</article>
-		</section>
-		<!-- última sección texto y imagenes de los 3 stickers (smile y corazón) -->
-		<section id="disfruta">
-			<article>
-				<h4>¡Disfrutá de FERIAR!</h4>
-				<div class="imagen-disfruta"></div>
+				</form>
 			</article>
 		</section>
 	</main>
@@ -175,15 +61,15 @@
 			<p>FERIAR © 2022 todos los derechos reservados.</p>
 		</section>
 		<section id="posicion-redes-footer">
-					<a href="https://www.facebook.com" target="_blank">
-						<img class="redes" src="img/footer/facebook.png" width="30px" height="30px" alt="facebook" />
-					</a>
-					<a href="https://www.instagram.com/?hl=es" target="_blank">
-						<img class="redes" src="img/footer/instagram.png" width="31px" height="30px" alt="instagram" />
-					</a>
-					<a href="https://twitter.com/?lang=es" target="_blank">
-						<img class="redes" src="img/footer/twitter.png" width="34px" height="30px" alt="twitter" />
-					</a>
+			<a href="https://www.facebook.com" target="_blank">
+				<img class="redes" src="img/footer/facebook.svg" width="30px" height="30px" alt="facebook">
+			</a>
+			<a href="https://www.instagram.com/?hl=es" target="_blank">
+				<img class="redes" src="img/footer/instagram.svg" width="31px" height="30px" alt="instagram">
+			</a>
+			<a href="https://twitter.com/?lang=es" target="_blank">
+				<img class="redes" src="img/footer/twitter.svg" width="35px" height="30px" alt="twitter">
+			</a>
 		</section>
 	</footer>
 </body>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Registro - FERIAR</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+</head>
+<body>
+	<header class="nav-animacion">
+		<nav class="header-index">
+			<!-- logo de feriar -->
+			<a href="index.html" target="_self" class="logo">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
+			</a>
+			<div class="nav">
+				<!----menu -->
+				<ul class="botones-menu">
+					<li>
+						<a href="index.html" target="_self">Ingresar</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="main-registrar">
+		<!--aca van los stickers de fondo-->
+		<div id="stickers-fondo">
+			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
+			<img id="linea-fucia-index" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
+			<img id="paleta-index" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
+		</div>
+		<section>
+			<ul class="carrusel-registro">
+				<!--REGISTRO 1-->
+				<li class="contenedor-cuadrado" id="cuadrado-registro-1">
+					<div class="espacio"></div>
+					<div class="cuadrado">
+						<div class="texto-registro">
+							<h1>Puedes vincular tu cuenta con:</h1>
+							<div class="redes-vincular">
+							<!--redes vincular-->
+							<a href="home.html" target="_self" >
+								<img src="img/registro/facebook.svg" width="50" height="50" alt="facebook">
+							</a>
+							<a href="home.html" target="_self">
+								<img src="img/registro/google.svg" width="50" height="50" alt="google">
+							</a>
+							<a href="home.html" target="_self">
+								<img src="img/registro/instagram.svg" width="50" height="50" alt="instagram">
+							</a>
+							</div>
+							<!--botones volver y siguiente-->
+							<div class="flechas">
+								<a href="#" class="flecha-no">
+									<img class="flechas-registro" src="img/registro/boton-volver.svg" width="60" height="60" alt="flecha volver">
+								</a>
+								<a href="#cuadrado-registro-2">
+									<img class="flechas-registro" src="img/registro/boton-siguiente.svg" width="60" height="60" alt="flecha siguiente">
+								</a>
+							</div>
+							<p>¡O registrate en tan solo 3 pasos!</p>
+							<!--pasos 1/3-->
+							<div>
+								<button class="boton-fucsia"></button>
+								<button class="boton-rosa"></button>
+								<button class="boton-rosa"></button>
+							</div>
+						</div>
+						<form method="post" action="mailto: melisasaavedra@outlook.com" subject="Enviar mail" target="_blank" enctype="text/plain">
+							<!--Nombre-->
+							<label for="nombre">Nombre</label>
+							<input type="text" name="nombre" id="Nombre" maxlength="30" placeholder="Escribe tu nombre" required>
+							<!--Apellido-->
+							<label for="apellido">Apellido</label>
+							<input type="text" name="apellido" id="Apellido" maxlength="50" placeholder="Escribe tu apellido" required>
+							<!--boton siguiente-->
+							<a href="#cuadrado-registro-2" target="_self" class="boton-siguiente">SIGUIENTE</a>
+						</form>
+					</div>
+				</li>
+				<!--REGISTRO 2-->
+				<li class="contenedor-cuadrado" id="cuadrado-registro-2">
+					<div class="espacio"></div>
+					<div class="cuadrado">
+						<div class="texto-registro">
+							<h1>¡Unos cuantos datos más y listo!</h1>
+							<!--flechas volver y siguiente-->
+							<div class="flechas">
+								<a href="#cuadrado-registro-1">
+									<img class="flechas-registro" src="img/registro/boton-volver.svg" width="60" height="60" alt="flecha volver">
+								</a>
+								<a href="#cuadrado-registro-3">
+									<img class="flechas-registro" src="img/registro/boton-siguiente.svg" width="60" height="60" alt="flecha siguiente">
+								</a>
+							</div>
+							<!--pasos 2/3-->
+							<div>
+								<button class="boton-fucsia"></button>
+								<button class="boton-fucsia"></button>
+								<button class="boton-rosa"></button>
+							</div>
+						</div>
+						<form method="post" action="mailto: melisasaavedra@outlook.com" subject="Enviar mail" target="_blank" enctype="text/plain">
+							<!--usuario-->
+							<label for="usuario">Usuario o e-mail</label>
+							<input type="text" name="usuario" id="Usuario" maxlength="30" placeholder="Escribe tu usuario o e-mail" required>
+							<!--contraseña-->
+							<label for="usuario">Contraseña</label>
+							<input type="password" name="Contraseña" id="Contraseña" maxlength="25" placeholder="************" required>
+							<!--confirmar contraseña-->
+							<label  for="usuario">Confirmar contraseña</label>
+							<input type="password" name="Confirmar contraseña" id="Confirmar contraseña" maxlength="25" placeholder="************" required>
+							<!--boton siguiente-->
+							<a href="#cuadrado-registro-3" target="_self" class="boton-siguiente">SIGUIENTE</a>
+						</form>
+					</div>
+				</li>
+				<!--REGISTRO 3-->
+				<li class="contenedor-cuadrado" id="cuadrado-registro-3">
+					<div class="espacio"></div>
+					<div class="cuadrado">
+						<div class="texto-registro">
+							<h1>¡Ya casi está listo!</h1>
+							<!--flechas volver y siguiente-->
+							<div class="flechas">
+								<a href="#cuadrado-registro-2">
+									<img class="flechas-registro" src="img/registro/boton-volver.svg" width="60" height="60" alt="flecha volver"></a>
+								<a href="#cuadrado-registro-4">
+									<img class="flechas-registro" src="img/registro/boton-siguiente.svg" width="60" height="60" alt="flecha siguiente">
+								</a>
+							</div>
+							<!--pasos 3/3-->
+							<div>
+								<button class="boton-fucsia"></button>
+								<button class="boton-fucsia"></button>
+								<button class="boton-fucsia"></button>
+							</div>
+							<!--sticker registro-->
+							<img src="img/registro/sticker-registro.svg" width="196" height="133" alt="sticker registro">
+						</div>
+						<form method="post" action="mailto:melisasaavedra@outlook.com" subject= "Enviar mail" target="_blank" type="text/plain">
+							<!--localidad-->
+							<label for="localidad">Localidad</label>
+							<input name="localidad" type="text" id="localidad" placeholder="Ej: Lomas de Zamora" required>
+							<!--categoria-->
+							<label for="categoria">Categoría</label>
+							<select class="respuesta-categoria" name="categoria" required>
+								<option value="1">Diseñador/a</option> 
+								<option value="2">Ilustrador/a</option> 
+								<option value="3">Freelance</option>
+								<option value="4">Branding</option>
+								<option value="5">Visual designer</option>
+								<option value="6">Motion grapher</option>
+								<option value="7">Otro</option>
+							</select>
+							<!--boton siguiente-->
+							<a href="#cuadrado-registro-4" target="_self" class="boton-siguiente">SIGUIENTE</a>
+						</form>
+					</div>
+				</li>
+				<!--REGISTRO 4 completado-->
+				<li class="contenedor-cuadrado" id="cuadrado-registro-4">
+					<div class="espacio"></div>
+					<div class="cuadrado">
+						<h1>¡Registro completado!</h1>
+						<!--animacion de sticker registro completado-->
+						<div class="img-completado"></div>
+						<!--boton ir a inicio-->
+						<a href="home.html" class="boton-ir-inicio">IR A INICIO</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<!-- En el footer van las imagenes de cada red social -->
+	<footer class="footer-flex">
+		<section id="posicion-texto-footer">
+			<p>FERIAR © 2022 todos los derechos reservados.</p>
+		</section>
+		<section id="posicion-redes-footer">
+			<a href="https://www.facebook.com" target="_blank">
+				<img class="redes" src="img/footer/facebook.svg" width="30px" height="30px" alt="facebook">
+			</a>
+			<a href="https://www.instagram.com/?hl=es" target="_blank">
+				<img class="redes" src="img/footer/instagram.svg" width="31px" height="30px" alt="instagram">
+			</a>
+			<a href="https://twitter.com/?lang=es" target="_blank">
+				<img class="redes" src="img/footer/twitter.svg" width="35px" height="30px" alt="twitter">
+			</a>
+		</section>
+	</footer>
+</body>
+</html>
