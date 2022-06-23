@@ -932,6 +932,7 @@ h2{
 /*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
 #main-feria-grafica {
 	padding-top: 4%;
+	display:flex;
 	
 }
 /*-------seccion como llegar------*/
@@ -1131,6 +1132,7 @@ h2{
 	padding: 12% 7% 6%;
 	display: flex;
 	justify-content: center;
+
 }
 .agenda-texto {
 	width: 65%;
@@ -1314,8 +1316,6 @@ h2{
 .div-carrusel-trabajos {
 	margin: 0 auto;
 }
-
-
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
 	header {
@@ -1527,6 +1527,25 @@ h2{
 	grid-template-columns: 311px 311px 311px 311px 311px 311px 311px;
 	grid-column-gap: 2px;
 	}
+}
+/*-----HTML PERFIL---------*/
+	.main-perfil {
+		flex-direction: column;
+   	 align-items: center;
+   	 justify-content: center;
+	}	
+	#seccion-trabajos {
+	width: 100%;
+    padding: 3% 3% 8% 2%;
+	 margin-top: 20px;
+	}
+	.h4-trabajos {
+    font-size: 1.2em;
+	}
+	#boton-trabajos {
+		text-align: center;
+	}
+
 }
 @media (max-width: 450px) {
 	/*-------SECCION CONTENIDO------*/
