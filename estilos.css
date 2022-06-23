@@ -1135,7 +1135,46 @@ h2{
 	background-position: top left;
 	background-size:100%;
 }
-	
+#boton-trabajos{
+	text-decoration: none;
+	background: #92DDEA;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	width:  335px;
+	height:  36px;
+	margin-top: 5px;
+	margin-bottom: 6px;
+	box-sizing: border-box;
+	font-weight: 800;
+	font-size: 1.25em;
+	color: #0E6372;
+	margin: 15px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+h4{	
+	font-size: 1.5em;
+	color: #FFFFFF;
+	margin: 20px;
+}
+.barra-trabajos{
+	background: #FF20AC;
+	border: 1px solid #000000;
+	border-radius: 10px 10px 0px 0px;
+	height: 70.19px;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: space-between;
+
+}
+.trabajos-perfil{
+	width: 961px;
+	height: 493px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
 	header {
