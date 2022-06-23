@@ -1131,6 +1131,7 @@ h2{
 	padding: 12% 7% 6%;
 	display: flex;
 	justify-content: center;
+
 }
 .agenda-texto {
 	width: 65%;
@@ -1179,18 +1180,20 @@ h2{
 }
 .main-perfil {
 	display:flex;
+	
 }
 /*---contenedor avatar perfil-----*/
 #sombra-perfil{
 	position: absolute;
 	width: 359px;
 	height: 683px;
-	top: 120px;
-	margin:none;
+	top:20px;
+	margin-left:-50px;
 	z-index: -1;
+	border-radius: 20px;
+	margin-top: 180px;
 }
 .contenedor_avatar{
-	
 	color: black;
 	background-color: white;
 	border:1px solid black;
@@ -1200,11 +1203,10 @@ h2{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: absolute;
+	margin-left: 140px;
 	width: 359px;
 	height: 683px;
-	left: 141px;
-	top: 175px;
+	margin-top: 174px;	
 }
 #foto-avatar{
 	margin-top:21px;
@@ -1221,6 +1223,16 @@ h2{
 	border-bottom: solid 2px;
 	border-radius: 0px;
 }
+.localidad{
+	display: flex;
+	justify-content:center;
+	font-size: 1em;
+	font-weight: 400;
+	margin-top: 14px;
+}
+#localidad-perfil{
+	margin-left: 8px;
+}
 .categorias{
 	width: 205px;
 	height: 101px;
@@ -1234,7 +1246,7 @@ h2{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top:40px;
+	margin-top:30px;
 }
 #editar-perfil{
 	font-size: 0.93em;
@@ -1255,20 +1267,92 @@ h2{
 	color: white;
 }
 
-.localidad{
-	display: flex;
-	justify-content:center;
-	font-size: 1em;
-	font-weight: 400;
-	margin-top: 25px;
+.redes-texto{
+	margin-top:30px;
 }
-#localidad-perfil{
-	margin-left: 8px;
-}
-/*---contenedor trabajos-----*/
-.trabajos-carrusel{
+.redes-sociales{
+	margin-top: 10px;
 	display:flex;
+	justify-content: space-around;
+	width: 100px;
 }
+
+/*---contenedor trabajos-----*/
+.trabajos-perfil{
+	box-sizing: border-box;
+	margin-left: 110px;
+	width: 961px;
+	height: 493px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	margin-top: 454px;
+}
+
+#boton-trabajos{
+	text-decoration: none;
+	background: #92DDEA;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	width:  335px;
+	height:  36px;
+	margin-top: 5px;
+	margin-bottom: 6px;
+	box-sizing: border-box;
+	font-weight: 800;
+	font-size: 1.25em;
+	color: #0E6372;
+	margin: 15px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+h4{	
+	font-size: 1.5em;
+	color: #FFFFFF;
+	margin: 20px;
+}
+.barra-trabajos{
+	background: #FF20AC;
+	border: 1px solid #000000;
+	border-radius: 10px 10px 0px 0px;
+	height: 70.19px;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: space-between;
+
+}
+.trabajos-carrusel{
+	display: flex;
+margin-top: 80px;
+	margin-left: 20px;
+	overflow-x: scroll;
+	width: 980px;
+	justify-content: space-between;
+
+}
+.carrusel-perfil{
+	margin-left: 20px;
+}
+
+	
+/*---------diseño del scroll horizontal--------*/
+.trabajos-carrusel:-webkit-scrollbar, .carrusel-perfil:-webkit-scrollbar {
+	width: 10px;
+	height: 20px;
+}
+.trabajos-carrusel:-webkit-scrollbar:horizontal, .carrusel-perfil:-webkit-scrollbar:horizontal {
+	background-color: #FF20AC;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+.trabajos-carrusel:-webkit-scrollbar-thumb:horizontal, .carrusel-perfil:-webkit-scrollbar-thumb:horizontal {
+	background: #92ddea;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
 	header {
