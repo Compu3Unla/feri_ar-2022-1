@@ -11,44 +11,26 @@
 	
 }
 body{
-	background-image: url("img/index/fondoindex.jpg");
+	background-image: url("img/fondo/fondo.svg");
 	background-position: top left;
 	background-size:100%;
 }
-/*-----------------header general-----------------*/
+/*-----------------HEADER GENERAL---------------*/
 
 header{
 	width: 100%;
-	height:100px;
-	padding: 15px 5%;
+	height: 90px;
+	padding: 10px 3%;
 	background:#FEABD9;
 	position: fixed;
 	z-index: 1000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
 	box-sizing: border-box;
 }
+/*-------------------------------MENU---------------------------------*/
 
-/*------menu-header-----*/
-.logo{
-<<<<<<< HEAD
-	margin-right: 24px;
-=======
-	argin-right: 24px;
->>>>>>> origin/main
-	display: flex;
-	justify-content:flex-start;
-}
-.logo img{
-	width: 174px;
-	height: auto;
-	margin-right: 27px;
-}
-/*------animacion logo nav-----*/
-.logo {
-	animation: logo-movimiento normal 10s 1s 1 ease;
+/*------animacion logo-----*/
+.logo:hover {
+	animation: logo-movimiento normal 10s  1 ease;
 }
 @-webkit-keyframes logo-movimiento {
 	0% {
@@ -67,49 +49,18 @@ header{
 		transform: scale3d(1, 1, 1);
 	}
 }
-/*------==================-----*/
-.buscar{
-	width: 100%;
-	max-width: 700px;
-	padding: 10px 10px 10px 20px;
-	background: white;
-<<<<<<< HEAD
-=======
-	padding: 10px 10px 10px 20px;
->>>>>>> origin/main
-	border-radius: 40px;
-	border: 1px solid black;
-}
-.buscador-form {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items:center;
-	justify-content: center;
-}
-.buscar-texto{
-	width: 100%;
-	max-width: 700px;
-	margin-left: 20px;
-	font-size: 1.25em;
-	font-weight: 800;
-	border: none;
-	background: none;
-	outline: none;
-	color: black;
-}
-
+/*--------menu botones desktop-----------*/
 .menu{
-	max-width: 577px;
+	gap: 31px;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+}
+.nav {
+	display: flex;
+	gap: 20px;
 }
 .botones-menu {
-<<<<<<< HEAD
-	padding: 0px 60px;
-=======
-	padding-left: 6%;
->>>>>>> origin/main
+	gap: 20px;
 	display: flex;
 	align-items: center;
 }
@@ -131,11 +82,124 @@ header{
 	align-items: center;
 	justify-content: center;
 }
-.botones-menu li{
-	margin-right: 32px;
+/*----------buscador-----------*/
+.buscador {
+	width: 100%;
 }
-/*------animacion botones nav-----*/
-.botones-menu li:hover, .botones-menu li:focus {
+.form-search input[type=text] {
+	box-sizing: content-box;
+	font-size: 100%;
+	border: solid 1px black;
+	padding: 9px 10px;
+	border-radius: 22px;
+}
+.form-search input[type=text]:focus {
+	width: 100%;
+	max-width: 700px;
+	background-color: white;
+}
+/*----------menu de perfil desktop------------*/
+
+.nav-mi-perfil {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.flecha-contenedor li {
+	width: 30px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flecha-mi-perfil{
+	width: 10px;
+	height: 10px;
+	border-radius: 2px;
+	border-top: solid 4px #0E6372;
+	border-right: solid 4px #0E6372;
+	transform: rotate(135deg);
+	transition: all 0.2s ease;
+}
+.nav-mi-perfil ul ul {
+	display: none;
+	position: absolute;
+	background-color: #FEABD9;
+	top: 71px;
+	right: 0;
+	border-radius: 5px;
+	padding: 20px 0px 0px
+}
+.nav-mi-perfil ul ul li {
+	height: auto;
+	width: auto;
+	padding: 25px 45px 10px 25px;
+	transition: all 0.15s ease;
+	justify-content: flex-start;
+}
+
+.nav-mi-perfil ul ul a {
+	color: black;
+	font-size: 1.2em;
+	transition: all 0.15s ease;
+}
+.nav-mi-perfil ul ul li:hover {
+	background-color: #FF20AC;
+}
+
+.nav-mi-perfil ul ul li:hover a {
+	font-weight: 700;
+	color: white;
+}
+.nav-mi-perfil ul li:hover ul {
+	display: block;
+}
+.nav-mi-perfil li:hover .flecha-mi-perfil {
+	transform: rotate(315deg);
+	border-color: #FF20AC; 
+}
+/*--------MENU HAMBURGUESA-----------*/
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	cursor:pointer;
+	display: none;
+}
+#check, .iso-mobile, .menu-mobile {
+	display: none;
+}
+/*----------------FOOTER----------------------*/
+.footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	font-weight:700;
+	padding: 16px 0px;
+	color: #0E6372;
+	background-color:#92DDEA;
+}
+#posicion-texto-footer {
+	padding: 0px 0px 0px 64px;
+	font-size: 1.0625em;
+}
+#posicion-redes-footer {
+	padding: 0px 64px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.redes {
+	padding: 0px 8px;
+}
+/*------animacion botones nav desktop, botones contenido y  boton menu hamburguesa-----*/
+.botones-menu li:hover,.botones-contenido h3:hover, .boton-volver:hover, .checkbtn img:hover, .boton-stand:hover, .boton-formulario-index:hover, .boton-siguiente:hover,.boton-ir-inicio:hover, .flechas-registro:hover, .flechas-registro:focus,.boton-ir-inicio:focus, .boton-siguiente:focus .boton-formulario-index:focus .boton-stand:focus .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus, .boton-volver:focus {
 border-radius: 40px;
 animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
@@ -143,25 +207,359 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	0% {
 		box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
 		transform: translateX(0) translateY(0);
-		}
+	}
 	100% {
 		box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
 		transform: translateX(-8px) translateY(-8px);
-		}
 	}
-/*-----======================-----*/
-<<<<<<< HEAD
-.nav-perfil{
-	width: 10%;
-	max-width: 300px;
-=======
-.nav-perfil img {
->>>>>>> origin/main
+}
+/*------------------STICKERS DE FONDO-----------------------*/
+#stickers-fondo {
 	display: flex;
-	justify-content: flex-end;
+	margin: 0px 0px 50px 0px;
+}
+#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2, #sticker-ferias, #linea-fucia-index, #paleta-index {
+	height: auto;
+	position: absolute;
+	z-index: -1;
+}
+#fondo-sticker1 {
+	width: 50%;
+	max-width: 142px;;
+	left: -4px;
+	top: 551px;
+}
+#sticker-linea-fucsia {
+	width: 68%;
+	max-width: 354px;
+	bottom: -200px;
+	right: 0;
+}
+#sticker-paleta {
+	width: 10%;
+	max-width: 225px;
+	right: 82px;
+	top: 1273px;
+}
+#sticker-rayo {
+	width: 30%;
+	max-width: 184px;
+	right: 60px;
+	top: 1844px;
+}
+#sticker-grabadoras {
+	width: 20%;
+	max-width: 391px;
+	left: 0px;
+	top: 1956px;
+}
+#sticker-corazon {
+	width: 278px;
+	left: 0px;
+	top: 2466px;
+}
+#sticker-linea-amarilla {
+	width: 384px;
+	left: 0px;
+	top: 2767px;
+}
+#sticker-grabadora2 {
+	width: 313px;
+	right: 38px;
+	top: 3020px;;
+}
+/*---------------HTML INDEX---------------*/
+/*------header-index----*/
+.header-index {
+	gap: 31px;
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
+}
+/*-----animacion del nav se mueve hacia abajo-------*/
+.nav-animacion {
+	animation: menu-movimiento  normal 3s ease-out both;
+}
+@-webkit-keyframes menu-movimiento {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 0%;
+	}
+}
+/*----------fondo stickers index------*/
+#linea-fucia-index {
+	width: 68%;
+	max-width: 373px;
+	bottom: 104px;
+	right: 0;
+}
+#paleta-index {
+	width: 10%;
+	max-width: 225px;
+	left: 361px;
+	top: 580px;
+}
+/*----conectarse-----*/
+#conectarse {
+	padding: 9% 6% 4%;
+	display: flex;
+	justify-content: center;
+}
+.texto-index {
+	width: 100%;
+	max-width: 600px;
+}
+.h1-index {
+	font-size: 2em;
+}
+.index-p {
+	padding: 7% 8%;
+	font-size: 1.3em;
+}
+.datos {
+	padding: 12% 0% 0%;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.datos-index {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+}
+.caja-formulario-index {
+	padding: 2% 4%;
+	margin: 10px 0px;
+	font-size: 1em;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+/*--botones del index registrarse, ingresar, olvidaste contraseña--*/
+.botones-index {
+	margin: 10px;
+	display: flex;
+	gap: 60px;
+}
+.boton-formulario-index {
+	margin: 10px 0px;
+	padding: 2% 13%;
+	font-size: 1.1em;
+	background-color: #FF20AC;
+	color: white;
+	font-weight: 700;
+	border-radius: 30px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+span a {
+	color: black;
+}
+.boton-password {
+	margin: 20px 0px;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: underline;
 }
 
+/*------------------------HTML REGISTRO--------------------------------*/
+/*--------circulos de los pasos-------*/
+.boton-fucsia{
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px;
+	background: #FF20AC;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.boton-rosa {
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px;
+	background: #F6C1DF;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+/*-----------------MAIN-----------------*/
+.main-registrar section {
+	width: 100%;
+	height: 917px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*-----Carrusel------*/
+.carrusel-registro {
+	max-width: 745px;
+	height: 763px;
+	overflow: hidden; /*esto es lo que hace que se pueda ver una card a la vez, lo oculta*/
+	display: flex;
+	position: absolute;
+	top: 39px;/*para que no quede pegado al borde superior de la pantalla y tenga un espaciado*/
+}
+/*-----contenedor cards------*/
+.contenedor-cuadrado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.espacio {
+	height: 142px;/*esto es para el espacio arriba de la card para que el elemento empiece donde empieza la página y no se mueva hacia abajo cuando vaya al siguiente card*/
+}
+/*-----cuadrado de las cards------*/
+.main-registrar .cuadrado {
+	width: 629px;
+	height: 526px;
+	padding: 30px 57px 62px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	border: 1px solid black;
+	background-color: #92DDEA;
+	border-radius: 31px;
+	gap: 23px;
+}
+/*-----flechas de volver y siguiente para que queden alineadas------*/
+.flechas {
+	width: 89%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 6.5%;
+	margin-left: 33px;
+}
+/*--para que este oculta la flecha de la primera card*/
+.flecha-no {
+	visibility: hidden;
+}
+/*-----texto------*/
+.texto-registro {
+	width: 100%;
+	max-width: 593px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.main-registrar h1{
+	font-size: 1.6875em;
+	text-align: center;
+	padding: 0% 9%;
+}
+/*-----redes vincular primera card------*/
+.redes-vincular {
+	padding: 2% 10%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+.redes-vincular img {
+	margin: 0px 10px;
+}
+/*-----------------*/
+
+.main-registrar p{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 700;
+}
+
+.main-registrar .texto-bold{
+	font-weight: bold;
+}
+
+/*-----form label------*/
+.main-registrar label {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+/*-----Form input------*/
+
+.main-registrar form{
+	width: 90%;
+	max-height: 314px;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 5px;
+}
+.main-registrar form input, .respuesta-categoria {
+	width: 100%;
+	height: 41px;
+	padding-left: 30px;
+	background-color: white;
+	border-radius: 20px;
+	font-weight: 700;
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+/*-----Boton-siguiente------*/
+
+.boton-siguiente {
+	width: 50%;
+	height: auto;
+	padding: 10px 40px 8px;
+	background-color: #FF20AC;
+	color: white;
+	font-weight: 700;
+	border-radius: 50px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	font-size: 1.3em;
+}
+
+#cuadrado-registro-1 .boton-siguiente, #cuadrado-registro-2 .boton-siguiente, #cuadrado-registro-3 .boton-siguiente {
+	margin-top: 40px;
+}
+/*-----boton-ir-inicio------*/
+.main-registrar .boton-ir-inicio {
+	width: 50%;
+	height: auto;
+	margin: 0% 20%;
+	padding: 9px 40px;
+	font-size: 1.2em;
+	background-color: #FF20AC;
+	color: white;
+	font-weight: 700;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+/*animacion de sticker completado registro el ultimo card*/
+.img-completado {
+	height: 371px;
+	position: relative;
+	left: 103px;
+	background-image: url("img/registro/animacion-registro-a.svg");
+	animation: registro-completo alternate 2s infinite ease-in-out;
+	background-repeat: no-repeat;
+}
+@keyframes registro-completo {
+	0%{
+		background-image: url("img/registro/animacion-registro-a.svg");
+	}
+	50%{
+		background-image: url( "img/registro/animacion-registro-b.svg");
+	}
+	100%{
+		background-image: url("img/registro/animacion-registro-a.svg");
+	}
+}
+/*--------------------HTML HOME--------------*/
 /*-------------circulos secciones home------------*/
 /*esto es para que al apretar en cada círculo no salte de sección de repente sino que fluya*/
 
@@ -186,7 +584,7 @@ html {
 	height: 21px;
 	border-radius: 100%;
 	background-color: white; 
-	border: 2px solid black
+	border: 1px solid black
 }
 .circulos a:hover {
 	background-color: #92DDEA
@@ -197,105 +595,76 @@ html {
 .circulos a:focus {
 	background-color: #2CA6BC;
 }
-/*-----seccion bienvenidx-----*/
+/*-----SECCION BIENVENIDX-----*/
 #bienvenida {
 	padding: 14% 7% 14% 1%;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
-<<<<<<< HEAD
-	align-items: flex-end;
-=======
 	align-items: flex-end
->>>>>>> origin/main
 }
-
-.bienvenidx{
+.bienvenidx, .h1-index {
 	padding: 2% 6%;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 3.75em;
 	color: white;
 	background-color:#ff20ac;
 	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
 }
+.bienvenidx {
+	font-size: 3.75em;
+}
 .texto-principal{
 	max-width: 652px;
 }
-.texto-principal p{
-	padding: 20px 50px 50px 40px;
+.texto-principal p, .index-p{
 	margin-top: 10px;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 1.875em;
-	line-height: 41px;
-	text-align: justify;
 	color: black;
 	box-sizing: border-box;
 	background: white;
 	border: 1px solid black;
 	border-radius: 32px;
 }
+.texto-principal p {
+	padding: 25px 57px 31px 64px;
+	font-size: 1.875em;
+}
 .texto-mobile {
 	display: none;
 }
-<<<<<<< HEAD
-.logo-bienvenida{
-=======
 .logo-bienvenida {
->>>>>>> origin/main
 	display: flex;
 	align-items: center;
 	position: relative;
 	left: 35px;
 	z-index: 10;
 }
-<<<<<<< HEAD
 /*-----animacion iso seccion bienvenidx-----*/
-=======
-	/*-----animacion iso seccion bienvenidx-----*/
->>>>>>> origin/main
 .logo-bienvenida {
 	width: 57%;
 	height: 321px;
-	background-image: url( "img/index/logobienvenida.png");
+	background-image: url("img/index/isologo-animacion-a.svg");
 	background-size: 100%;
 	animation: iso-bienvenidx alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
 @keyframes iso-bienvenidx{
 	0%{
-		background-image: url("img/index/logobienvenida.png");
+		background-image: url("img/index/isologo-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/logo-animacion-b.png");
+		background-image: url("img/index/isologo-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/logobienvenida.png");
+		background-image: url("img/index/isologo-animacion-a.svg");
 	}
  }
-/*-----seccion objetivos-----*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-#objetivos{
-
-	box-sizing: border-box;
-position:static;
-width: 1920;
-height: 909px;
-	z-index: 20;
-}
-.box-objetivos{
-	display:flex;
-}
-=======
->>>>>>> origin/main
-=======
->>>>>>> origin/main
+/*-----SECCION OBJETIVOS-----*/
 h2{
-	padding-top: 17px;
 	font-weight: 700;
 	font-size: 2.5em ;
 	color: white;
@@ -337,12 +706,58 @@ h2{
 .objetivos-items{
 	display:flex;
 }
-/*-----seccion contenido-----*/
-<<<<<<< HEAD
-h3{ 
-=======
-h3{
->>>>>>> origin/main
+/*-----SECCION CONTENIDO-----*/
+/*--------------contenido grid--------------*/
+.contenido-grid {
+	max-width: 902px;
+	margin: 0px auto;
+	padding: 9% 10% 14%;
+	display: grid;
+	/*NOTA: el css original era: grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); pero al hacerlo asi sale un error en dw, solo deja con px*/
+	grid-template-columns:repeat(auto-fit, minmax(229px, 1px));
+	grid-gap: 60px;
+	row-gap: 100px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	justify-items: center;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	margin-block-end: 2em;
+	margin-block-start: 1em;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	padding-inline-end: 40px;
+}
+/*---------------------*/
+#contenido{
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.titulo-contenido {
+	width: 400px;
+	padding: 1% 77px;;
+	font-weight: 700;
+	font-size: 2.5em;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	border-radius: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	display:flex;
+}
+#contenido li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 13px;
+}
+#contenido h3{
 	width: 232px;
 	height: 40px;
 	font-weight: 700;
@@ -353,15 +768,11 @@ h3{
 	box-sizing:border-box;
 	border-radius: 20px;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .p-contenidos{
 	width: 232px;
 	height: 115px;
 	padding: 15px;
-	margin-top:10px;
 	font-size: 1.25em;
 	font-weight: 400;
 	color: black;
@@ -370,48 +781,18 @@ h3{
 	border-radius: 20px;
 	text-align: center;
 	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center
 }
-#contenido {
-	width: 75%;
-	padding: 7% 10% 0%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-#contenido h2 {
-	padding: 1% 5%;
-	display:flex;
-	justify-content: center;
-	text-align:center;
-}
-#contenido ul {
-	display: flex;
-	justify-content: center;
-	justify-content: space-between;
-}
-#contenido li {
-	width: 23%;
-	padding: 3% 1%;
-	margin: 10px 30px;
-	gap: 20px;
-	box-sizing: border-box;
+/*--------botones del contenido-------*/
+.botones-contenido {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 10px;
 }
-.aricle-contenido{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-/*-------seccion disfruta---------*/
+
+/*-------SECCION DISFRUTA---------*/
 #disfruta{
-	padding: 11% 10% 3% 10%;
+	padding: 10% 10% 5% 10%;
 	box-sizing: border-box;
 }
 #disfruta article {
@@ -432,60 +813,31 @@ h3{
 .imagen-disfruta {
 	width: 42%;
 	height: 532px;
-	background-image: url("img/index/cierre-animacion-home.png");
+	background-image: url("img/index/cierre-animacion-a.svg");
 	background-size: 100%;
 	animation: cierre-animacion-home alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
 @keyframes cierre-animacion-home{
 	0%{
-		background-image: url("img/index/cierre-animacion-home.png");
+		background-image: url("img/index/cierre-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/cierre-animacion-2.png");
+		background-image: url("img/index/cierre-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/cierre-animacion-home.png");
+		background-image: url("img/index/cierre-animacion-a.svg");
 	}
 }
-/*-------footer---------*/
-.footer-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
-	align-items: center;
-}
-footer {
-	width: 100%;
-	height: 50px;
-	font-weight:700;
-	padding: 16px 0px;
-	color: #0E6372;
-	background-color:#92DDEA;
-}
-#posicion-texto-footer {
-	padding: 0px 0px 0px 64px;
-	font-size: 1.0625em;
-}
-#posicion-redes-footer {
-	padding: 0px 64px 0px 0px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.redes {
-	padding: 0px 8px;
-}
 /*--------------------------------FERIAS-FERIAR.HTML----------------------------------------*/
-#main-ferias {
-	padding: 10% 70px 30px;
-	background-image: url("img/ferias/fondo.jpg");
-	background-size: 100%;
-	
+#sticker-ferias {
+	width: 30%;
+	max-width: 184px;
+	bottom: -482px;
+	right: 0;
 }
-
 .ferias{
+	 padding: 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -528,10 +880,6 @@ footer {
 	overflow-y: hidden;
 	
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 .ferias-graficas {
 	width: 75%;
 	padding: 0px 20px 0px 10px;
@@ -563,10 +911,446 @@ footer {
 		transform: rotateY(360deg);
 	}
 }
+/*---------diseño del scroll horizontal--------*/
+.lista-ferias::-webkit-scrollbar, .galeria-carrusel::-webkit-scrollbar {
+	width: 10px;
+	height: 20px;
+}
+.lista-ferias::-webkit-scrollbar:horizontal, .galeria-carrusel::-webkit-scrollbar:horizontal {
+	background-color: #FF20AC;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+.lista-ferias::-webkit-scrollbar-thumb:horizontal, .galeria-carrusel::-webkit-scrollbar-thumb:horizontal {
+	background: #92ddea;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
 /*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
 #main-feria-grafica {
-	padding: 10% 70px 30px;
-	background-image: url("img/fg/fondo-fg.png");
-	background-size: 100%;
+	padding-top: 4%;
 	
+}
+/*-------seccion como llegar------*/
+#seccion-como-llegar {
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+}
+.feria-juntas {
+	padding: 1% 4% 10px;
+	gap: 80px;
+	display: flex;
+	align-items: center;
+}
+.feria-juntas h1 {
+	font-weight: 700;
+	font-Size: 2.5em;
+	color: #0E6372;
+}
+.como-llegar {
+	gap: 60px;
+	display: flex;
+	justify-content: center;
+}
+.como-llegar h2 {
+	font-size: 1.85em;
+}
+.div-informacion-llegar {
+	width: 40%;
+}
+.ul-informacion {
+	margin: 10px 0px 15px;
+	padding: 2% 3% 2% 2%;
+	background-color: white;
+	border-radius: 30px;
+	border: 1px solid black;
+}
+.informacion-juntas {
+	margin-bottom: 15px;
+	gap: 20px;
+	display: flex;
+	align-items: center;
+}
+.informacion-juntas p {
+	width: 100%;
+	padding: 2%;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #F6C1DF;
+	border-radius: 40px;
+	box-sizing: border-box;
+	text-align: center;
+}
+/*---botones de redes, favoritos y stand*/
+.botones-juntas {
+	padding-top: 2%;
+	gap: 20px;
+	display: flex;
+}
+
+.boton-stand {
+	width: 310px;
+	cursor:pointer;
+}
+
+.boton-stand p {
+	padding: 15px 10px;
+	font-weight: 700;
+	font-size: 1em;
+	text-align: center;
+	color: white;
+	background-color: #FF20AC;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+/*------animacion boton favorito----------*/
+.boton-favoritos {
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@keyframes heartbeat {
+	from {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		-webkit-transform: scale(0.91);
+		transform: scale(0.91);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	17% {
+		-webkit-transform: scale(0.98);
+		transform: scale(0.98);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	33% {
+		-webkit-transform: scale(0.87);
+		transform: scale(0.87);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	45% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+/*------------mapa-----------*/
+.mapa iframe {
+	margin-top: 10px;
+	border:1px solid black;
+	border-radius: 30px;
+}
+
+/*------------seccion cards------------*/
+#seccion-cards {
+	padding: 5% 8% 12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-a h3, .card-b h3, .galeria-titulo {
+	font-weight: 700;
+	font-size: 1.875em;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	border-radius: 20px 20px 0px 0px;
+	box-sizing: border-box;
+}
+.card-a h3, .card-b h3 {
+	padding: 3% 6%;
+	text-align: center;
+}
+.card-a p, .card-b p {
+	padding: 60px 86px;
+	font-size: 1.5em;
+}
+.card-a p, .card-b p, .fondo-galeria { 
+	background-color: white;
+	border: 0.5px solid black;
+	border-radius: 0px 0px 20px 20px;
+	box-sizing: border-box;
+}
+.card-b {
+	position: relative;
+	right: 55px;
+	top: 237px;
+	z-index: 20;
+	margin-bottom: 13%;
+}
+/*--------------seccion galeria--------------*/
+
+/*---------fondo galeria--------*/
+#seccion-galeria {
+	width: 60%;
+	padding: 7% 20%;
+	display: flex;
+	flex-direction: column;
+}
+.galeria-titulo {
+	padding: 2% 7%;
+}
+.fondo-galeria {
+	padding: 0% 4% 6%;
+}
+/*  -------galeria carrusel Juntas----------*/
+.galeria-carrusel {
+	display: grid;
+	grid-template-columns: 400px 400px 400px 400px 400px 400px 400px 400px;
+	grid-column-gap: 20px;
+	grid-auto-flow: column;
+	align-items: center;
+	width: 100%;
+	height: 429px;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.carrusel-juntas {
+	margin: 0 auto;
+}
+/*-----------------HTML CURSOS-------------------*/
+
+
+
+/*-----------------HTML AGENDA-------------------*/
+
+
+
+
+/*-----------------HTML PERFIL-------------------*/
+.body-perfil {
+	background-image: url("img/perfil/fondo-perfil-body.svg");
+	background-position: top left;
+	background-size:100%;
+}
+	
+@media (max-width: 600px) {
+/*-----MENU HAMBURGUESA Mobile--------*/
+	header {
+		height: 80px;
+		padding: 15px 2%;
+	}
+	.menu {
+		gap: 15px;
+	}
+	.nav {
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+	}
+	/*-----iso mobile y menu--------*/
+	.logo {
+		padding-bottom: 2%;
+	}
+	.logo:hover {
+	animation: logo-movimiento normal 10s 1s 1 ease;
+	}
+	.iso-mobile, .checkbtn, .menu-mobile {
+		display: block;
+	}
+	.logo-desktop {
+		display: none;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+	.botones-menu{
+		position: fixed;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		top: 80px;
+		gap: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	.botones-menu a {
+		border-radius: 0px;
+		margin: 0px;
+		padding: 4% 0% 4% 14%;
+		justify-content: flex-start;
+		width: 300px;
+		box-sizing: content-box;
+	}
+	.botones-menu li {
+	font-size: 1em;
+	}
+	.botones-menu a:hover {
+		background-color: #FF20AC;
+		color: white;
+		fon-size: 1.2em;
+	}
+	.botones-menu li:hover, .botones-menu li:focus {
+		border-radius: 0px;
+		animation: none;
+	}
+	.botones-menu li:hover {
+		font-size: 1.3em;
+	}
+	
+	/*-----------buscador-----------*/
+	.buscador {
+		padding-bottom: 2%;
+	}
+	.form-search input[type=text]:focus {
+		max-width: 230px;
+		width: 100%;
+	}
+	/*--------nav perfil----------*/
+	.nav-mi-perfil {
+		width: 10%;
+		flex: none;
+		padding-bottom: 3%;
+		margin-left: 4px;;
+	}
+	.flecha-contenedor {
+		display: none;
+	}
+	/*--------FOOTER MOBILE-------------*/
+	.footer-flex {
+		padding: 10px 0px;
+		line-height: 15px;
+		font-size: 0.8125em;
+	}
+	.footer-flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center
+	}
+	#posicion-texto-footer {
+		padding: 0% 0% 2%
+	}
+	#posicion-redes-footer {
+		padding: 0px;
+	}
+	
+	/*----MAIN STICKERS DE FONDO----*/
+	#sticker-corazon, #sticker-linea-amarilla, #sticker-grabadoras, #sticker-grabadora2, #sticker-paleta, #sticker-rayo, #paleta-index {
+		display: none;
+	}
+	/*--------------------HTML INDEX-------------*/
+	/*---stickers fondo------*/
+	#linea-fucia-index {
+	width: 50%;
+	bottom: 266px;
+	}
+	
+	/*---------index--------*/
+	.main-index {
+		padding: 5%;
+	}
+	.index-p {
+		text-align: center;
+	}
+	.botones-index {
+		gap: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.boton-formulario-index {
+		padding: 2% 10%;
+	 }
+	/*--------------------HTML HOME-----------------------------*/
+	/*circulos de las secciones*/
+	.circulos {
+		display: none;
+	}
+	/*-----SECCION BIENVENIDX-----*/
+	.logo-bienvenida, .texto-desktop {
+		display: none;
+	}
+	.texto-mobile {
+		display: block;
+	}
+	#bienvenida {
+		padding: 28% 6% 14%;
+	}
+	.bienvenidx{
+		font-size: 2.5em;
+	}
+	.texto-principal p{
+		padding: 23px 45px;
+		border-radius: 20px;
+		text-align: center;
+	}
+	/*---SECCION OBJETIVOS-----*/
+	#objetivos {
+		display: none;
+	}
+	
+	/*-------SECCION CONTENIDO------*/
+	/*-------contenido grid-----*/
+	.contenido-grid{
+		max-width: 600px;
+	}
+	.contenido-grid{
+		margin: 0 auto;
+		padding: 0%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1px));
+		grid-gap: 20px;
+		grid-auto-flow: dense;
+		justify-content: center;
+	}
+	/*------------------------------------*/
+	#contenido {
+		gap: 30px;
+	}
+	.titulo-contenido{
+		width: 300px;
+		padding: 5px 54px;
+		font-size: 2em;
+	}
+	#contenido h3{
+		width: 197px;
+		height: 41px;
+	}
+	.p-contenidos {
+		width: 93%;
+		padding: 9px;
+		border-radius: 15px;
+	}
+	/*----SECCION DISFRUTA------*/
+	#disfruta h4 {
+		font-size: 3em;
+	}
+	.imagen-disfruta {
+		width: 75%;
+		height: 268px;
+	}
+	/*--------------------HTML FERIAS-FERIAR-----------------------------*/
+	#main-ferias {
+		padding: 10% 0% 10%;
+	}
+	.ferias {
+		padding: 5% 1%;
+	}
+	.ferias h1 {
+		padding: 4%;
+	}
+	/*--------grid----------*/
+	.lista-ferias {
+	grid-template-columns: 311px 311px 311px 311px 311px 311px 311px;
+	grid-column-gap: 2px;
+	}
+}
+@media (max-width: 450px) {
+	/*-------SECCION CONTENIDO------*/
+	.contenido-grid {
+		max-width: 250px;
+	}
 }
