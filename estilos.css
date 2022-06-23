@@ -404,6 +404,7 @@ span a {
 /*-----contenedor cards------*/
 .contenedor-cuadrado {
 	display: flex;
+
 	flex-direction: column;
 	align-items: center;
 }
@@ -1186,15 +1187,30 @@ main{
 	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
-	width: 384px;
-	height: 703px;
-	margin-left:139px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin:174px;
-	box-shadow: 100% #FF20AC;
+	position: absolute;
+width: 359px;
+height: 683px;
+left: 141px;
+top: 175px;
+	z-index: 60;
+
+
+}
+#sombra-perfil{
+position: absolute;
+width: 359px;
+height: 683px;
+left: 116px;
+top: 195px;
+	margin:none;
+
+
+	z-index: 40;
+
 }
 #foto-avatar{
 	margin-top:21px;
@@ -1231,15 +1247,11 @@ main{
 	height: 34px;
 	width: 157px;
 	margin-top:50px;
-  display:flex;
+	display:flex;
 	justify-content:center;
 	align-items: center;
-}
-#editar-perfil-texto{
-	text-decoration: none;
-	color: white;
-}
 
+}
 #editar-perfil-texto{
 	text-decoration: none;
 	color: white;
@@ -1253,47 +1265,6 @@ main{
 }
 .trabajos-carrusel{
 	display:flex;
-}
-
-#boton-trabajos{
-	text-decoration: none;
-	background: #92DDEA;
-	border: 1px solid #000000;
-	border-radius: 20px;
-	width:  335px;
-	height:  36px;
-	margin-top: 5px;
-	margin-bottom: 6px;
-	box-sizing: border-box;
-	font-weight: 800;
-	font-size: 1.25em;
-	color: #0E6372;
-	margin: 15px;
-	display:flex;
-	justify-content:center;
-	align-items: center;
-}
-h4{	
-	font-size: 1.5em;
-	color: #FFFFFF;
-	margin: 20px;
-}
-.barra-trabajos{
-	background: #FF20AC;
-	border: 1px solid #000000;
-	border-radius: 10px 10px 0px 0px;
-	height: 70.19px;
-	box-sizing: border-box;
-	display:flex;
-	justify-content: space-between;
-
-}
-.trabajos-perfil{
-	width: 961px;
-	height: 493px;
-	background: #FFFFFF;
-	border: 1px solid #000000;
-	border-radius: 10px;
 }
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
