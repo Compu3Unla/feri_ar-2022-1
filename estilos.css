@@ -1180,9 +1180,17 @@ h2{
 .main-perfil {
 	display:flex;
 }
+/*---contenedor avatar perfil-----*/
+#sombra-perfil{
+	position: absolute;
+	width: 359px;
+	height: 683px;
+	top: 120px;
+	margin:none;
+	z-index: -1;
+}
 .contenedor_avatar{
-	font-size: 1.25em;
-	font-weight: 400;
+	
 	color: black;
 	background-color: white;
 	border:1px solid black;
@@ -1193,11 +1201,15 @@ h2{
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	z-index: 40;
+	width: 359px;
+	height: 683px;
+	left: 141px;
+	top: 175px;
 }
 #foto-avatar{
 	margin-top:21px;
 }
+
 #nombre-perfil{
 	color: #000000;
 	font-size: 1.56em;
@@ -1205,6 +1217,9 @@ h2{
 	background: none;
 	border:none;
 	margin-top: 33px;
+	text-decoration: none;
+	border-bottom: solid 2px;
+	border-radius: 0px;
 }
 .categorias{
 	width: 205px;
@@ -1218,7 +1233,7 @@ h2{
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	padding-top: 14px;
+	justify-content: center;
 	margin-top:40px;
 }
 #editar-perfil{
@@ -1239,6 +1254,7 @@ h2{
 	text-decoration: none;
 	color: white;
 }
+
 .localidad{
 	display: flex;
 	justify-content:center;
@@ -1246,6 +1262,10 @@ h2{
 	font-weight: 400;
 	margin-top: 25px;
 }
+#localidad-perfil{
+	margin-left: 8px;
+}
+/*---contenedor trabajos-----*/
 .trabajos-carrusel{
 	display:flex;
 }
