@@ -1125,8 +1125,51 @@ h2{
 }
 /*-----------------HTML CURSOS-------------------*/
 
+.footer-cursos{
+	position: absolute;
+	bottom: 0;
+}
 
-
+#main-cursos{
+	padding-top: 10%;
+}
+.cursos-section{
+	display: flex;
+	margin-bottom: 50px;
+}
+.curso-box{
+	padding: 50px 20px 40px;
+	margin-top: 10px;
+	font-size: 1.5em;
+	background-color: white;
+	border: 0.5px solid black;
+	border-radius: 15px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.curso-texto{
+	align-self: center;
+}
+.sticker-cursos {
+	width: 42%;
+	height: 40.5em;
+	background-image: url("img/cursos/stickers-cursos-a.svg");
+	background-size: 100%;
+	animation: sticker-cursos-construccion alternate 2s infinite ease-in-out;
+	background-repeat: no-repeat;
+	align-items: center;
+}
+@keyframes sticker-cursos-construccion{
+	0%{
+		background-image: url("img/cursos/stickers-cursos-a.svg");
+	}
+	50%{
+		background-image: url("img/cursos/stickers-cursos-b.svg");
+	}
+	100%{
+		background-image: url("img/cursos/stickers-cursos-a.svg");
+	}
+}
 /*-----------------HTML AGENDA-------------------*/
 .main-agenda {
 	padding: 12% 7% 6%;
@@ -1544,6 +1587,24 @@ h2{
 	#boton-trabajos {
 		text-align: center;
 	}
+/*-----------------HTML CURSOS-------------------*/
+	
+	#main-cursos{
+		padding-top:20%;
+	}
+	.cursos-section{
+		flex-direction: column;
+	}
+	.sticker-cursos {
+		width: 80%;
+		height: 320px;
+		padding-bottom: 10%;
+		display: flex;
+		align-content: center;
+	}
+	.curso-texto{
+		width: 80%;
+	}
 
 }
 @media (max-width: 450px) {
@@ -1551,4 +1612,6 @@ h2{
 	.contenido-grid {
 		max-width: 250px;
 	}
+
+	
 }
