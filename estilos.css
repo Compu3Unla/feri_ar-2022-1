@@ -930,6 +930,7 @@ h2{
 /*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
 #main-feria-grafica {
 	padding-top: 4%;
+	display:flex;
 	
 }
 /*-------seccion como llegar------*/
