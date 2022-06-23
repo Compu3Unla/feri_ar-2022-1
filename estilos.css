@@ -1125,10 +1125,50 @@ h2{
 
 
 /*-----------------HTML AGENDA-------------------*/
-
-
-
-
+.main-agenda {
+	padding: 12% 7% 6%;
+	display: flex;
+	justify-content: center;
+}
+.agenda-texto {
+	width: 65%;
+	padding: 0% 17%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.agenda-texto h1 {
+	width: 87%;
+	padding: 2% 6%;
+	font-weight: 700;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	border-radius: 13px;
+	text-align: center;
+	font-size: 1.7em;
+}
+.agenda-texto p {
+	width: 96%;
+	height: 51px;
+	margin: 12px 0px 20px;
+	font-style: normal;
+	font-weight: 700;
+	color: black;
+	background: white;
+	border: 1px solid black;
+	border-radius: 16px;
+	text-align: center;
+	font-size: 1.3em;
+	padding: 3% 2% 2%;
+}
+/*---la agenda-----*/
+.agenda-feriar {
+	border: solid 1px black;
+	border-radius: 8px;
+	font-family: 'Nunito';
+}
 /*-----------------HTML PERFIL-------------------*/
 .body-perfil {
 	background-image: url("img/perfil/fondo-perfil-body.svg");
@@ -1191,11 +1231,15 @@ main{
 	height: 34px;
 	width: 157px;
 	margin-top:50px;
-	display:flex;
+  display:flex;
 	justify-content:center;
 	align-items: center;
-	
 }
+#editar-perfil-texto{
+	text-decoration: none;
+	color: white;
+}
+
 #editar-perfil-texto{
 	text-decoration: none;
 	color: white;
@@ -1210,6 +1254,7 @@ main{
 .trabajos-carrusel{
 	display:flex;
 }
+
 #boton-trabajos{
 	text-decoration: none;
 	background: #92DDEA;
