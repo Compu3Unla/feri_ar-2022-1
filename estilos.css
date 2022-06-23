@@ -1176,7 +1176,7 @@ h2{
 	background-position: top left;
 	background-size:100%;
 }
-main{
+.main-perfil {
 	display:flex;
 }
 .contenedor_avatar{
@@ -1196,7 +1196,7 @@ width: 359px;
 height: 683px;
 left: 141px;
 top: 175px;
-	z-index: 60;
+z-index: 60;
 
 
 }
