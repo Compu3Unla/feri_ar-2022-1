@@ -1527,7 +1527,6 @@ h2{
 	grid-template-columns: 311px 311px 311px 311px 311px 311px 311px;
 	grid-column-gap: 2px;
 	}
-}
 /*-----HTML PERFIL---------*/
 	.main-perfil {
 		flex-direction: column;
