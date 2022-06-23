@@ -1125,16 +1125,120 @@ h2{
 
 
 /*-----------------HTML AGENDA-------------------*/
-
-
-
-
+.main-agenda {
+	padding: 12% 7% 6%;
+	display: flex;
+	justify-content: center;
+}
+.agenda-texto {
+	width: 65%;
+	padding: 0% 17%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.agenda-texto h1 {
+	width: 87%;
+	padding: 2% 6%;
+	font-weight: 700;
+	color: white;
+	background-color: #ff20ac;
+	border: 1px solid black;
+	border-radius: 13px;
+	text-align: center;
+	font-size: 1.7em;
+}
+.agenda-texto p {
+	width: 96%;
+	height: 51px;
+	margin: 12px 0px 20px;
+	font-style: normal;
+	font-weight: 700;
+	color: black;
+	background: white;
+	border: 1px solid black;
+	border-radius: 16px;
+	text-align: center;
+	font-size: 1.3em;
+	padding: 3% 2% 2%;
+}
+/*---la agenda-----*/
+.agenda-feriar {
+	border: solid 1px black;
+	border-radius: 8px;
+	font-family: 'Nunito';
+}
 /*-----------------HTML PERFIL-------------------*/
 .body-perfil {
 	background-image: url("img/perfil/fondo-perfil-body.svg");
 	background-position: top left;
 	background-size:100%;
 }
+.contenedor_avatar{
+	font-size: 1.25em;
+	font-weight: 400;
+	color: black;
+	background-color: white;
+	border:1px solid black;
+	border-radius: 20px;
+	text-align: center;
+	width: 384px;
+	height: 703px;
+	margin-left:139px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#nombre-perfil{
+	color: #000000;
+	font-size: 1.56em;
+	font-weight: 700;
+	background: none;
+	border:none;
+	margin-top: 33px;
+}
+.categorias{
+	width: 205px;
+	height: 101px;
+	background-color: #FFE927;
+	border: 1px solid #000000;
+	border-radius: 28px;
+	font-size:1.25em;
+	font-weight: 700;
+	text-align: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding-top: 14px;
+	margin-top:40px;
+}
+#editar-perfil{
+	font-size: 0.93em;
+	font-weight: 800;
+	background-color: #FF20AC;
+	border: 1px solid #000000;
+	border-radius: 149px;
+	height: 34px;
+	width: 157px;
+	margin-top:50px;
+}
+#editar-perfil-texto{
+	text-decoration: none;
+	color: white;
+}
+.localidad{
+	display: flex;
+	justify-content:center;
+	font-size: 1em;
+	font-weight: 400;
+	margin-top: 25px;
+}
+.trabajos-carrusel{
+	display:flex;
+}
+
 	
 @media (max-width: 600px) {
 /*-----MENU HAMBURGUESA Mobile--------*/
