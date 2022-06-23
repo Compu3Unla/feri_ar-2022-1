@@ -1177,10 +1177,33 @@ h2{
 	background-image: url("img/perfil/fondo-perfil-body.svg");
 	background-position: top left;
 	background-size:100%;
+	
 }
 .main-perfil {
 	display:flex;
-	
+
+}
+/*---stickers fondo perfil-----*/
+#stickers-fondo-perfil{
+	height: auto;
+	position: absolute;
+	z-index: 20;
+}
+
+#sticker-chispas1{
+	position: absolute;
+left: -7px;
+top: 768px;
+}
+#sticker-chispas2{
+	position: absolute;
+	left: 1815px;
+	top: 343px;
+}
+#sticker-chispas3{
+	position: absolute;
+	left: 1763px;
+	top: 711px;
 }
 /*---contenedor avatar perfil-----*/
 #sombra-perfil{
@@ -1336,21 +1359,7 @@ margin-top: 80px;
 }
 
 	
-/*---------diseño del scroll horizontal--------*/
-.trabajos-carrusel:-webkit-scrollbar, .carrusel-perfil:-webkit-scrollbar {
-	width: 10px;
-	height: 20px;
-}
-.trabajos-carrusel:-webkit-scrollbar:horizontal, .carrusel-perfil:-webkit-scrollbar:horizontal {
-	background-color: #FF20AC;
-	border-radius: 10px;
-	border: 1px solid black;
-}
-.trabajos-carrusel:-webkit-scrollbar-thumb:horizontal, .carrusel-perfil:-webkit-scrollbar-thumb:horizontal {
-	background: #92ddea;
-	border-radius: 10px;
-	border: 1px solid black;
-}
+
 
 
 @media (max-width: 600px) {
