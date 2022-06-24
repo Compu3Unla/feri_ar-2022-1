@@ -5,17 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>Juntas - FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+	<!--FAVICON-->
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/png" sizes="16x16">
 	<!--css js galeria-->
 	<link tyle="text/css" rel="stylesheet" href="css/jquery.fancybox.css">
 </head>
 <body>
+	<!--HEADER Y NAV-->
 	<header>
 		<nav class="menu">
 			<!-- logo de feriar -->
 			<a href="home.html" target="_self" class="logo">
-				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
-				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo desktop">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso mobile">
 			</a>
 			<!-- buscador -->
 			<div class="buscador">
@@ -24,20 +26,20 @@
 				</form>
 			</div>
 			<div class="nav">
-				<!--  menu hamburguesa es para el responsive de mobile -->
+				<!--  menu hamburguesa responsive de mobile al hacer el check se desplaza y aparece el menu -->
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
-					<img src="img/nav/menu hamburguesa.svg" width="50px" height="50px" alt="menu">
+					<img class="animacion-boton" src="img/nav/menu-hamburguesa.svg" width="50px" height="50px" alt="menu">
 				</label>
 				<!--  menu -->
 				<ul class="botones-menu">
-					<li>
+					<li class="animacion-boton">
 						<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
-					</li>
-					<li>
+					</li >
+					<li class="animacion-boton">
 						<a href="cursos.html" title="Cursos - FERIAR" target="_self">Cursos</a>
 					</li>
-					<li>
+					<li class="animacion-boton">
 						<a href="agenda.html" title="Agenda - FERIAR" target="_self">Agenda</a>
 					</li>
 					<li class="menu-mobile" >
@@ -75,14 +77,19 @@
 			</div>
 		</nav>
 	</header>
+	<!--MAIN-->
 	<main>
 		<!--aca van los stickers de fondo-->
 		<section id="stickers-fondo">
-			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
-			<img id="sticker-linea-fucsia" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
-			<img id="sticker-paleta" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
-			<img id="sticker-rayo" src="img/fondo/sticker-rayo.svg" width="184px" height="426px" alt="sticker rayo">
-			<img id="sticker-grabadoras" src="img/fondo/sticker-grabadoras.svg" width="391px" height="530px" alt="sticker grabadoras">
+			<img id="fondo-sticker1" class="stickers" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
+			
+			<img id="sticker-linea-fucsia" class="stickers" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
+			
+			<img id="sticker-paleta" class="stickers" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
+			
+			<img id="sticker-rayo"  class="stickers" src="img/fondo/sticker-rayo.svg" width="184px" height="426px" alt="sticker rayo">
+			
+			<img id="sticker-grabadoras" class="stickers" src="img/fondo/sticker-grabadoras.svg" width="391px" height="530px" alt="sticker grabadoras">
 		</section>
 		<!--  en el ul van a estar los 3 circulos con las secciones de la feria  -->
 		<ul class="circulos"> 
@@ -96,17 +103,18 @@
 				<a href="#seccion-galeria" target="_self"></a>
 			</li>
 		</ul>
+		<!--SECCION COMO LLEGAR-->
 		<section id="seccion-como-llegar">
 			<article class="feria-juntas">
 				<a href="ferias-feriar.html" target="_self">
-					<img class="boton-volver" src="img/fg/boton-volver.svg" width="60px" height="60px" alt="boton volver atras">
+					<img class="animacion-boton" src="img/fg/boton-volver.svg" width="60px" height="60px" alt="boton volver atras">
 				</a>
 				<h1>Feria Juntas</h1>
 			</article>
 			<article class="como-llegar">
 				<div class="div-informacion-llegar">
 					<h2>CÓMO LLEGAR</h2>
-					<ul class="ul-informacion">
+					<ul class="ul-informacion fondo-blanco">
 						<li class="informacion-juntas">
 							<img src="img/fg/icono-ubicacion.svg" width="51px" height="63px" alt="icono de ubicación">
 							<p>Av. Olazábal 1784 - Belgrano / CABA</p>
@@ -142,9 +150,7 @@
 						<a class="boton-favoritos" href="agenda.html" target="_self">
 							<img src="img/fg/favoritos.svg" width="48px" height="48px" alt="facebook">
 						</a>
-						<a class="boton-stand" href="#" target="_self">
-							<p>ADQUIRIR UN STAND</p>
-						</a>
+						<button class="boton-stand fondo-fucsia animacion-boton" type="submit" name="boton-stand" onclick="location.href='#'" enctype="text/plain">ADQUIRIR UN STAND</button>
 					</div>
 				</div>
 				<div class="mapa">
@@ -153,23 +159,25 @@
 				</div>
 			</article>
 		</section>
+		<!--SECCION CARDS-->
 		<section id="seccion-cards">
 			<article class="card-a">
-				<h3>SOBRE JUNTAS</h3>
-				<p>
+				<h3 class="fondo-fucsia">SOBRE JUNTAS</h3>
+				<p class="fondo-blanco">
 					El objetivo de Juntas es mostrar el trabajo de emprendedorxs nacionales y latinoamericanxs que comparten formas de producción, lenguajes visuales y estéticas semejantes. Valoran el trabajo a pequeña escala, hecho a mano y de manera autogestiva y local.
 				</p>
 			</article>
 			<article class="card-b">
-				<h3>CANTIDAD DE ENCUENTROS</h3>
-				<p>
+				<h3 class="fondo-fucsia">CANTIDAD DE ENCUENTROS</h3>
+				<p class="fondo-blanco">
 					‘‘El primer año realizábamos ediciones cada dos meses pero al ver la demanda de la gente y lo bien que reaccionaban todxs a la propuesta, decidimos que se vuelva una feria mensual, incluso con ediciones dobles en ciertas fechas especiales.’’
 				</p>
 			</article>
 		</section>
+		<!--SECCION GALERIA-->
 		<section id="seccion-galeria">
-			<h4 class="galeria-titulo">GALERIA</h4>
-			<article class="fondo-galeria">
+			<h4 class="galeria-titulo fondo-fucsia">GALERIA</h4>
+			<article class="fondo-galeria fondo-blanco">
 				<div class="galeria-carrusel">
 					<div class="carrusel-juntas">
 						<a href="img/fg/juntas1.svg" data-fancybox="gallery" data-caption="Encuentro en Olazábal 1784, belgrano, ilustraciones y stickers">
@@ -177,7 +185,7 @@
 						</a>
 					</div>
 					<div class="carrusel-juntas">
-						<a href="img/fg/juntas2.svg" data-fancybox="gallery" data-caption="Encuentro de Mayo por los ojos  mágicos">
+						<a href="img/fg/juntas2.svg" data-fancybox="gallery" data-caption="Encuentro de Mayo: 'por los ojos  mágicos'">
 							<img src="img/fg/juntas2-miniatura.svg" alt="Feria Juntas edición de Mayo" width="400px" height="300px">
 						</a>
 					</div>
@@ -202,7 +210,7 @@
 						</a>
 					</div>
 					<div class="carrusel-juntas">
-						<a href="img/fg/juntas7.svg" data-fancybox="gallery" data-caption="Encuentro edición de Mayo por los ojos  mágicos, feria Juntas">
+						<a href="img/fg/juntas7.svg" data-fancybox="gallery" data-caption="Encuentro edición de Mayo: Por los ojos  mágicos, feria Juntas">
 							<img src="img/fg/juntas7-miniatura.svg" alt="Encuentro Mayo feria Juntas" width="400px" height="300px">
 						</a>
 					</div>

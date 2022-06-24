@@ -5,15 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>Ferias - FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+	<!--FAVICON-->
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/png" sizes="16x16">
 </head>
 <body>
+	<!--HEADER Y NAV-->
 	<header>
 		<nav class="menu">
 			<!-- logo de feriar -->
 			<a href="home.html" target="_self" class="logo">
-				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
-				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo desktop">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso mobile">
 			</a>
 			<!-- buscador -->
 			<div class="buscador">
@@ -22,20 +24,20 @@
 				</form>
 			</div>
 			<div class="nav">
-				<!--  menu hamburguesa es para el responsive de mobile -->
+				<!--  menu hamburguesa responsive de mobile al hacer el check se desplaza y aparece el menu -->
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
-					<img src="img/nav/menu hamburguesa.svg" width="50px" height="50px" alt="menu">
+					<img class="animacion-boton" src="img/nav/menu-hamburguesa.svg" width="50px" height="50px" alt="menu">
 				</label>
 				<!--  menu -->
 				<ul class="botones-menu">
-					<li>
+					<li class="animacion-boton">
 						<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
 					</li>
-					<li>
+					<li class="animacion-boton">
 						<a href="cursos.html" title="Cursos - FERIAR" target="_self">Cursos</a>
 					</li>
-					<li>
+					<li class="animacion-boton">
 						<a href="agenda.html" title="Agenda - FERIAR" target="_self">Agenda</a>
 					</li>
 					<li class="menu-mobile" >
@@ -61,10 +63,10 @@
 								<a href="perfil.html" target="_self">Mi perfil</a>
 							</li>
 							<li>
-								<a href=" " target="_self">Mis cursos</a>
+								<a href="cursos.html" target="_self">Mis cursos</a>
 							</li>
-							<li>"cursos.html"
-								<a href="index.html" title="FERIAR" target="_self">Cerrar sesión</a>
+							<li>
+								<a href="index.html" target="_self">Cerrar sesión</a>
 							</li>
 						</ul>
 					</li>
@@ -73,115 +75,119 @@
 			</div>
 		</nav>
 	</header>
+	<!--MAIN-->
 	<main id="main-ferias">
 		<!--aca van los stickers de fondo-->
 		<section id="stickers-fondo">
-			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
-			<img id="sticker-ferias" src="img/fondo/sticker-rayo.svg" width="184px" height="426px" alt="sticker rayo">
-			<img id="sticker-paleta" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
+			<img id="fondo-sticker1" class="stickers" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
+			
+			<img id="sticker-ferias" class="stickers" src="img/fondo/sticker-rayo.svg" width="184px" height="426px" alt="sticker rayo">
+			
+			<img id="sticker-paleta" class="stickers" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
 		</section>
-		<!-- carrusel de la 1era ferias poner el src con las imagenes -->
+		<!-- 1ER CARRUSEL DE FERIAS GRÁFICAS -->
 		<section class="ferias">
-			<h1>FERIAS GRÁFICAS</h1>
+			<h1 class="fondo-fucsia">FERIAS GRÁFICAS</h1>
 			<article class="lista-ferias">
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/presion.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/presion.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Presión</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/feria agria.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/feria agria.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Feria Agria</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/kiltra.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/kiltra.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Kiltra</p>
 				</div>
 				<div class="ferias-graficas">
-					<!-- aca va el link que lleva html feria-grafica -->
+					<!-- aca va el link que lleva html feria-grafica de Juntas -->
 					<a href="feria-grafica.html" target="_self">
-						<img class="logo-fg" src="img/ferias/juntas.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/juntas.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Juntas</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/ilustrades.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/ilustrades.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Ilustrades</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/cat_fest.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/cat_fest.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Cat Fest</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/feria_sudaka.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/feria_sudaka.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Feria Sudaka</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/feria_pegajosa.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/feria_pegajosa.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Feria Pegajosa</p>
 				</div>
 			</article>
 		</section>
+		<!-- 2DO CARRUSEL DE FERIAS GRÁFICAS -->
 		<section class="ferias">
 			<article class="lista-ferias">
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/feria_chispa.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/feria_chispa.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Feria Chispa</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/festiva.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/festiva.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Festiva</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/fuega.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/fuega.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Fuega</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/garabatos.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/garabatos.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Garabatos</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/fegra.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/fegra.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">FeGra</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/fag.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/fag.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Fag</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/dispar_arte.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/dispar_arte.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">DisparArte</p>
 				</div>
 				<div class="ferias-graficas">
 					<a href="#" target="_self">
-						<img class="logo-fg" src="img/ferias/friki_feria_grafica.svg" width="300" height="300" alt="logo-fg"/>
+						<img class="logo-fg" src="img/ferias/friki_feria_grafica.svg" width="300" height="300" alt="logo-fg">
 					</a>
 					<p class="ferias-nombre">Friki Feria Gráfica</p>
 				</div>

@@ -5,15 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>Agenda - FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+	<!--FAVICON-->
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/png" sizes="16x16">
 </head>
 <body>
+	<!--HEADER Y NAV-->
 	<header>
 		<nav class="menu">
 			<!-- logo de feriar -->
 			<a href="home.html" target="_self" class="logo">
-				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
-				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo desktop">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso mobile">
 			</a>
 			<!-- buscador -->
 			<div class="buscador">
@@ -22,20 +24,20 @@
 				</form>
 			</div>
 			<div class="nav">
-				<!--  menu hamburguesa es para el responsive de mobile -->
+				<!--  menu hamburguesa responsive de mobile al hacer el check se desplaza y aparece el menu -->
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
-					<img src="img/nav/menu hamburguesa.svg" width="50px" height="50px" alt="menu">
+					<img class="animacion-boton" src="img/nav/menu-hamburguesa.svg" width="50px" height="50px" alt="menu">
 				</label>
 				<!--  menu -->
 				<ul class="botones-menu">
-					<li>
+					<li class="animacion-boton">
 						<a href="ferias-feriar.html" title="Ferias - FERIAR" target="_self">Ferias</a>
 					</li>
-					<li>
+					<li class="animacion-boton">
 						<a href="cursos.html" title="Cursos - FERIAR" target="_self">Cursos</a>
 					</li>
-					<li>
+					<li class="animacion-boton">
 						<a href="agenda.html" title="Agenda - FERIAR" target="_self">Agenda</a>
 					</li>
 					<li class="menu-mobile" >
@@ -73,19 +75,22 @@
 			</div>
 		</nav>
 	</header>
+	<!--MAIN-->
 	<main class="main-agenda">
 		<!--aca van los stickers de fondo-->
 		<section id="stickers-fondo">
-			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
-			<img id="sticker-linea-fucsia" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
+			<img id="fondo-sticker1" class="stickers" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
+			
+			<img id="sticker-linea-fucsia" class="stickers" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
 		</section>
 		<section>
 			<article class="agenda-texto">
-				<h1>TU AGENDA FERIAR</h1>
-				<p>
+				<h1 class="fondo-fucsia">TU AGENDA FERIAR</h1>
+				<p class="fondo-blanco">
 					Próximos encuentros de tus ferias gráficas favoritas
 				</p>
 			</article>
+			<!--iframe de agenda, no se puede modificar el tamaño de tipografía-->
 			<article>
 				<iframe class="agenda-feriar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%2392ddea&ctz=America%2FArgentina%2FBuenos_Aires&showPrint=0&src=MmVhb3YzNTk2cHU0YTE4OGxsc3BmZWhvcGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23E4C441" style="" width="1100" height="700" frameborder="0" scrolling="no"></iframe>
 			</article>

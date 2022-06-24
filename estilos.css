@@ -2,6 +2,7 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
+/*---------GEENERAL SE APLICA A TODOS LOS HTMLS------*/
 * {
 	margin: 0px;
 	padding: 0px;
@@ -15,7 +16,7 @@ body{
 	background-position: top left;
 	background-size:100%;
 }
-/*-----------------HEADER GENERAL---------------*/
+/*-----------------header general---------------*/
 
 header{
 	width: 100%;
@@ -26,7 +27,13 @@ header{
 	z-index: 1000;
 	box-sizing: border-box;
 }
-
+/*----colores background------*/
+.fondo-fucsia {
+	background-color: #FF20AC;
+}
+.fondo-blanco {
+	background-color: white;
+}
 /*-------------------------------MENU---------------------------------*/
 
 /*------animacion logo-----*/
@@ -78,7 +85,7 @@ header{
 	border-radius: 20px;
 	box-sizing: border-box;
 }
-.botones-menu a{
+.botones-menu a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -113,7 +120,7 @@ header{
 	align-items: center;
 	justify-content: center;
 }
-.flecha-mi-perfil{
+.flecha-mi-perfil {
 	width: 10px;
 	height: 10px;
 	border-radius: 2px;
@@ -142,6 +149,7 @@ header{
 .nav-mi-perfil ul ul a {
 	color: black;
 	font-size: 1.2em;
+	font-weight: 400;
 	transition: all 0.15s ease;
 }
 .nav-mi-perfil ul ul li:hover {
@@ -159,7 +167,7 @@ header{
 	transform: rotate(315deg);
 	border-color: #FF20AC; 
 }
-/*--------MENU HAMBURGUESA-----------*/
+/*--------MENU HAMBURGUESA MOBILE-----------*/
 .checkbtn {
 	font-size: 30px;
 	color: white;
@@ -173,7 +181,6 @@ header{
 /*----------------FOOTER----------------------*/
 .footer-flex {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
@@ -199,8 +206,24 @@ footer {
 .redes {
 	padding: 0px 8px;
 }
-/*------animacion botones nav desktop, botones contenido y  boton menu hamburguesa-----*/
-.botones-menu li:hover,.botones-contenido h3:hover, .boton-volver:hover, .checkbtn img:hover, .boton-stand:hover, .boton-formulario-index:hover, .boton-siguiente:hover,.boton-ir-inicio:hover, .flechas-registro:hover, #boton-trabajos:hover, #editar-perfil:hover, #editar-perfil:focus, #boton-trabajos:focus .flechas-registro:focus,.boton-ir-inicio:focus, .boton-siguiente:focus .boton-formulario-index:focus .boton-stand:focus .botones-contenido h3:focus,.checkbtn img:focus, .botones-menu li:focus, .boton-volver:focus {
+/*---------diseño del scroll horizontal--------*/
+.lista-ferias::-webkit-scrollbar, .galeria-carrusel::-webkit-scrollbar, .trabajos-carrusel::-webkit-scrollbar {
+	width: 10px;
+	height: 20px;
+}
+.lista-ferias::-webkit-scrollbar:horizontal, .galeria-carrusel::-webkit-scrollbar:horizontal, .trabajos-carrusel::-webkit-scrollbar:horizontal {
+	background-color: #FF20AC;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+.lista-ferias::-webkit-scrollbar-thumb:horizontal, .galeria-carrusel::-webkit-scrollbar-thumb:horizontal, .trabajos-carrusel::-webkit-scrollbar-thumb:horizontal {
+	background: #92ddea;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+/*------animacion botones -----*/
+.animacion-boton:hover, .animacion-boton:focus {
 border-radius: 40px;
 animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
@@ -217,9 +240,14 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 /*------------------STICKERS DE FONDO-----------------------*/
 #stickers-fondo {
 	display: flex;
-	margin: 0px 0px 50px 0px;
+	margin: 0px 0px 50px;
 }
-#fondo-sticker1, #sticker-linea-fucsia, #sticker-paleta, #sticker-rayo, #sticker-grabadoras, #sticker-corazon, #sticker-linea-amarilla, #sticker-grabadora2, #sticker-ferias, #linea-fucia-index, #paleta-index {
+ #sticker-ferias {
+	height: auto;
+	position: absolute;
+	z-index: -1;
+}
+.stickers {
 	height: auto;
 	position: absolute;
 	z-index: -1;
@@ -232,8 +260,8 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 #sticker-linea-fucsia {
 	width: 68%;
-	max-width: 354px;
-	bottom: -200px;
+	max-width: 374px;
+	bottom: 104px;
 	right: 0;
 }
 #sticker-paleta {
@@ -267,8 +295,13 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 #sticker-grabadora2 {
 	width: 313px;
 	right: 38px;
-	top: 3020px;;
+	top: 3020px;
 }
+
+
+/*--------TERMINA LO GENERAL, EMPIEZA LOS HTMLS-----------*/
+
+
 /*---------------HTML INDEX---------------*/
 /*------header-index----*/
 .header-index {
@@ -290,7 +323,7 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	}
 }
 /*----------fondo stickers index------*/
-#linea-fucia-index {
+#linea-fucsia-index {
 	width: 68%;
 	max-width: 373px;
 	bottom: 104px;
@@ -321,7 +354,6 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 .datos {
 	padding: 12% 0% 0%;
-	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 }
@@ -348,7 +380,6 @@ animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	margin: 10px 0px;
 	padding: 2% 13%;
 	font-size: 1.1em;
-	background-color: #FF20AC;
 	color: white;
 	font-weight: 700;
 	border-radius: 30px;
@@ -368,7 +399,7 @@ span a {
 
 /*------------------------HTML REGISTRO--------------------------------*/
 /*--------circulos de los pasos-------*/
-.boton-fucsia{
+.boton-fucsia {
 	width: 20px;
 	height: 20px;
 	margin: 0px 10px;
@@ -387,7 +418,7 @@ span a {
 /*-----------------MAIN-----------------*/
 .main-registrar section {
 	width: 100%;
-	height: 917px;
+	height: 423px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
@@ -405,7 +436,6 @@ span a {
 /*-----contenedor cards------*/
 .contenedor-cuadrado {
 	display: flex;
-
 	flex-direction: column;
 	align-items: center;
 }
@@ -413,7 +443,7 @@ span a {
 	height: 142px;/*esto es para el espacio arriba de la card para que el elemento empiece donde empieza la página y no se mueva hacia abajo cuando vaya al siguiente card*/
 }
 /*-----cuadrado de las cards------*/
-.main-registrar .cuadrado {
+.cuadrado {
 	width: 629px;
 	height: 526px;
 	padding: 30px 57px 62px;
@@ -449,7 +479,7 @@ span a {
 	align-items: center;
 	gap: 20px;
 }
-.main-registrar h1{
+.main-registrar h1 {
 	font-size: 1.6875em;
 	text-align: center;
 	padding: 0% 9%;
@@ -466,7 +496,7 @@ span a {
 }
 /*-----------------*/
 
-.main-registrar p{
+.main-registrar p {
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: 700;
@@ -481,7 +511,6 @@ span a {
 	font-size: 1.2em;
 	font-weight: 700;
 }
-/*-----Form input------*/
 
 .main-registrar form{
 	width: 90%;
@@ -493,53 +522,48 @@ span a {
 	justify-content: flex-end;
 	gap: 5px;
 }
+/*-----Form input------*/
 .main-registrar form input, .respuesta-categoria {
 	width: 100%;
 	height: 41px;
 	padding-left: 30px;
-	background-color: white;
+	font-size: 1em;
 	border-radius: 20px;
 	font-weight: 700;
 	border: 1px solid black;
 	box-sizing: border-box;
-	font-size: 1em;
 }
 /*-----Boton-siguiente------*/
-
 .boton-siguiente {
 	width: 50%;
 	height: auto;
 	padding: 10px 40px 8px;
-	background-color: #FF20AC;
+	margin-top: 40px;
 	color: white;
+	font-size: 1.3em;
 	font-weight: 700;
-	border-radius: 50px;
+	border-radius: 40px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid black;
-	font-size: 1.3em;
 }
 
-#cuadrado-registro-1 .boton-siguiente, #cuadrado-registro-2 .boton-siguiente, #cuadrado-registro-3 .boton-siguiente {
-	margin-top: 40px;
-}
 /*-----boton-ir-inicio------*/
-.main-registrar .boton-ir-inicio {
+.boton-ir-inicio {
 	width: 50%;
 	height: auto;
 	margin: 0% 20%;
 	padding: 9px 40px;
 	font-size: 1.2em;
-	background-color: #FF20AC;
 	color: white;
 	font-weight: 700;
 	border-radius: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 /*animacion de sticker completado registro el ultimo card*/
 .img-completado {
@@ -591,10 +615,7 @@ html {
 .circulos a:hover {
 	background-color: #92DDEA
 }
-.circulos a:active {
-	background-color: #2CA6BC;
-}
-.circulos a:focus {
+.circulos a:active, .circulos a:focus {
 	background-color: #2CA6BC;
 }
 /*-----SECCION BIENVENIDX-----*/
@@ -607,10 +628,8 @@ html {
 }
 .bienvenidx, .h1-index {
 	padding: 2% 6%;
-	font-style: normal;
 	font-weight: 800;
 	color: white;
-	background-color:#ff20ac;
 	border:1px solid black;
 	border-radius: 20px;
 	text-align: center;
@@ -618,16 +637,13 @@ html {
 .bienvenidx {
 	font-size: 3.75em;
 }
-.texto-principal{
+.texto-principal {
 	max-width: 652px;
 }
-.texto-principal p, .index-p{
+.texto-principal p, .index-p {
 	margin-top: 10px;
-	font-style: normal;
 	font-weight: 700;
-	color: black;
 	box-sizing: border-box;
-	background: white;
 	border: 1px solid black;
 	border-radius: 32px;
 }
@@ -645,28 +661,28 @@ html {
 	left: 35px;
 	z-index: 10;
 }
-/*-----animacion iso seccion bienvenidx-----*/
+/*-----animacion  bienvenidx html index y home-----*/
 .logo-bienvenida {
 	width: 57%;
 	height: 321px;
-	background-image: url("img/index/isologo-animacion-a.svg");
+	background-image: url("img/home/isologo-animacion-a.svg");
 	background-size: 100%;
 	animation: iso-bienvenidx alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
-@keyframes iso-bienvenidx{
+@keyframes iso-bienvenidx {
 	0%{
-		background-image: url("img/index/isologo-animacion-a.svg");
+		background-image: url("img/home/isologo-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/isologo-animacion-b.svg");
+		background-image: url("img/home/isologo-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/isologo-animacion-a.svg");
+		background-image: url("img/home/isologo-animacion-a.svg");
 	}
  }
 /*-----SECCION OBJETIVOS-----*/
-h2{
+h2 {
 	font-weight: 700;
 	font-size: 2.5em ;
 	color: white;
@@ -700,8 +716,7 @@ h2{
 	padding: 50px 20px 40px;
 	margin-top: 10px;
 	font-size: 1.5em;
-	background-color: white;
-	border: 0.5px solid black;
+	border: 1px solid black;
 	border-radius: 15px;
 	box-sizing: border-box;
 }
@@ -741,14 +756,6 @@ h2{
 .titulo-contenido {
 	width: 400px;
 	padding: 1% 77px;;
-	font-weight: 700;
-	font-size: 2.5em;
-	color: white;
-	background-color: #ff20ac;
-	border: 1px solid black;
-	border-radius: 20px;
-	text-align: center;
-	box-sizing: border-box;
 	display:flex;
 }
 #contenido li {
@@ -784,17 +791,9 @@ h2{
 	text-align: center;
 	box-sizing: border-box;
 }
-/*--------botones del contenido-------*/
-.botones-contenido {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-}
-
 /*-------SECCION DISFRUTA---------*/
 #disfruta{
-	padding: 10% 10% 5% 10%;
+	padding: 10% 10% 5%;
 	box-sizing: border-box;
 }
 #disfruta article {
@@ -804,31 +803,30 @@ h2{
 	gap: 10px;
 }
 #disfruta h4 {
-	padding-bottom: 0px;
 	font-weight: 800;
 	font-size: 3.75em;
 	font-style: normal;
 	text-align: center;
 	color: #FF20AC;
 }
-/*-------animacion de los stickers---------*/
+/*-------animacion de los stickers disfruta--------*/
 .imagen-disfruta {
 	width: 42%;
 	height: 532px;
-	background-image: url("img/index/cierre-animacion-a.svg");
+	background-image: url("img/home/cierre-animacion-a.svg");
 	background-size: 100%;
 	animation: cierre-animacion-home alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
 }
 @keyframes cierre-animacion-home{
 	0%{
-		background-image: url("img/index/cierre-animacion-a.svg");
+		background-image: url("img/home/cierre-animacion-a.svg");
 	}
 	50%{
-		background-image: url("img/index/cierre-animacion-b.svg");
+		background-image: url("img/home/cierre-animacion-b.svg");
 	}
 	100%{
-		background-image: url("img/index/cierre-animacion-a.svg");
+		background-image: url("img/home/cierre-animacion-a.svg");
 	}
 }
 /*--------------------------------FERIAS-FERIAR.HTML----------------------------------------*/
@@ -839,7 +837,7 @@ h2{
 	right: 0;
 }
 .ferias{
-	 padding: 5%;
+	padding: 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -851,7 +849,6 @@ h2{
 	font-weight: 700;
 	font-size: 2.5em;
 	color: white;
-	background-color: #ff20ac;
 	border: 1px solid black;
 	border-radius: 20px;
 	text-align: center;
@@ -879,8 +876,7 @@ h2{
 	height: 600px;
 	scroll-snap-type: x mandatory;
 	overflow-x: scroll;
-	overflow-y: hidden;
-	
+	overflow-y: hidden;	
 }
 .ferias-graficas {
 	width: 75%;
@@ -913,27 +909,10 @@ h2{
 		transform: rotateY(360deg);
 	}
 }
-/*---------diseño del scroll horizontal--------*/
-.lista-ferias::-webkit-scrollbar, .galeria-carrusel::-webkit-scrollbar, .trabajos-carrusel::-webkit-scrollbar {
-	width: 10px;
-	height: 20px;
-}
-.lista-ferias::-webkit-scrollbar:horizontal, .galeria-carrusel::-webkit-scrollbar:horizontal, .trabajos-carrusel::-webkit-scrollbar:horizontal {
-	background-color: #FF20AC;
-	border-radius: 10px;
-	border: 1px solid black;
-}
-.lista-ferias::-webkit-scrollbar-thumb:horizontal, .galeria-carrusel::-webkit-scrollbar-thumb:horizontal, .trabajos-carrusel::-webkit-scrollbar-thumb:horizontal {
-	background: #92ddea;
-	border-radius: 10px;
-	border: 1px solid black;
-}
-
 /*--------------------------------FERIA-GRAFICA.HTML----------------------------------------*/
 #main-feria-grafica {
 	padding-top: 4%;
 	display:flex;
-	
 }
 /*-------seccion como llegar------*/
 #seccion-como-llegar {
@@ -966,7 +945,6 @@ h2{
 .ul-informacion {
 	margin: 10px 0px 15px;
 	padding: 2% 3% 2% 2%;
-	background-color: white;
 	border-radius: 30px;
 	border: 1px solid black;
 }
@@ -995,19 +973,16 @@ h2{
 
 .boton-stand {
 	width: 310px;
-	cursor:pointer;
-}
-
-.boton-stand p {
 	padding: 15px 10px;
 	font-weight: 700;
 	font-size: 1em;
 	text-align: center;
 	color: white;
-	background-color: #FF20AC;
+	border-radius: 40px;
 	border: 1px solid black;
-	border-radius: 20px;
+	cursor:pointer;
 }
+
 /*------animacion boton favorito----------*/
 .boton-favoritos {
 	animation: heartbeat 1.5s ease-in-out infinite both;
@@ -1065,7 +1040,6 @@ h2{
 	font-weight: 700;
 	font-size: 1.875em;
 	color: white;
-	background-color: #ff20ac;
 	border: 1px solid black;
 	border-radius: 20px 20px 0px 0px;
 	box-sizing: border-box;
@@ -1079,7 +1053,6 @@ h2{
 	font-size: 1.5em;
 }
 .card-a p, .card-b p, .fondo-galeria { 
-	background-color: white;
 	border: 0.5px solid black;
 	border-radius: 0px 0px 20px 20px;
 	box-sizing: border-box;
@@ -1124,42 +1097,17 @@ h2{
 	margin: 0 auto;
 }
 /*-----------------HTML CURSOS-------------------*/
+/*-----animacion de los stickers-----*/
+.stickers-cursos {
+	width: 550px;
+	height: 564px;
 
-.footer-cursos{
-	position: absolute;
-	bottom: 0;
-}
-
-#main-cursos{
-	padding-top: 10%;
-}
-.cursos-section{
-	display: flex;
-	margin-bottom: 50px;
-}
-.curso-box{
-	padding: 50px 20px 40px;
-	margin-top: 10px;
-	font-size: 1.5em;
-	background-color: white;
-	border: 0.5px solid black;
-	border-radius: 15px;
-	box-sizing: border-box;
-	text-align: center;
-}
-.curso-texto{
-	align-self: center;
-}
-.sticker-cursos {
-	width: 42%;
-	height: 40.5em;
 	background-image: url("img/cursos/stickers-cursos-a.svg");
 	background-size: 100%;
-	animation: sticker-cursos-construccion alternate 2s infinite ease-in-out;
+	animation: stickers-animacion alternate 2s infinite ease-in-out;
 	background-repeat: no-repeat;
-	align-items: center;
 }
-@keyframes sticker-cursos-construccion{
+@keyframes stickers-animacion{
 	0%{
 		background-image: url("img/cursos/stickers-cursos-a.svg");
 	}
@@ -1167,9 +1115,48 @@ h2{
 		background-image: url("img/cursos/stickers-cursos-b.svg");
 	}
 	100%{
-		background-image: url("img/cursos/stickers-cursos-a.svg");
+		background-image: url("img/cursos/stickers-cursos-b.svg");
 	}
 }
+/*----------------*/
+.main-cursos {
+	padding: 10% 5% 4%;
+}
+.seccion-contruccion {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.curso-texto {
+	display: flex;
+	position: relative;
+	right: 70px;
+	top: 66px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 20;
+}
+.cursos-h1 {
+	width: 100%;
+	padding: 3% 0%;
+	font-size: 3em;
+	font-weight: 800;
+	color: white;
+	border-radius: 20px;
+	text-align: center;
+	border: 1px solid black;
+}
+.texto-lo-sentimos {
+	padding: 8% 12%;
+	margin-top: 10px;
+	font-size: 1.6em;
+	border-radius: 20px;
+	border: 1px solid black;
+	font-weight: 700;
+	text-align: center;
+}
+
 /*-----------------HTML AGENDA-------------------*/
 .main-agenda {
 	padding: 12% 7% 6%;
@@ -1190,7 +1177,6 @@ h2{
 	padding: 2% 6%;
 	font-weight: 700;
 	color: white;
-	background-color: #ff20ac;
 	border: 1px solid black;
 	border-radius: 13px;
 	text-align: center;
@@ -1200,161 +1186,155 @@ h2{
 	width: 96%;
 	height: 51px;
 	margin: 12px 0px 20px;
-	font-style: normal;
+	padding: 3% 2% 2%;
+	font-size: 1.3em;
 	font-weight: 700;
-	color: black;
-	background: white;
 	border: 1px solid black;
 	border-radius: 16px;
 	text-align: center;
-	font-size: 1.3em;
-	padding: 3% 2% 2%;
 }
-/*---la agenda-----*/
+/*-- agenda-----*/
 .agenda-feriar {
 	border: solid 1px black;
 	border-radius: 8px;
-	font-family: 'Nunito';
 }
 /*-----------------HTML PERFIL-------------------*/
+/*--------fondo main------*/
 .body-perfil {
 	background-image: url("img/perfil/fondo-perfil-body.svg");
 	background-size: 1920px;
 }
 .main-perfil {
-    padding: 12% 6% 8%;
-    display: flex;
-    align-items: flex-end;
-    gap: 37px;
-    justify-content: center;
+	padding: 12% 6% 8%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 37px;
+}
+/*-----fondo del perfil------*/
+.contenedor-perfil {
+	position: absolute;
+	z-index: -1;
 }
 .contenedor_avatar {
+	width: 380px;
 	font-size: 1.25em;
-    font-weight: 400;
-    width: 380px;
-	    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
 }
-/*imagen perfil*/
+/*----imagen perfil-----*/
 #foto-avatar {
 	margin: 25px 8px 5px 27px;
 }
-/*nombre*/
+/*---nombre-----*/
 #nombre-perfil {
-	color: #000000;
-    font-size: 1.56em;
-    font-weight: 700;
-    background: none;
-    border: none;
+	color: black;
+	font-size: 1.56em;
+	font-weight: 700;
+	background: none;
+	border: none;
 }
+/*----localidad-------*/
 .localidad {
 	display: flex;
-    justify-content: center;
-    font-size: 1em;
-    font-weight: 400;
+	justify-content: center;
+	font-size: 1em;
+	font-weight: 400;
 }
 #localidad-perfil {
 	margin: 0px 14px;
 }
+/*----categorias de perfil-----*/
 .categorias {
 	width: 205px;
-    background-color: #FFE927;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-size: 1.25em;
-    font-weight: 700;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
+	padding: 4%;
+	font-size: 1.25em;
+	font-weight: 700;
+	text-align: center;
+	background-color: #FFE927;
+	border: 1px solid black;
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
 }
+/*---boton editar perfil----*/
 #editar-perfil {
-    font-size: 1em;
-    font-weight: 700;
-    background-color: #FF20AC;
-    border: 1px solid #000000;
-    border-radius: 30px;
-    width: 157px;
-    color: white;
-    padding: 2% 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#editar-perfil a {
+	padding: 2% 3%;
+	display: flex;
+	font-size: 1em;
+	font-weight: 700;
 	color: white;
+	border: 1px solid black;
+	border-radius: 30px;
+	justify-content: center;
+	align-items: center;
 }
+/*-----redes sociales----*/
 .p-redes {
 	font-size: 1.1em;
-    font-weight: 700;
+	font-weight: 700;
 }
 .redes-sociales img {
 	margin: 0px 10px;
 }
-.contenedor-perfil {
-	position: absolute;
-    z-index: -1;
-}
-.trabajos-carrusel {
-    display: flex;
-}
-/*----seccion de trabajos---*/
-#seccion-trabajos {
+
+/*-----seccion trabajos------*/
+.seccion-trabajos {
 	width: 58%;
-    padding: 1% 3% 0% 0%;
-    display: flex;
-    flex-direction: column;
-    height: 372px;
+	height: 372px;
+	padding: 1% 3% 0% 0%;
+	display: flex;
+	flex-direction: column;
 }
 .mis-trabajos-perfil {
 	display: flex;
-    padding: 2% 7%;
-    background-color: #ff20ac;
-    border-radius: 20px 20px 0px 0px;
-    border: 1px solid black;
-    justify-content: space-between;
-    align-items: center;
+	padding: 2% 7%;
+	border-radius: 20px 20px 0px 0px;
+	border: 1px solid black;
+	justify-content: space-between;
+	align-items: center;
 }
 .h4-trabajos {
 	font-weight: 800;
-    font-size: 1.6em;
-    color: white;
+	font-size: 1.6em;
+	color: white;
 }
-#boton-trabajos {
-	    padding: 1% 3%;
-    background-color: #92DDEA;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-size: 1em;
-    font-weight: 700;
-    color: #0E6372;
-}
-#boton-trabajos a {
+.boton-trabajos {
+	padding: 1% 3%;
+	background-color: #92DDEA;
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 1em;
 	color: #0E6372;
-    font-weight: 800;
+	font-weight: 800;
 }
 .fondo-trabajos {
 	padding: 0% 4% 5%;
 	background-color: white;
-    border: 1px solid black;
-    border-radius: 0px 0px 20px 20px;
-    box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 0px 0px 20px 20px;
+	box-sizing: border-box;
+}
+/*------carrusel trabajos-----*/
+.trabajos-carrusel {
+	display: flex;
 }
 /*--grid mis trabajos*/
 .trabajos-carrusel {
+	width: 100%;
+	height: 313px;
 	display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px 300px;
-    grid-column-gap: 12px;
-    grid-auto-flow: column;
-    align-items: center;
-    width: 100%;
-    height: 313px;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    overflow-y: hidden;
+	grid-template-columns: 300px 300px 300px 300px 300px 300px;
+	grid-column-gap: 12px;
+	grid-auto-flow: column;
+	align-items: center;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 .div-carrusel-trabajos {
 	margin: 0 auto;
@@ -1408,7 +1388,7 @@ h2{
 		box-sizing: content-box;
 	}
 	.botones-menu li {
-	font-size: 1em;
+		font-size: 1em;
 	}
 	.botones-menu a:hover {
 		background-color: #FF20AC;
@@ -1434,9 +1414,9 @@ h2{
 	/*--------nav perfil----------*/
 	.nav-mi-perfil {
 		width: 10%;
-		flex: none;
 		padding-bottom: 3%;
-		margin-left: 4px;;
+		margin-left: 4px;
+		flex: none;
 	}
 	.flecha-contenedor {
 		display: none;
@@ -1446,11 +1426,7 @@ h2{
 		padding: 10px 0px;
 		line-height: 15px;
 		font-size: 0.8125em;
-	}
-	.footer-flex {
-		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center
 	}
 	#posicion-texto-footer {
@@ -1467,27 +1443,32 @@ h2{
 	/*--------------------HTML INDEX-------------*/
 	/*---stickers fondo------*/
 	#linea-fucia-index {
-	width: 50%;
-	bottom: 266px;
+		width: 50%;
+		bottom: 266px;
 	}
 	
 	/*---------index--------*/
 	.main-index {
-		padding: 5%;
+		padding: 20% 0% 6%;
 	}
 	.index-p {
 		text-align: center;
 	}
 	.botones-index {
-		gap: 15px;
+		width: 100%;
+		gap: 10px;
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		justify-content: space-around;
 	}
 	.boton-formulario-index {
-		padding: 2% 10%;
+		padding: 2% 6%;
 	 }
 	/*--------------------HTML HOME-----------------------------*/
+	/*----sticker fondo----*/
+	#sticker-linea-fucsia {
+		top: 800px;
+	}
 	/*circulos de las secciones*/
 	.circulos {
 		display: none;
@@ -1502,10 +1483,10 @@ h2{
 	#bienvenida {
 		padding: 28% 6% 14%;
 	}
-	.bienvenidx{
+	.bienvenidx {
 		font-size: 2.5em;
 	}
-	.texto-principal p{
+	.texto-principal p {
 		padding: 23px 45px;
 		border-radius: 20px;
 		text-align: center;
@@ -1517,10 +1498,10 @@ h2{
 	
 	/*-------SECCION CONTENIDO------*/
 	/*-------contenido grid-----*/
-	.contenido-grid{
+	.contenido-grid {
 		max-width: 600px;
 	}
-	.contenido-grid{
+	.contenido-grid {
 		margin: 0 auto;
 		padding: 0%;
 		display: grid;
@@ -1533,7 +1514,7 @@ h2{
 	#contenido {
 		gap: 30px;
 	}
-	.titulo-contenido{
+	.titulo-contenido {
 		width: 300px;
 		padding: 5px 54px;
 		font-size: 2em;
@@ -1567,27 +1548,31 @@ h2{
 	}
 	/*--------grid----------*/
 	.lista-ferias {
-	grid-template-columns: 311px 311px 311px 311px 311px 311px 311px;
-	grid-column-gap: 2px;
+		grid-template-columns: 311px 311px 311px 311px 311px 311px 311px;
+		grid-column-gap: 2px;
 	}
-/*-----HTML PERFIL---------*/
+	/*-----HTML PERFIL---------*/
+	.body-perfil {
+		background-image: url("img/perfil/mobile-perfil.svg");
+		background-size: 600px;
+	}
 	.main-perfil {
 		flex-direction: column;
-   	 align-items: center;
-   	 justify-content: center;
-	}	
-	#seccion-trabajos {
-	width: 100%;
-    padding: 3% 3% 8% 2%;
-	 margin-top: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+	.seccion-trabajos {
+		width: 100%;
+		padding: 3% 3% 8% 2%;
+		margin-top: 50px;
 	}
 	.h4-trabajos {
-    font-size: 1.2em;
+		font-size: 1.2em;
 	}
-	#boton-trabajos {
+	.boton-trabajos {
 		text-align: center;
 	}
-/*-----------------HTML CURSOS-------------------*/
+	/*-----------------HTML CURSOS-------------------*/
 	
 	#main-cursos{
 		padding-top:20%;
@@ -1605,13 +1590,10 @@ h2{
 	.curso-texto{
 		width: 80%;
 	}
-
 }
 @media (max-width: 450px) {
 	/*-------SECCION CONTENIDO------*/
 	.contenido-grid {
 		max-width: 250px;
 	}
-
-	
 }
