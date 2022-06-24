@@ -1,4 +1,4 @@
-Pasamos a comentarles el funcionamiento de la página para esta entrega final:
+Pasamos a comentarles el funcionamiento de la página para esta entrega final: (texto corregido)
 
 Trabajamos con resoluciones de pantalla de:
 1920x1080px para desktop, y media de 600px, 450px para mobile.
