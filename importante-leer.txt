@@ -1,0 +1,163 @@
+Pasamos a comentarles el funcionamiento de la página para esta entrega final:
+
+Trabajamos con resoluciones de pantalla de:
+190x1080px para desktop, y media de 600px, 450px para mobile.
+
+HTMLs que NO responden al formato mobile son: index.html, home.html, ferias-feriar.html, perfil.html
+HTMLs que SI responden al formato mobile son: registro.html, agenda.html, feria-grafica.html, cursos.html
+cursos.html: se ve bien para resolución de 600px pero al reducir su ancho de pantalla la animación pierde su tamaño y no buscamos que pase eso.
+
+Aclaraciones:
+
+El buscador en el mobile esta pequeño al agrandarse no se nota mucho la diferencia (nuestra idea era que se agrande y ocupe todo el ancho como de la pantalla y al hacer un touch se regrese a su sitio 
+con su ancho como la pagina de mercado libre pero no pudimos hacerlo)
+
+La tipografía de agenda en 'agenda.html' se ve demasiado pequeña en el tamaño de pantalla que estamos manejando (1920px) pero el calendario es funcional
+no pudimos cambiar el tamaño al ser un iframe ya quedaría en manos de un programador.
+
+ferias-feriar.html: no pudimos sacar la barra de scroll en el responsive mobile y pos eso la dejamos en ambas para que siga funcionando correctamente pero
+nuestra idea era que el scroll de realice con el touch de la pantalla y que el diseño de la barra desaparezca.
+
+home.html: nuestra sección de contenidos decidimos que no sean botones ya que tenemos un header fijo que se desplaza juntamente al hacer scroll para que el 
+usuario pudiera acceder por el nav con facilidad y eficacia, la parte de contenido lo tomamos como una descripción/ información para que el usuario pueda conocer de que se trata Feriar 
+y como funciona (además lo que son botones le colocamos una animación para que no produzca confusiones por el color).
+
+Usamos formato svg para todas las imagenes.
+---------------------------------------------------------------------------
+
+Funcionalidad de la página:
+
+NAV GENERAL:
+desktop:
+logo de feriar-------> te lleva a home.html
+
+Buscador----> se agranda al hacer click para facilitar el su uso y se adaptable
+
+Botón ferias ----> te lleva a ferias-refiar.html
+
+Botón cursos-----> te lleva a cursos.html (este html pusimos página en contruccion ya que no se termino)
+
+Botón agenda-----> te lleva a agenda.html
+
+Foto del perfil (con flechita) ------> Mi perfil (te lleva a perfil.html)
+                               ------> Mis cursos (te lleva a cursos.html (porqu estaria en construccion tambien esta seccion)
+                               ------> Cerrar seción (te lleva a index.html)
+Además el nav lo pusimos fijo para que el usuario sele facilite a todo momento de poner clickear alguno de los botones sin tener que scrollear hasta arriba
+
+mobile:
+Iso -----> te lleva al home (excepto en el index que te lleva al mismo html index)
+
+Buscador-------> al clickar se agranda
+
+menu hamburguesa----> se desliza y se abre los contenidos de la página
+                ---> ferias: te lleeva a ferias-refiar. html (mobile)
+                ---> cursos: te lleva a cursos.html (página en contruccion, no esta en @media 600px)
+                ---> agenda: te lleva a agenda.html (no está para @media 600px)
+               ----> Mi perfil te lleva a perfil.html (mobile)
+               ----> Mis cursos te lleva a cursos.html (porque esta sección tambien esta en construcción no responde a @media 600px)
+               -----> Cerrar sesión te lleva a index.html (mobile)
+----------------------------------------------------------------------------
+FOOTER GENERAL:
+las redes sociales te llevan a los links externos de facebook, instagram y twitter a modo de ejemplo para ver su funcionalidad
+----------------------------------------------------------------------
+index.html (está para desktop y mobile): 
+el logo (iso en mobile) de feriar y el botón ingresar ---> te lleva al mismo sition (index.html)
+
+Botón registrarse ----> registro.html (te lleva al paso a paso del registro)
+
+Botón ir a inicio ----> home.html (te lleva directo al home)
+
+botón ¿Olvidaste tu contraseña? (esta linkeado pero no dirige a ningun sitio)
+---------------------------------------------------------------
+registro.html(no esta para mobile):
+en este html hicimos un carrusel donde al clickear siguiente o las flechas siguiente y volver se pueda desplazar al siguiente paso
+las redes facebook, google y instagram ---> te lleva al home (simulando que se vinculó la cuenta directamente)
+
+botón siguiente --> te lleva al siguiente card
+
+Botónes flechas------> funcionan para ir al siguiente card o regresar al anterior paso
+
+Botón -------> ir a inicio te lleva al home
+
+al igual nav en logo y el ingresar te llevar de nuevo al index
+
+En el último paso de registro tenemos categorías donde el usuario pueda elegir lo que es para que se lo añada en su perfil (la idea es que se pueda elegir mas de una categoria si lo desea)
+---------------------------------------------------------------
+home.html (esta para desktop y mobile):
+
+En la parte derecha hay 4 circulos funciona, cada circulo te lleva a una sección del html para una funcionalidad mas práctica y rapida:
+1er circulo----> sección bienvenida (texto de bienvenida)
+2do circulo-----> sección objetivos (nuestros bojetivos)
+2er circulo----> sección contenido (muestra informacion al usuario de lo que se encontrara en la página)
+4to circulo---> sección disfruta (mensaje final del html)
+
+(en la parte de mobile estos circulos se quitan al igual que el isologo con animacion)
+---------------------------------------------------------------------------
+ferias-feriar.html (esta para desktop y mobile):
+en este html se encontrarán las ferias gráficas cada funcionan con un link que te dirigiría a la feria dicha.
+Solo funciona la feria ''Juntas'' y te lleva a -----> feria-gráfica.html
+
+Hicimos 2 carruseles dividiendo 8 ferias en cada carrusel a modo de ejemplo como funcionaria este html.
+
+Tiene una barra de scroll diseñada para que el usuario tenga facilidad a la hora de elegir cual feria ir e informarse
+(en la parte de mobile queriamos diseñarla para que no este y solo se pueda hacer touch)
+--------------------------------------------------
+feria-grafica.html (no esta para mobile):
+
+al igual que el home.html tiene 3 circulos en la parte derecha cada circulo funciona y te dirige a cada seccion para un acceso 
+rápido de cada sección de la página, funcionaria de la siguiente forma:
+1er circulo -----> te lleva a la secciónn de como llegar
+2do circulo------> te lleva a la sección de cards
+3er circulo-----> te lleva a la sección de galería
+
+Botón flecha volver-----> te lleva de regreso a ferias-feriar.html
+
+Tenemos un iframe del mapa de juntas con la funcionalidad de poder ver su ubicación (cumple con todas las funciones del mapa google)
+
+Botones de redes sociales (facebook y instagram) ----> te llevan a un link externo de la feria de Juntas
+
+Botón de favoritos-----> te lleva a agenda.html
+
+Galeria ----> Tiene un diseño de scroll y las imagenes son en carrusel al clickear alguna de ellas esta se agranda
+y te lleva a la galeria JS donde te dá además una descripción pequeña de que es lo que se trata cada imagen que se está viendo.
+-----------------------------------------------------------------
+cursos.html (no esta para mobile):
+Esta sección esta en construcción no esta terminada, dejamos el nav para que puedan seguir navegando
+------------------------------------------------------------
+agenda.html (no esta para mobile):
+El usuario puede encontrar una agenda totalmente funcional (es un iframe al igual que el mapa)
+nuestra idea aquí era que al agregar la ferias a favoritos te aparece marcado en esta agenda lo que se habia agregado a favoritos
+puede ir cambiando los meses con las flechas en la parte superior izquierda y en la parte superior derecha
+tiene para ver el mes o semana si lo desea, además se incluye una agenda para que haga anotaciones de alguna feria que no se quiera perder
+pusimos a modo de ejemplo 3 ferias (entre ellas juntas para simular que esta agregada a favoritos) y uno en el boton de agenda.
+------------------------------------------------------------
+(Foto de perfil con la flechita) donde se enuentra perfil.html (esta en version mobile):
+Se encuetra todos los datos previos (recopilados en la parte de registro o al vincular su cuenta con alguna red (facebook, google, instagram)
+
+Botón editar perfil-----> no esta linkeado a ningun html
+
+Botón subir más trabajos -----> no esta linkeado a ningun html
+
+Botones de redes ---> linkeado a modo de ejemplo a las redes del usuario te llevaria al link externo de la red social del usuario
+
+Galeria----> tiene un diseño de scroll horizontal para que pueda desplazarse a en forma de carrusel y al clickear sobre alguna de estas imagenes se 
+agranda y te lleva a la galeria de JS además cada imagen tiene una descripción de que es ese trabajo realizado por el usuario.
+
+(en mobile no queremos que aparezca tambien la barra del scroll solamente que se desplace al hacer touch)
+-------------------------------------------
+(Foto de perfil con la flechita) donde se enuentra 'mis cursos' te lleva a ----> cursos.html
+esta en construccion al igual que el html de cursos.
+
+
+Eso es todo espero que les guste la página <3 muchas gracias! :)
+
+
+
+
+
+
+
+ 
+
+
+
