@@ -1,7 +1,7 @@
 Pasamos a comentarles el funcionamiento de la página para esta entrega final:
 
 Trabajamos con resoluciones de pantalla de:
-190x1080px para desktop, y media de 600px, 450px para mobile.
+1920x1080px para desktop, y media de 600px, 450px para mobile.
 
 HTMLs que NO responden al formato mobile son: index.html, home.html, ferias-feriar.html, perfil.html
 HTMLs que SI responden al formato mobile son: registro.html, agenda.html, feria-grafica.html, cursos.html
