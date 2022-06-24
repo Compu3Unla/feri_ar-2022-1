@@ -5,48 +5,50 @@
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>FERIAR</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="img/index/favicon.svg" type="image/png" sizes="16x16">
+	<!--FAVICON-->
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/png" sizes="16x16">
 </head>
 <body>
 	<header class="nav-animacion">
 		<nav class="header-index">
-			<!-- logo de feriar -->
+			<!-- logo FERIAR -->
 			<a href="#conectarse" target="_self" class="logo">
-				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo header">
-				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso header">
+				<img class="logo-desktop" src="img/nav/logo.svg" width="174px" height="61px" alt="logo desktop">
+				<img class="iso-mobile" src="img/nav/iso.svg" width="52px" height="52px" alt="iso mobile">
 			</a>
-			<div class="nav">
-				<!--  menu -->
-				<ul class="botones-menu">
-					<li>
-						<a href="#conectarse" target="_self">Ingresar</a>
-					</li>
-				</ul>
-			</div>
+			<!--  header index -->
+			<ul class="botones-menu">
+				<li class="animacion-boton">
+					<a href="#conectarse" target="_self">Ingresar</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
 	<main class="main-index">
 		<!--aca van los stickers de fondo-->
-		<section id="stickers-fondo">
-			<img id="fondo-sticker1" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
-			<img id="linea-fucia-index" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
-			<img id="paleta-index" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
-		</section>
+		<img id="fondo-sticker1" class="stickers" src="img/fondo/sticker-capsulas.svg" width="142px" height="133px" alt="sticker">
+		
+		<img id="linea-fucsia-index" class="stickers" src="img/fondo/sticker-linea-fucsia.svg" width="354px" height="520px" alt="sticker">
+		
+		<img id="paleta-index" class="stickers" src="img/fondo/sticker-paleta.svg" width="225px" height="268px" alt="sticker paleta">
 		<section id="conectarse">
 			<article class="logo-bienvenida"></article>
 			<article class="texto-index">
-				<h1 class="h1-index">¡SÉ PARTE DE FERIAR!</h1>
-				<p class="index-p">
+				<h1 class="h1-index fondo-fucsia">¡SÉ PARTE DE FERIAR!</h1>
+				<p class="index-p fondo-blanco">
 					No esperes más y da a conocer tu talento al mundo o aventúrate a descubrir ferias gráficas cerca tuyo
 				</p>
 				<form class="datos" method="post" action="mailto:melisasaavedra@outlook.com" subject="cliente" target="_self" enctype="text/plain">
+					<!--usuario o e-mail-->
 					<label class="datos-index" for="correo-electrónico">USUARIO O E-MAIL</label>
-					<input type="correo-electrónico" class="caja-formulario-index" id="correo_electronico" name="correo_electronico" placeholder="Escribe tu correo electrónico" required>
+					<input type="correo-electrónico" class="caja-formulario-index" name="correo-electronico" placeholder="Escribe tu correo electrónico" required>
+					<!--contraseña-->
 					<label class="datos-index" for="password">CONTRASEÑA</label>
-					<input type="password" class="caja-formulario-index" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" required>
+					<input type="password" class="caja-formulario-index" name="contraseña" placeholder="Escribe tu contraseña" required>
+					<!--botones de registrarse y ir a inicio-->
 					<div class="botones-index">
-						<button class="boton-formulario-index" type="submit" name="boton-registrarse" onclick="location.href='registro.html'" enctype="text/plain">REGISTRARSE</button>
-						<button type="submit" class="boton-formulario-index" name="boton-ingresar" onclick="location.href='home.html'" enctype="text/plain">IR A INICIO</button>
+						<button class="boton-formulario-index fondo-fucsia animacion-boton" type="submit" name="boton-registrarse" onclick="location.href='registro.html'" enctype="text/plain">REGISTRARSE</button>
+						<button type="submit" class="boton-formulario-index fondo-fucsia animacion-boton" name="boton-ir-incio" onclick="location.href='home.html'" enctype="text/plain">IR A INICIO</button>
 					</div>
 					<span class="boton-password">
 						<a href="#">¿Olvidaste tu contraseña?</a>
