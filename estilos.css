@@ -418,7 +418,7 @@ span a {
 /*-----------------MAIN-----------------*/
 .main-registrar section {
 	width: 100%;
-	height: 423px;
+	height: 483px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
@@ -473,7 +473,7 @@ span a {
 /*-----texto------*/
 .texto-registro {
 	width: 100%;
-	max-width: 593px;
+	max-width: 627px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -663,7 +663,7 @@ html {
 }
 /*-----animacion  bienvenidx html index y home-----*/
 .logo-bienvenida {
-	width: 57%;
+	width: 50%;
 	height: 321px;
 	background-image: url("img/home/isologo-animacion-a.svg");
 	background-size: 100%;
@@ -722,6 +722,15 @@ h2 {
 }
 .objetivos-items{
 	display:flex;
+	gap: 10px;
+	align-items: center;
+}
+.objetivos-p {
+	padding-bottom: 1%;
+}
+
+.objetivos-agenda {
+	padding: 1% 0% 0%;
 }
 /*-----SECCION CONTENIDO-----*/
 /*--------------contenido grid--------------*/
@@ -932,7 +941,7 @@ h2 {
 	color: #0E6372;
 }
 .como-llegar {
-	gap: 60px;
+	gap: 100px;
 	display: flex;
 	justify-content: center;
 }
@@ -1186,7 +1195,7 @@ h2 {
 	width: 96%;
 	height: 51px;
 	margin: 12px 0px 20px;
-	padding: 3% 2% 2%;
+	padding: 3% 2% 1%;
 	font-size: 1.3em;
 	font-weight: 700;
 	border: 1px solid black;
@@ -1243,9 +1252,7 @@ h2 {
 	justify-content: center;
 	font-size: 1em;
 	font-weight: 400;
-}
-#localidad-perfil {
-	margin: 0px 14px;
+	gap: 14px;
 }
 /*----categorias de perfil-----*/
 .categorias {
@@ -1405,7 +1412,7 @@ h2 {
 	
 	/*-----------buscador-----------*/
 	.buscador {
-		padding-bottom: 2%;
+		padding-bottom: 1%;
 	}
 	.form-search input[type=text]:focus {
 		max-width: 230px;
@@ -1414,7 +1421,7 @@ h2 {
 	/*--------nav perfil----------*/
 	.nav-mi-perfil {
 		width: 10%;
-		padding-bottom: 3%;
+		padding-bottom: 2%;
 		margin-left: 4px;
 		flex: none;
 	}
@@ -1423,7 +1430,7 @@ h2 {
 	}
 	/*--------FOOTER MOBILE-------------*/
 	.footer-flex {
-		padding: 10px 0px;
+		padding: 14px 0px 10px;
 		line-height: 15px;
 		font-size: 0.8125em;
 		flex-direction: column;
@@ -1525,7 +1532,7 @@ h2 {
 	}
 	.p-contenidos {
 		width: 93%;
-		padding: 9px;
+		padding: 16px 9px 9px;
 		border-radius: 15px;
 	}
 	/*----SECCION DISFRUTA------*/
